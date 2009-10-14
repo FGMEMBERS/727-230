@@ -1,0 +1,175 @@
+<PropertyList>
+<sim>
+		<description>Boeing 727-230</description>
+		<author>Heiko Schulz (fuselage, wings), Emmanuel Barranger (Instruments)</author>
+		<status>early-production</status>
+
+		<flight-model>yasim</flight-model>
+		<aero>727-230</aero>
+
+
+<startup>
+<splash-texture>Aircraft/727-230/splash.png</splash-texture>
+</startup>
+
+ <autopilot>
+
+	      <path>Aircraft/727-230/737-autopilotV5.xml</path>
+
+      </autopilot>
+    
+		<model>
+			<path>Aircraft/727-230/Models/727-230.xml</path>
+		</model>
+    
+		<view>
+			<internal archive="y">true</internal>
+			<config>
+				<!-- x/y/z == right/up/back -->
+				<x-offset-m archive="y">-0.475</x-offset-m>
+				<y-offset-m archive="y">1.02</y-offset-m>
+				<z-offset-m archive="y">-20.44</z-offset-m>
+<!--				<z-offset-m archive="y">-6.300</z-offset-m>-->
+				<pitch-offset-deg archive="y">-11.0</pitch-offset-deg>
+        <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+        <dynamic>
+        <enabled type="bool" userarchive="y">false</enabled>
+        </dynamic>
+			</config>
+		</view>
+    
+		
+    
+		 <view n="100">
+   <name>interior view</name>
+   <type>lookfrom</type>
+   <internal archive="y">true</internal>
+    <config>
+        <from-model type="bool">true</from-model>
+        <from-model-idx type="int">0</from-model-idx>
+        <ground-level-nearplane-m type="double">0.05f</ground-level-nearplane-m>
+        <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+        <default-pitch-deg type="double">0</default-pitch-deg>
+        <default-heading-deg type="double">0</default-heading-deg>
+        <front-direction-deg type="double">0</front-direction-deg>
+     <x-offset-m archive="y" type="double">-0.36</x-offset-m>
+     <y-offset-m archive="y" type="double">1.09</y-offset-m>
+     <z-offset-m archive="y" type="double">20.53</z-offset-m>
+     <pitch-offset-deg>3</pitch-offset-deg>
+    </config>
+  </view>
+		
+    
+		<chase-distance-m>-100</chase-distance-m>
+
+		<flaps>
+			<setting>0.000</setting>
+			<!-- flaps up -->
+			<setting>0.125</setting>
+			<!-- flaps 1  -->
+			<setting>0.250</setting>
+			<!-- flaps 2  -->
+			<setting>0.375</setting>
+			<!-- flaps 5  -->
+			<setting>0.500</setting>
+			<!-- flaps 10 -->
+			<setting>0.625</setting>
+			<!-- flaps 15 -->
+			<setting>0.750</setting>
+			<!-- flaps 25 -->
+			<setting>0.875</setting>
+			<!-- flaps 30 -->
+			<setting>1.000</setting>
+			<!-- flaps 40 -->
+		</flaps>
+		
+		
+    
+ 		<!--<ai>
+			<submodels>
+				<contrails type="bool">true</contrails>
+			</submodels>
+		</ai>-->
+  
+     
+<weight n="0">
+			<name>156 PAX</name>
+			<weight-lb>25080</weight-lb>
+			<max-lb>25080</max-lb>
+		</weight>
+		
+<weight n="1">
+			<name>pilots</name>
+			<weight-lb>540</weight-lb>
+			<max-lb>540</max-lb>
+		</weight>
+  
+<instrumentation>
+<mk-viii>
+            <serviceable>true</serviceable>
+            <configuration-module>
+            <category-1>2</category-1><!-- GA Fast, 150' Mode 4B -->
+            </configuration-module>
+            <inputs>
+                <arinc429>
+                <decision-height-ncd>false</decision-height-ncd>
+                <decision-height>200</decision-height>
+                </arinc429>
+            </inputs>
+        </mk-viii>
+ 
+</instrumentation>
+
+  </sim>
+  
+  <gear>
+		<gear n="0">
+			<tyre-smoke type="int">0</tyre-smoke>
+			
+			
+		</gear>
+		<gear n="1">
+			<tyre-smoke type="int">0</tyre-smoke>
+			
+		</gear>
+		<gear n="2">
+			<tyre-smoke type="int">0</tyre-smoke>
+			
+		</gear>
+		<!--<tailhook>
+			<position-norm type="double">0</position-norm>
+		</tailhook>-->
+	</gear>
+  <engines>
+
+    <engine n="0">
+
+      <rpm>1000</rpm>
+
+      <reverser-position type="double">0.000000</reverser-position>
+
+    </engine>
+
+    <engine n="1">
+
+      <rpm>1000</rpm>
+
+      <reverser-position type="double">0.000000</reverser-position>
+
+    </engine>
+
+
+  
+  <engine n="2">
+
+      <rpm>1000</rpm>
+
+      <reverser-position type="double">0.000000</reverser-position>
+
+    </engine>
+
+  </engines>
+
+
+ 
+</PropertyList>
