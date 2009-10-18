@@ -12,6 +12,30 @@
 <splash-texture>Aircraft/727-230/splash.png</splash-texture>
 </startup>
 
+<sound>
+      <path>Aircraft/737-100/Sounds/737-100-sound.xml</path>
+      <switch type="bool">0</switch>
+      <stall-horn type="bool">0</stall-horn>
+    </sound>
+    
+    <menubar>
+<default>
+<menu n="10">
+<label>727-230</label>
+<enabled type="bool">true</enabled>
+   <item >
+      <label>Pushback</label>
+      <name>pushback</name>
+      <binding>
+       <command>dialog-show</command>
+       <dialog-name>pushback</dialog-name>
+      </binding>
+     </item>
+ </menu>
+
+ </default>
+</menubar>
+
  <autopilot>
 
 	      <path>Aircraft/727-230/737-autopilotV5.xml</path>

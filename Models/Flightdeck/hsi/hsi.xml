@@ -25,6 +25,10 @@
     <object-name>GSpointer</object-name>
     <object-name>cache</object-name>
     <object-name>off-flag</object-name>
+    <object-name>heading-down</object-name>
+    <object-name>heading-up</object-name>
+    <object-name>course-down</object-name>
+    <object-name>course-up</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitre</object-name>
@@ -60,21 +64,24 @@
     <object-name>cache</object-name>
     <object-name>off-flag</object-name>
     <emission>
-      <red>   0.030 </red>
-      <green> 0.015 </green>
-      <blue>  0.005 </blue>
+      <red>   0.8 </red>
+      <green> 0.7 </green>
+      <blue>  0.5 </blue>
       <factor-prop>/controls/lighting/instruments-norm</factor-prop>
     </emission>
   </animation>
 
   <!-- tacan distance digital display -->
   <animation>
-    <type>textranslate</type>
+    <type>rotate</type>
     <object-name>dist01</object-name>
-    <property>instrumentation/tacan/indicated-distance-nm</property>
-    <!-- <property>/instrumentation/navcomputer/indicated-distance-nm</property> -->
-    <factor>0.001</factor>
-    <step>100</step>
+    <property>/instrumentation/tacan/dist/val1000</property>
+    <factor> 36 </factor>
+    <center>
+      <x-m> -0.015 </x-m>
+      <y-m>  0.018 </y-m>
+      <z-m>  0.045 </z-m>
+    </center>
     <axis>
       <x> 0 </x>
       <y> 1 </y>
@@ -83,12 +90,15 @@
   </animation>
 
   <animation>
-    <type>textranslate</type>
+    <type>rotate</type>
     <object-name>dist02</object-name>
-    <property>instrumentation/tacan/indicated-distance-nm</property>
-    <!-- <property>/instrumentation/navcomputer/indicated-distance-nm</property> -->
-    <factor>0.01</factor>
-    <step>10</step>
+    <property>/instrumentation/tacan/dist/val100</property>
+    <factor> 36 </factor>
+    <center>
+      <x-m> -0.015 </x-m>
+      <y-m>  0.024 </y-m>
+      <z-m>  0.045 </z-m>
+    </center>
     <axis>
       <x> 0 </x>
       <y> 1 </y>
@@ -97,12 +107,15 @@
   </animation>
 
   <animation>
-    <type>textranslate</type>
+    <type>rotate</type>
     <object-name>dist03</object-name>
-    <property>instrumentation/tacan/indicated-distance-nm</property>
-    <!-- <property>/instrumentation/navcomputer/indicated-distance-nm</property> -->
-    <factor>0.1</factor>
-    <step>1</step>
+    <property>/instrumentation/tacan/dist/val10</property>
+    <factor> 36 </factor>
+    <center>
+      <x-m> -0.015 </x-m>
+      <y-m>  0.030 </y-m>
+      <z-m>  0.045 </z-m>
+    </center>
     <axis>
       <x> 0 </x>
       <y> 1 </y>
@@ -111,27 +124,33 @@
   </animation>
 
   <animation>
-    <type>textranslate</type>
+    <type>rotate</type>
     <object-name>dist04</object-name>
-    <property>instrumentation/tacan/indicated-distance-nm</property>
-    <!-- <property>/instrumentation/navcomputer/indicated-distance-nm</property> -->
-    <factor>1</factor>
-    <step>0.1</step>
+    <property>/instrumentation/tacan/dist/val1</property>
+    <factor> 36 </factor>
+    <center>
+      <x-m> -0.015 </x-m>
+      <y-m>  0.036 </y-m>
+      <z-m>  0.045 </z-m>
+    </center>
     <axis>
       <x> 0 </x>
       <y> 1 </y>
       <z> 0 </z>
     </axis>
   </animation>
- 
+
   <!-- Course Readout -->
   <animation>
-    <type>textranslate</type>
+    <type>rotate</type>
     <object-name>crs01</object-name>
-    <property>instrumentation/nav[1]/radials/selected-deg</property>
-    <!-- <property>/instrumentation/nav/radials/selected-deg</property> -->
-    <factor>0.001</factor>
-    <step>100</step>
+    <property>/instrumentation/nav[1]/radials/rsd/val100</property>
+    <factor> 36 </factor>
+    <center>
+      <x-m> -0.015 </x-m>
+      <y-m> -0.035 </y-m>
+      <z-m>  0.045 </z-m>
+    </center>
     <axis>
       <x> 0 </x>
       <y> 1 </y>
@@ -140,12 +159,15 @@
   </animation>
 
   <animation>
-    <type>textranslate</type>
+    <type>rotate</type>
     <object-name>crs02</object-name>
-    <property>instrumentation/nav[1]/radials/selected-deg</property>
-    <!-- <property>/instrumentation/nav/radials/selected-deg</property> -->
-    <factor>0.01</factor>
-    <step>10</step>
+    <property>/instrumentation/nav[1]/radials/rsd/val10</property>
+    <factor> 36 </factor>
+    <center>
+      <x-m> -0.015 </x-m>
+      <y-m> -0.029 </y-m>
+      <z-m>  0.045 </z-m>
+    </center>
     <axis>
       <x> 0 </x>
       <y> 1 </y>
@@ -154,12 +176,15 @@
   </animation>
 
   <animation>
-    <type>textranslate</type>
+    <type>rotate</type>
     <object-name>crs03</object-name>
-    <property>instrumentation/nav[1]/radials/selected-deg</property>
-    <!-- <property>/instrumentation/nav/radials/selected-deg</property> -->
-    <factor>0.1</factor>
-    <step>1</step>
+    <property>/instrumentation/nav[1]/radials/rsd/val1</property>
+    <factor> 36 </factor>
+    <center>
+      <x-m> -0.015 </x-m>
+      <y-m> -0.023 </y-m>
+      <z-m>  0.045 </z-m>
+    </center>
     <axis>
       <x> 0 </x>
       <y> 1 </y>
@@ -172,11 +197,11 @@
     <object-name>cmpscard</object-name>
     <condition>
       <greater-than>
-        <property>systems/electrical/outputs/hsi</property>
+        <property>/systems/electrical/outputs/hsi</property>
         <value>24</value>
       </greater-than>
     </condition>
-    <property>instrumentation/heading-indicator-fg/indicated-heading-deg</property>
+    <property>/instrumentation/heading-indicator-fg/indicated-heading-deg</property>
     <!-- <property>/orientation/heading-magnetic-deg[0]</property> -->
     <axis>
       <x> 1 </x>
@@ -213,7 +238,7 @@
         <value>24</value>
       </greater-than>
     </condition>
-    <property>instrumentation/heading-indicator-fg/indicated-heading-deg</property>
+    <property>/instrumentation/heading-indicator-fg/indicated-heading-deg</property>
     <!-- <property>/autopilot/settings/heading-bug-deg</property> -->
     <axis>
       <x> -1 </x>
@@ -227,12 +252,12 @@
     <object-name>bearing-bug</object-name>
     <condition>
       <greater-than>
-        <property>systems/electrical/outputs/hsi</property>
+        <property>/systems/electrical/outputs/hsi</property>
         <value>24</value>
       </greater-than>
     </condition>
-    <!-- <property>/instrumentation/navcomputer/indicated-bearing</property> -->
-    <property>/autopilot/settings/heading-bug-deg</property>
+    <property>/instrumentation/navcomputer/indicated-bearing</property>
+    <!-- <property>/autopilot/settings/heading-bug-deg</property> -->
     <axis>
       <x> -1 </x>
       <y>  0 </y>
@@ -246,11 +271,11 @@
     <condition>
       <or>
         <equals>
-          <property>instrumentation/tacan/in-range</property>
+          <property>/instrumentation/tacan/in-range</property>
           <value>false</value>
         </equals>
         <equals>
-          <property>instrumentation/tacan/switch-position</property>
+          <property>/instrumentation/tacan/switch-position</property>
           <value>0</value>
         </equals>
       </or>
@@ -262,7 +287,7 @@
     <object-name>off-flag</object-name>
     <condition>
       <less-than>
-        <property>systems/electrical/outputs/hsi</property>
+        <property>/systems/electrical/outputs/hsi</property>
         <value>24</value>
       </less-than>
     </condition>
@@ -297,8 +322,8 @@
     <object-name>GSpointer</object-name>
     <property>/instrumentation/nav/gs-needle-deflection</property>
     <interpolation>
-      <entry><ind>-9</ind><dep>-0.03</dep></entry>
-      <entry><ind>9</ind><dep>0.03</dep></entry>
+      <entry><ind> -9 </ind><dep> -0.03 </dep></entry>
+      <entry><ind>  9 </ind><dep>  0.03 </dep></entry>
     </interpolation>
     <axis>
       <x> 0 </x>
@@ -316,13 +341,49 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>course-down</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/nav[1]/radials/selected-deg</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>course-up</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/nav[1]/radials/selected-deg</property>
+        <step>1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
     <type>rotate</type>
     <object-name>buttonCRS</object-name>
-    <property>instrumentation/nav[1]/radials/selected-deg</property>
+    <property>/instrumentation/nav[1]/radials/selected-deg</property>
     <center>
       <x-m>  0.007 </x-m>
-      <y-m> -0.048 </y-m>
-      <z-m> -0.050 </z-m>
+      <y-m> -0.051 </y-m>
+      <z-m> -0.053 </z-m>
     </center>
     <axis>
       <x> -1 </x>
@@ -332,13 +393,49 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>heading-down</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/heading-indicator-fg/offset-deg</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>heading-up</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/instrumentation/heading-indicator-fg/offset-deg</property>
+        <step>1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
    <type>rotate</type>
    <object-name>buttonHDG</object-name>
-   <property>instrumentation/heading-indicator-fg/offset-deg</property>
+   <property>/instrumentation/heading-indicator-fg/offset-deg</property>
    <center>
       <x-m>  0.007 </x-m>
-      <y-m> -0.048 </y-m>
-      <z-m> -0.050 </z-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.053 </z-m>
    </center>
    <axis>
      <x> -1 </x>

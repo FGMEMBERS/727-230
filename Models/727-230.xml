@@ -4,6 +4,22 @@
 
   <path>727-230.ac</path>
   
+   <model>
+    <name>shadowOSG</name>
+    <path>Aircraft/727-230/Models/shadow.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>shadow</object-name>
+    <condition>
+      <equals>
+        <property>sim[0]/rendering/shadows/enabled</property>
+        <value>true</value>
+      </equals>
+    </condition>
+  </animation>
+  
    <animation>
     <type>shader</type>
     <shader>chrome</shader>
@@ -347,7 +363,7 @@
         <type>rotate</type>
         <object-name>rightaileron</object-name>
         <property>surface-positions/right-aileron-pos-norm</property>
-        <factor>-15</factor>
+        <factor>15</factor>
         <axis>
 			<x1-m>4.752</x1-m>
 			<y1-m>12.880</y1-m>
@@ -355,6 +371,21 @@
 			<x2-m>5.956</x2-m>
 			<y2-m>15.657</y2-m>
 			<z2-m>-0.396</z2-m>
+		</axis>
+    </animation>
+    
+ <animation>
+        <type>rotate</type>
+        <object-name>inneraileronr</object-name>
+        <property>surface-positions/right-aileron-pos-norm</property>
+        <factor>20</factor>
+        <axis>
+			<x1-m>1.763</x1-m>
+			<y1-m>6.371</y1-m>
+			<z1-m>-0.633</z1-m>
+			<x2-m>2.322</x2-m>
+			<y2-m>7.655</y2-m>
+			<z2-m>-0.601</z2-m>
 		</axis>
     </animation>
     
@@ -373,6 +404,242 @@
 		</axis>
     </animation>
     
+<animation>
+        <type>rotate</type>
+        <object-name>inneraileronl</object-name>
+        <property>surface-positions/right-aileron-pos-norm</property>
+        <factor>20</factor>
+        <axis>
+			<x1-m>1.762</x1-m>
+			<y1-m>-6.375</y1-m>
+			<z1-m>-0.633</z1-m>
+			<x2-m>2.322</x2-m>
+			<y2-m>-7.655</y2-m>
+			<z2-m>-0.601</z2-m>
+		</axis>
+    </animation>
+    
+    <!--spoiler-->
+    <!--outboardspoiler-->
+    <animation>
+  <type>rotate</type>   
+  <object-name>obs1</object-name>
+  <object-name>obs2</object-name>
+  <property>surface-positions/speedbrake-pos-norm</property>
+  <factor>45</factor>
+    <offset-deg>0</offset-deg>   
+  <axis>
+			<x1-m>2.249</x1-m>
+			<y1-m>-9.001</y1-m>
+			<z1-m>-0.472</z1-m>
+			<x2-m>2.753</x2-m>
+			<y2-m>-10.066</y2-m>
+			<z2-m>-0.450</z2-m>
+		</axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>   
+  <object-name>obs1</object-name>
+  <object-name>obs2</object-name>
+  <property>surface-positions/left-aileron-pos-norm</property>
+  <factor>-25</factor>
+ <offset-deg>0</offset-deg>   
+  <min-deg>0</min-deg>
+  
+  
+  <axis>
+			<x1-m>2.249</x1-m>
+			<y1-m>-9.001</y1-m>
+			<z1-m>-0.472</z1-m>
+			<x2-m>2.753</x2-m>
+			<y2-m>-10.066</y2-m>
+			<z2-m>-0.450</z2-m>
+		</axis>
+ </animation>
+ 
+ 
+ <animation>
+ <type>rotate</type>   
+  <object-name>obs13</object-name>
+  <object-name>obs14</object-name>
+  <property>surface-positions/speedbrake-pos-norm</property>
+  <factor>-45</factor>
+  <offset-deg>0</offset-deg>   
+  <axis>
+			<x1-m>2.249</x1-m>
+			<y1-m>9.001</y1-m>
+			<z1-m>-0.472</z1-m>
+			<x2-m>2.753</x2-m>
+			<y2-m>10.066</y2-m>
+			<z2-m>-0.450</z2-m>
+		</axis>
+ </animation>
+ 
+ <animation>
+ <type>rotate</type>   
+  <object-name>obs13</object-name>
+  <object-name>obs14</object-name>
+   <property>surface-positions/right-aileron-pos-norm</property>
+  <factor>25</factor>
+ <offset-deg>0</offset-deg>   
+  <max-deg>0</max-deg>   
+  <axis>
+			<x1-m>2.249</x1-m>
+			<y1-m>9.001</y1-m>
+			<z1-m>-0.472</z1-m>
+			<x2-m>2.753</x2-m>
+			<y2-m>10.066</y2-m>
+			<z2-m>-0.450</z2-m>
+		</axis>
+ </animation>
+ 
+ <!--inboardspoiler3,4&11,12-->
+    <animation>
+  <type>rotate</type>   
+  <object-name>ibs4</object-name>
+ <object-name>ibs3</object-name>
+  <property>surface-positions/speedbrake-pos-norm</property>
+  <factor>45</factor>
+  <offset-deg>0</offset-deg>   
+  <axis>
+			<x1-m>2.249</x1-m>
+			<y1-m>-9.001</y1-m>
+			<z1-m>-0.472</z1-m>
+			<x2-m>2.753</x2-m>
+			<y2-m>-10.066</y2-m>
+			<z2-m>-0.450</z2-m>
+		</axis>
+ </animation>
+ 
+  <animation>
+  <type>rotate</type>   
+  <object-name>ibs4</object-name>
+ <object-name>ibs3</object-name>
+   <property>surface-positions/left-aileron-pos-norm</property>
+  <factor>-25</factor>
+  <offset-deg>0</offset-deg>   
+  <min-deg>0</min-deg>
+     
+  <axis>
+			<x1-m>2.249</x1-m>
+			<y1-m>-9.001</y1-m>
+			<z1-m>-0.472</z1-m>
+			<x2-m>2.753</x2-m>
+			<y2-m>-10.066</y2-m>
+			<z2-m>-0.450</z2-m>
+		</axis>
+ </animation>
+ 
+ <animation>
+ <type>rotate</type>   
+  <object-name>ibs11</object-name>
+  <object-name>ibs12</object-name>
+   <property>surface-positions/speedbrake-pos-norm</property>
+  <factor>-45</factor>
+  <offset-deg>0</offset-deg>   
+  <axis>
+			<x1-m>2.249</x1-m>
+			<y1-m>9.001</y1-m>
+			<z1-m>-0.472</z1-m>
+			<x2-m>2.753</x2-m>
+			<y2-m>10.066</y2-m>
+			<z2-m>-0.450</z2-m>
+		</axis>
+ </animation>
+ 
+ <animation>
+ <type>rotate</type>   
+  <object-name>ibs11</object-name>
+  <object-name>ibs12</object-name>
+  <property>surface-positions/right-aileron-pos-norm</property>
+  <factor>25</factor>
+  <offset-deg>0</offset-deg>   
+  <max-deg>0</max-deg>
+  
+  <axis>
+			<x1-m>2.249</x1-m>
+			<y1-m>9.001</y1-m>
+			<z1-m>-0.472</z1-m>
+			<x2-m>2.753</x2-m>
+			<y2-m>10.066</y2-m>
+			<z2-m>-0.450</z2-m>
+		</axis>
+ </animation>
+ 
+ <!--inboardspoiler5,6&10,9-->
+ <animation>
+ <type>rotate</type>   
+  <object-name>ibs5</object-name>
+ <object-name>ibs6</object-name>
+  <property>surface-positions/speedbrake-pos-norm</property>
+  <factor>-45</factor>
+  <offset-deg>0</offset-deg>   
+  <axis>
+			<x1-m>1.142</x1-m>
+			<y1-m>-6.073</y1-m>
+			<z1-m>-0.516</z1-m>
+			<x2-m>0.406</x2-m>
+			<y2-m>-2.208</y2-m>
+			<z2-m>-0.600</z2-m>
+		</axis>
+ </animation>
+ 
+ <animation>
+ <type>rotate</type>   
+  <object-name>ibs5</object-name>
+ <object-name>ibs6</object-name>
+ <object-name>gs7</object-name>
+ <property>surface-positions/left-aileron-pos-norm</property>
+  <factor>25</factor>
+  <offset-deg>0</offset-deg>   
+  <max-deg>0</max-deg>   
+  <axis>
+			<x1-m>1.142</x1-m>
+			<y1-m>-6.073</y1-m>
+			<z1-m>-0.516</z1-m>
+			<x2-m>0.406</x2-m>
+			<y2-m>-2.208</y2-m>
+			<z2-m>-0.600</z2-m>
+		</axis>
+ </animation>
+ 
+ <animation>
+ <type>rotate</type>   
+  <object-name>ibs10</object-name>
+ <object-name>ibs9</object-name>
+  <property>surface-positions/speedbrake-pos-norm</property>
+  <factor>45</factor>
+  <offset-deg>0</offset-deg>   
+  <axis>
+			<x1-m>1.142</x1-m>
+			<y1-m>6.073</y1-m>
+			<z1-m>-0.516</z1-m>
+			<x2-m>0.406</x2-m>
+			<y2-m>2.208</y2-m>
+			<z2-m>-0.600</z2-m>
+		</axis>
+ </animation>
+ 
+ <animation>
+ <type>rotate</type>   
+  <object-name>ibs10</object-name>
+ <object-name>ibs9</object-name>
+  <object-name>gs8</object-name>
+  <property>surface-positions/right-aileron-pos-norm</property>
+  <factor>-25</factor>
+  <offset-deg>0</offset-deg>   
+  <min-deg>0</min-deg>
+  <axis>
+			<x1-m>1.142</x1-m>
+			<y1-m>6.073</y1-m>
+			<z1-m>-0.516</z1-m>
+			<x2-m>0.406</x2-m>
+			<y2-m>2.208</y2-m>
+			<z2-m>-0.600</z2-m>
+		</axis>
+ </animation>
+ 
     <animation>
         <type>rotate</type>
         <object-name>rhngdoor</object-name>
@@ -498,9 +765,9 @@
             </entry>
         </interpolation>
         <center>
-            <x-m>0.032</x-m>
-            <y-m>-2.567</y-m>
-            <z-m>-0.768</z-m>
+            <x-m>-0.165</x-m>
+            <y-m>-2.833</y-m>
+            <z-m>-0.611</z-m>
         </center>
         <axis>
             <x>1</x>
@@ -630,9 +897,9 @@
             </entry>
         </interpolation>
         <center>
-            <x-m>0.032</x-m>
-            <y-m>2.567</y-m>
-            <z-m>-0.768</z-m>
+            <x-m>-0.165</x-m>
+            <y-m>2.833</y-m>
+            <z-m>-0.611</z-m>
         </center>
         <axis>
             <x>-1</x>
@@ -1087,19 +1354,46 @@
     
 <animation>
         <type>rotate</type>
-        <object-name>slat1.1</object-name>
+        <object-name>slat2.1</object-name>
+        <object-name>slat2.2</object-name>
+       <object-name>slat2.3</object-name>
+       <property>surface-positions/slats</property>
+        <factor>30</factor>
+         <axis>
+			<x1-m>-2.082</x1-m>
+			<y1-m>-6.376</y1-m>
+			<z1-m>-0.469</z1-m>
+			<x2-m>3.38</x2-m>
+			<y2-m>-14.54</y2-m>
+			<z2-m>-0.329</z2-m>
+		</axis>
+    </animation>
+    
+    <animation>
+        <type>translate</type>
+           <object-name>slat1.1</object-name>
         <object-name>slat1.2</object-name>
        <object-name>slat1.3</object-name>
-       <property>surface-positions/slats</property>
-        <factor>70</factor>
-          <axis>
-			<x1-m>-2.349</x1-m>
-			<y1-m>6.376</y1-m>
-			<z1-m>-0.611</z1-m>
-			<x2-m>3.182</x2-m>
-			<y2-m>14.543</y2-m>
-			<z2-m>-0.408</z2-m>
-		</axis>
+      <property>surface-positions/slats</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>-0.2</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>-0.2</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>1.0</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
     </animation>
     
     <animation>
@@ -1122,16 +1416,100 @@
         <object-name>slat2.2</object-name>
        <object-name>slat2.3</object-name>
        <property>surface-positions/slats</property>
-        <factor>-70</factor>
+        <factor>30</factor>
           <axis>
-			<x1-m>-2.349</x1-m>
+			<x1-m>-2.082</x1-m>
 			<y1-m>-6.376</y1-m>
-			<z1-m>-0.611</z1-m>
-			<x2-m>3.182</x2-m>
-			<y2-m>-14.543</y2-m>
-			<z2-m>-0.408</z2-m>
+			<z1-m>-0.469</z1-m>
+			<x2-m>3.338</x2-m>
+			<y2-m>-14.540</y2-m>
+			<z2-m>-0.329</z2-m>
 		</axis>
     </animation>
+    
+    <animation>
+        <type>translate</type>
+           <object-name>slat2.1</object-name>
+        <object-name>slat2.2</object-name>
+       <object-name>slat2.3</object-name>
+      <property>surface-positions/slats</property>
+        <interpolation>
+            <entry>
+                <ind>0</ind>
+                <dep>0</dep>
+            </entry>
+            <entry>
+                <ind>0.666</ind>
+                <dep>-0.2</dep>
+            </entry>
+            <entry>
+                <ind>1.0</ind>
+                <dep>-0.2</dep>
+            </entry>
+        </interpolation>
+        <axis>
+            <x>1.0</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    
+    <animation>
+    <type>translate</type>
+    <object-name>tyrern</object-name>
+    <object-name>tyreln</object-name>
+     <object-name>noseaxle</object-name>
+      <object-name>Cube</object-name>
+    <object-name>nlowerstrut</object-name>
+     <object-name>noseaxle</object-name>
+    <property>/gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
+      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.50 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0.0 </x>
+      <y> 0.0 </y>
+      <z> 1.0 </z>
+    </axis>
+  </animation>
+  
+   <animation>
+    <type>translate</type>
+    <object-name>lmgt</object-name>
+              <object-name>lmgaxle</object-name>
+        <object-name>lglhlowerstrut</object-name>
+    <property>/gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
+      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.60 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0.0 </x>
+      <y> 0.0 </y>
+      <z> 1.0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>rmgt</object-name>
+              <object-name>rmgaxle</object-name>
+        <object-name>rglhlowerstrut</object-name>
+    <property>/gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> -0.08 </dep></entry>
+      <entry><ind> 0.13 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.60 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0.0 </x>
+      <y> 0.0 </y>
+      <z> 1.0 </z>
+    </axis>
+  </animation>
     
 <model>
 		<path>Aircraft/Generic/Effects/tyre-smoke-nose.xml</path>
@@ -1223,7 +1601,17 @@
 			<z-m>0.601</z-m>
 		</offsets>
 	</model>-->
+	
 
+<model>
+ <name>Pushback</name>
+ <path>Models\Airport\Pushback\Military.xml</path>
+ <offsets>
+  <x-m>-19.246</x-m>
+  <y-m>0</y-m>
+  <z-m>-2.7</z-m>
+ </offsets>
+</model>
 
 </PropertyList>
 
