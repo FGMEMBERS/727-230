@@ -144,26 +144,30 @@
  
 </instrumentation>
 
+
   </sim>
+  
   
   <gear>
 		<gear n="0">
 			<tyre-smoke type="int">0</tyre-smoke>
-			
+			<sprayspeed-ms type="double">0</sprayspeed-ms>
+			<spray-density type="double">0</spray-density>
 			
 		</gear>
 		<gear n="1">
 			<tyre-smoke type="int">0</tyre-smoke>
-			
+			<sprayspeed-ms type="double">0</sprayspeed-ms>
+			<spray-density type="double">0</spray-density>
 		</gear>
 		<gear n="2">
 			<tyre-smoke type="int">0</tyre-smoke>
-			
+			<sprayspeed-ms type="double">0</sprayspeed-ms>
+			<spray-density type="double">0</spray-density>
 		</gear>
-		<!--<tailhook>
-			<position-norm type="double">0</position-norm>
-		</tailhook>-->
-	</gear>
+		
+</gear>
+	
   <engines>
 
     <engine n="0">
@@ -194,6 +198,13 @@
 
   </engines>
 
+
+<nasal>
+		<tyresmoke>
+			<file>Aircraft/727-230/Nasal/tyresmoke.nas</file>
+		</tyresmoke>
+		
+</nasal>
 
  
 </PropertyList>

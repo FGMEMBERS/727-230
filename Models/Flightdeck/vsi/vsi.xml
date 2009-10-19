@@ -29,9 +29,9 @@
     <object-name>face</object-name>
     <object-name>needle</object-name>
     <emission>
-      <red>   0.030 </red>
-      <green> 0.015 </green>
-      <blue>  0.005 </blue>
+      <red>   0.8 </red>
+      <green> 0.7 </green>
+      <blue>  0.5 </blue>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>

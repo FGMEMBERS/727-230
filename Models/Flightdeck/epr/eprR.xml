@@ -41,7 +41,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>/engines/engine[2]/epr</property>
+    <property>/engines/engine[1]/epr</property>
     <interpolation>
       <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
       <entry><ind> 1.4 </ind><dep>  66 </dep></entry>

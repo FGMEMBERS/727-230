@@ -39,7 +39,7 @@
   <animation>
     <type>rotate</type>
     <object-name>needle</object-name>
-    <property>/engines/engine[2]/oilt-norm</property>
+    <property>/engines/engine[1]/oilt-norm</property>
     <interpolation>
       <entry><ind> -0.25 </ind><dep> -45 </dep></entry>
       <entry><ind>  0.00 </ind><dep>   0 </dep></entry>
