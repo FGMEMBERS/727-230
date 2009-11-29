@@ -22,13 +22,13 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>shader.png</texture>
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
     <object-name>vitre</object-name>
-  </animation>
-
+  </animation>
+
   <animation>
     <type>material</type>
     <object-name>face</object-name>
@@ -130,7 +130,7 @@
     <type>rotate</type>
     <object-name>rouem01</object-name>
     <property>/velocities/mach</property>
-    <factor>3600</factor>
+    <factor>3600</factor>
     <center>
       <x-m> -0.016 </x-m>
       <y-m>  0.005 </y-m>
@@ -147,7 +147,7 @@
     <type>rotate</type>
     <object-name>rouem1</object-name>
     <property>/velocities/mach</property>
-    <factor>360</factor>
+    <factor>360</factor>
     <center>
       <x-m> -0.016 </x-m>
       <y-m> -0.005 </y-m>

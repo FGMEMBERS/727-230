@@ -18,22 +18,30 @@
       <stall-horn type="bool">0</stall-horn>
     </sound>
     
-    <menubar>
-<default>
-<menu n="10">
-<label>727-230</label>
-<enabled type="bool">true</enabled>
-   <item >
-      <label>Pushback</label>
-      <name>pushback</name>
-      <binding>
-       <command>dialog-show</command>
-       <dialog-name>pushback</dialog-name>
-      </binding>
-     </item>
- </menu>
-
- </default>
+<menubar>
+		<default>
+		<menu n="10">
+		<label>727-230</label>
+		<enabled type="bool">true</enabled>
+		
+		   <item >
+		      <label>Pushback</label>
+		      <name>pushback</name>
+		      <binding>
+		       <command>dialog-show</command>
+		       <dialog-name>pushback</dialog-name>
+		      </binding>
+		     </item>
+			<item>
+				<label>Select Livery</label>
+				<binding>
+					<command>nasal</command>
+					<script>aircraft.livery.dialog.open()</script>
+				</binding>
+			</item>
+								     
+		 </menu>
+	</default>
 </menubar>
 
  <autopilot>
@@ -44,6 +52,14 @@
     
 		<model>
 			<path>Aircraft/727-230/Models/727-230.xml</path>
+			<livery>
+				<name type="string">Lufthansa</name>
+				<texture>727-230_Lufthansa.png</texture>
+			</livery>
+			<tail>
+				<name type="string">Lufthansa</name>
+				<texture>727-230.tail_Lufthansa.png</texture>
+			</tail>			
 		</model>
     
 		<view>
@@ -203,8 +219,24 @@
 		<tyresmoke>
 			<file>Aircraft/727-230/Nasal/tyresmoke.nas</file>
 		</tyresmoke>
-		
+	    <livery>
+	        <file>Aircraft/727-230/Nasal/livery.nas</file>
+	    </livery>
 </nasal>
 
+	<!-- Engines using thrust reversal keyboard. http://wiki.flightgear.org/index.php/Howto:_Add_thrust_reversal -->
+	<!-- Prestes Hangar code - SET-2009 -->
+	<input>
+		<keyboard>
+			<key n="127">
+				<name>Delete</name>
+				<desc>Toggle Reversers</desc>
+				<binding>
+					<command>nasal</command>
+					<script>reversethrust.togglereverser()</script>
+				</binding>
+			</key>
+		</keyboard>
+	</input>
  
 </PropertyList>

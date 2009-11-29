@@ -69,8 +69,8 @@
   <animation>
     <type>rotate</type>
     <object-name>roue1</object-name>
-    <property>/engines/engine[0]/fuel-flow-pph/unit1</property>
-    <factor>36</factor>
+    <property>/engines/engine[0]/fuel-flow-pph/unit1</property>
+    <factor>36</factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m>  0.012 </y-m>
@@ -86,8 +86,8 @@
   <animation>
     <type>rotate</type>
     <object-name>roue10</object-name>
-    <property>/engines/engine[0]/fuel-flow-pph/unit10</property>
-    <factor>36</factor>
+    <property>/engines/engine[0]/fuel-flow-pph/unit10</property>
+    <factor>36</factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m>  0.006 </y-m>
@@ -103,8 +103,8 @@
   <animation>
     <type>rotate</type>
     <object-name>roue100</object-name>
-    <property>/engines/engine[0]/fuel-flow-pph/unit100</property>
-    <factor>36</factor>
+    <property>/engines/engine[0]/fuel-flow-pph/unit100</property>
+    <factor>36</factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m> -0.001 </y-m>
@@ -120,8 +120,8 @@
   <animation>
     <type>rotate</type>
     <object-name>roue1000</object-name>
-    <property>/engines/engine[0]/fuel-flow-pph/unit1000</property>
-    <factor>36</factor>
+    <property>/engines/engine[0]/fuel-flow-pph/unit1000</property>
+    <factor>36</factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m> -0.007 </y-m>
@@ -137,8 +137,8 @@
   <animation>
     <type>rotate</type>
     <object-name>roue10000</object-name>
-    <property>/engines/engine[0]/fuel-flow-pph/unit10000</property>
-    <factor>36</factor>
+    <property>/engines/engine[0]/fuel-flow-pph/unit10000</property>
+    <factor>36</factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m> -0.014 </y-m>
