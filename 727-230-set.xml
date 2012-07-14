@@ -2,7 +2,13 @@
 <sim>
 		<description>Boeing 727-230</description>
 		<author>Heiko Schulz (fuselage, wings), Emmanuel Barranger (Instruments)</author>
-		<status>early-production</status>
+		<status>alpha</status>
+                    <rating>
+                   <FDM type="int">2</FDM>
+                    <systems type="int">1</systems>
+                    <cockpit type="int">2</cockpit>
+                    <model type="int">3</model>
+                   </rating>
 
 		<flight-model>yasim</flight-model>
 		<aero>727-230</aero>
