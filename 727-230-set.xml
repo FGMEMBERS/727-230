@@ -12,6 +12,13 @@
 
 		<flight-model>yasim</flight-model>
 		<aero>727-230</aero>
+        
+        <tags>
+            <tag>transport</tag>
+            <tag>boeing</tag>
+            <tag>jet</tag>
+            <tag>retractable-gear</tag>
+        </tags>
 
 
 <startup>
