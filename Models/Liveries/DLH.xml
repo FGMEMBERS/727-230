@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+			<livery>
+				<name type="string">DLH</name>
+				<texture>727-230_Lufthansa.png</texture>
+			</livery>
+			<tail>
+				<name type="string">DLH</name>
+				<texture>727-230.tail_Lufthansa.png</texture>
+			</tail>
+
+    </model>
+</sim>
+</PropertyList>

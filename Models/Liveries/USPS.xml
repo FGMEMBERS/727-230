@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+			<livery>
+				<name type="string">USPS</name>
+				<texture>727-230_USPS.png</texture>
+			</livery>
+			<tail>
+				<name type="string">USPS</name>
+				<texture>727-230.tail_USPS.png</texture>
+			</tail>
+
+    </model>
+</sim>
+</PropertyList>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+			<livery>
+				<name type="string">CRZ</name>
+				<texture>727-230_Cruzeiro.png</texture>
+			</livery>
+			<tail>
+				<name type="string">CRZ</name>
+				<texture>727-230.tail_Cruzeiro.png</texture>
+			</tail>
+
+    </model>
+</sim>
+</PropertyList>

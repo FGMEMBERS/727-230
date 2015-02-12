@@ -3,26 +3,19 @@
 		<description>Boeing 727-230</description>
 		<author>Heiko Schulz (fuselage, wings), Emmanuel Barranger (Instruments)</author>
 		<status>alpha</status>
-                    <rating>
-                   <FDM type="int">2</FDM>
-                    <systems type="int">1</systems>
-                    <cockpit type="int">2</cockpit>
-                    <model type="int">3</model>
-                   </rating>
+		    <rating>
+		   <FDM type="int">2</FDM>
+		    <systems type="int">1</systems>
+		    <cockpit type="int">2</cockpit>
+		    <model type="int">3</model>
+		   </rating>
 
 		<flight-model>yasim</flight-model>
 		<aero>727-230</aero>
-        
-        <tags>
-            <tag>transport</tag>
-            <tag>boeing</tag>
-            <tag>jet</tag>
-            <tag>retractable-gear</tag>
-        </tags>
 
 
 <startup>
-<splash-texture>Aircraft/727-230/splash.png</splash-texture>
+<splash-texture>Aircraft/727-230/splash-tribute.png</splash-texture>
 </startup>
 
 <sound>
@@ -30,13 +23,13 @@
       <switch type="bool">0</switch>
       <stall-horn type="bool">0</stall-horn>
     </sound>
-    
+
 <menubar>
 		<default>
 		<menu n="10">
 		<label>727-230</label>
 		<enabled type="bool">true</enabled>
-		
+
 		   <item >
 		      <label>Pushback</label>
 		      <name>pushback</name>
@@ -52,17 +45,15 @@
 					<script>aircraft.livery.dialog.open()</script>
 				</binding>
 			</item>
-								     
+
 		 </menu>
 	</default>
 </menubar>
 
- <autopilot>
+<autopilot>
+      <path>Aircraft/727-230/737-autopilotV5.xml</path>
+</autopilot>
 
-	      <path>Aircraft/727-230/737-autopilotV5.xml</path>
-
-      </autopilot>
-    
 		<model>
 			<path>Aircraft/727-230/Models/727-230.xml</path>
 			<livery>
@@ -72,9 +63,9 @@
 			<tail>
 				<name type="string">Lufthansa</name>
 				<texture>727-230.tail_Lufthansa.png</texture>
-			</tail>			
+			</tail>
 		</model>
-    
+
 		<view>
 			<internal archive="y">true</internal>
 			<config>
@@ -84,35 +75,35 @@
 				<z-offset-m archive="y">-20.44</z-offset-m>
 <!--				<z-offset-m archive="y">-6.300</z-offset-m>-->
 				<pitch-offset-deg archive="y">-11.0</pitch-offset-deg>
-        <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
-        <dynamic>
-        <enabled type="bool" userarchive="y">false</enabled>
-        </dynamic>
+	<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+	<dynamic>
+	<enabled type="bool" userarchive="y">false</enabled>
+	</dynamic>
 			</config>
 		</view>
-    
-		
-    
+
+
+
 		 <view n="100">
    <name>interior view</name>
    <type>lookfrom</type>
    <internal archive="y">true</internal>
     <config>
-        <from-model type="bool">true</from-model>
-        <from-model-idx type="int">0</from-model-idx>
-        <ground-level-nearplane-m type="double">0.05f</ground-level-nearplane-m>
-        <default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
-        <default-pitch-deg type="double">0</default-pitch-deg>
-        <default-heading-deg type="double">0</default-heading-deg>
-        <front-direction-deg type="double">0</front-direction-deg>
+	<from-model type="bool">true</from-model>
+	<from-model-idx type="int">0</from-model-idx>
+	<ground-level-nearplane-m type="double">0.05f</ground-level-nearplane-m>
+	<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+	<default-pitch-deg type="double">0</default-pitch-deg>
+	<default-heading-deg type="double">0</default-heading-deg>
+	<front-direction-deg type="double">0</front-direction-deg>
      <x-offset-m archive="y" type="double">-0.36</x-offset-m>
      <y-offset-m archive="y" type="double">1.09</y-offset-m>
      <z-offset-m archive="y" type="double">20.53</z-offset-m>
      <pitch-offset-deg>3</pitch-offset-deg>
     </config>
   </view>
-		
-    
+
+
 		<chase-distance-m>-100</chase-distance-m>
 
 		<flaps>
@@ -135,22 +126,22 @@
 			<setting>1.000</setting>
 			<!-- flaps 40 -->
 		</flaps>
-		
-		
-    
- 		<!--<ai>
+
+
+
+		<!--<ai>
 			<submodels>
 				<contrails type="bool">true</contrails>
 			</submodels>
 		</ai>-->
-  
-     
+
+
 <weight n="0">
 			<name>156 PAX</name>
 			<weight-lb>25080</weight-lb>
 			<max-lb>25080</max-lb>
 		</weight>
-		
+
 <weight n="1">
 			<name>pilots</name>
 			<weight-lb>540</weight-lb>
@@ -165,32 +156,18 @@
 		</instrumentation>
 
   </sim>
-  
-	<instrumentation>
-	 <mk-viii>                         <!-- http://wiki.flightgear.org/index.php/GPWS -->
-	  <serviceable>true</serviceable>  <!-- EGPWS_ENABLE -->
-	  <configuration-module>
-	   <category-1> 255 </category-1>  <!-- AIRCRAFT_MODE_TYPE_SELECT -->
-	   <category-8>                    <!-- RADIO_ALTITUDE_INPUT_SELECT -->
-             3 <!-- YASim --> 
-           </category-8>
-	  </configuration-module>
-	  <inputs>                         <!-- Module I/O -->
-	   <arinc429>
-	    <decision-height-ncd> false </decision-height-ncd>
-	    <decision-height> 200 </decision-height>
-	   </arinc429>
-	  </inputs>
-	 </mk-viii>
-	</instrumentation>
 
-  
+<!-- IAHMCOL introduced new instrumentation file to install ADF, Clock, and DME. Old config was transferred there -->
+  <instrumentation>
+      <path>Aircraft/727-230/Systems/727-230-instrumentation.xml</path>
+  </instrumentation>
+
   <gear>
 		<gear n="0">
 			<tyre-smoke type="int">0</tyre-smoke>
 			<sprayspeed-ms type="double">0</sprayspeed-ms>
 			<spray-density type="double">0</spray-density>
-			
+
 		</gear>
 		<gear n="1">
 			<tyre-smoke type="int">0</tyre-smoke>
@@ -202,9 +179,47 @@
 			<sprayspeed-ms type="double">0</sprayspeed-ms>
 			<spray-density type="double">0</spray-density>
 		</gear>
-		
+
 </gear>
-	
+
+<!-- IAHMCOL: It creates 3 tanks, RW and LH capable of 1890 gallons
+     each. Center capable of 4310 gallons; for an standard option of
+     8090 total gallons. Tanks start filled, and Center selected.
+     Ideally, when center tank (feeding the 3 engines) equalizes 1890
+     gallons, RW and LH should start feeding also, one engine per tank.
+     Switch for center vs 3 tank feeding configuration might be implemented.
+     Automatic switch of center vs 3 tank feeding might be implemented
+-->
+<!-- IAHMCOL suggests reading
+      http://wiki.flightgear.org/Howto:Write_a_fuel_system_in_JSBSim
+      for trying to implement fueling method
+-->
+<consumables>
+    <fuel>
+      <tank n="0">
+	<name type="string">Left Wing</name>
+	<density-ppg type="double">6.72</density-ppg>
+	<unusable-gal_us type="double">2.5</unusable-gal_us>
+	<level-gal_us type="double">1890</level-gal_us>
+	<selected type="bool">false</selected>
+      </tank>
+      <tank n="1">
+	<name type="string">Center</name>
+	<density-ppg type="double">6.72</density-ppg>
+	<unusable-gal_us type="double">2.5</unusable-gal_us>
+	<level-gal_us type="double">4310</level-gal_us>
+	<selected type="bool">true</selected>
+      </tank>
+       <tank n="2">
+	<name type="string">Right Wing</name>
+	<density-ppg type="double">6.72</density-ppg>
+	<unusable-gal_us type="double">2.5</unusable-gal_us>
+	<level-gal_us type="double">1890</level-gal_us>
+	<selected type="bool">false</selected>
+      </tank>
+    </fuel>
+</consumables>
+
   <engines>
 
     <engine n="0">
@@ -224,7 +239,7 @@
     </engine>
 
 
-  
+
   <engine n="2">
 
       <rpm>1000</rpm>
@@ -235,14 +250,23 @@
 
   </engines>
 
-
+<!--Nasal files modified to include ADF/RMI and DME -->
 <nasal>
-		<tyresmoke>
-			<file>Aircraft/727-230/Nasal/tyresmoke.nas</file>
-		</tyresmoke>
-	    <livery>
-	        <file>Aircraft/727-230/Nasal/livery.nas</file>
-	    </livery>
+          <ADF>
+            <file>Aircraft/727-230/Nasal/mk-rmi-adf-nav.nas</file>
+          </ADF>
+          <DME>
+            <file>Aircraft/727-230/Nasal/mk-ki266.nas</file>
+             <script><![CDATA[
+               ki266.new(0);
+               ]]></script>
+       	  </DME>
+          <tyresmoke>
+		<file>Aircraft/727-230/Nasal/tyresmoke.nas</file>
+	  </tyresmoke>
+	  <livery>
+		<file>Aircraft/727-230/Nasal/livery.nas</file>
+	   </livery>
 </nasal>
 
 	<!-- Engines using thrust reversal keyboard. http://wiki.flightgear.org/index.php/Howto:_Add_thrust_reversal -->
@@ -259,5 +283,5 @@
 			</key>
 		</keyboard>
 	</input>
- 
+
 </PropertyList>

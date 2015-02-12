@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+			<livery>
+				<name type="string">Servientrega</name>
+				<texture>727-230_Servientrega.png</texture>
+			</livery>
+			<tail>
+				<name type="string">Servientrega</name>
+				<texture>727-230.tail_Servientrega.png</texture>
+			</tail>
+
+    </model>
+</sim>
+</PropertyList>
