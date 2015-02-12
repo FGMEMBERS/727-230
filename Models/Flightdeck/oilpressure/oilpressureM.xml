@@ -17,13 +17,13 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass.png</texture>
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass.png</texture>
     <object-name>vitre</object-name>
-  </animation>
-
+  </animation>
+
   <animation>
     <type>material</type>
     <object-name>face</object-name>

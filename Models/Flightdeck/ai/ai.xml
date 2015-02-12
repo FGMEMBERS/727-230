@@ -60,8 +60,8 @@
       <green> 0.3 </green>
       <blue>  0.3 </blue>
       <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
-    </emission> 
-  </animation>    
+    </emission>
+  </animation>
 
   <animation>
     <type>rotate</type>
@@ -78,7 +78,7 @@
       <y> 0 </y>
       <z> 0 </z>
     </axis>
-  </animation>  
+  </animation>
 
   <animation>
     <type>rotate</type>
@@ -95,7 +95,7 @@
       <y> 1 </y>
       <z> 0 </z>
     </axis>
-  </animation>  
+  </animation>
 
   <animation>
     <type>rotate</type>
@@ -113,7 +113,7 @@
       <z> 0 </z>
     </axis>
   </animation>
- 
+
   <animation>
     <type>rotate</type>
     <object-name>slip-ball</object-name>
@@ -124,7 +124,7 @@
     <center>
       <x-m> -0.053 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.000 </z-m> 
+      <z-m>  0.000 </z-m>
     </center>
     <axis>
       <x> -1 </x>

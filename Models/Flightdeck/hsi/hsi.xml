@@ -39,12 +39,12 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>shader.png</texture>
-  </animation>
-
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+  </animation>
+
   <animation>
     <type>material</type>
     <object-name>back</object-name>
@@ -72,124 +72,124 @@
   </animation>
 
   <!-- tacan distance digital display -->
-  <animation>
+  <animation>
     <type>rotate</type>
     <object-name>dist01</object-name>
-    <property>/instrumentation/tacan/dist/val1000</property>
-    <factor> 36 </factor>
+    <property>/instrumentation/tacan/dist/val1000</property>
+    <factor> 36 </factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m>  0.018 </y-m>
       <z-m>  0.045 </z-m>
     </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
-  <animation>
+  <animation>
     <type>rotate</type>
     <object-name>dist02</object-name>
-    <property>/instrumentation/tacan/dist/val100</property>
-    <factor> 36 </factor>
+    <property>/instrumentation/tacan/dist/val100</property>
+    <factor> 36 </factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m>  0.024 </y-m>
       <z-m>  0.045 </z-m>
     </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
-  <animation>
+  <animation>
     <type>rotate</type>
     <object-name>dist03</object-name>
-    <property>/instrumentation/tacan/dist/val10</property>
-    <factor> 36 </factor>
+    <property>/instrumentation/tacan/dist/val10</property>
+    <factor> 36 </factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m>  0.030 </y-m>
       <z-m>  0.045 </z-m>
     </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
-  <animation>
+  <animation>
     <type>rotate</type>
     <object-name>dist04</object-name>
-    <property>/instrumentation/tacan/dist/val1</property>
-    <factor> 36 </factor>
+    <property>/instrumentation/tacan/dist/val1</property>
+    <factor> 36 </factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m>  0.036 </y-m>
       <z-m>  0.045 </z-m>
     </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
   <!-- Course Readout -->
-  <animation>
+  <animation>
     <type>rotate</type>
     <object-name>crs01</object-name>
-    <property>/instrumentation/nav[1]/radials/rsd/val100</property>
-    <factor> 36 </factor>
+    <property>/instrumentation/nav[1]/radials/rsd/val100</property>
+    <factor> 36 </factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m> -0.035 </y-m>
       <z-m>  0.045 </z-m>
     </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
-  <animation>
+  <animation>
     <type>rotate</type>
     <object-name>crs02</object-name>
-    <property>/instrumentation/nav[1]/radials/rsd/val10</property>
-    <factor> 36 </factor>
+    <property>/instrumentation/nav[1]/radials/rsd/val10</property>
+    <factor> 36 </factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m> -0.029 </y-m>
       <z-m>  0.045 </z-m>
     </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
-  <animation>
+  <animation>
     <type>rotate</type>
     <object-name>crs03</object-name>
-    <property>/instrumentation/nav[1]/radials/rsd/val1</property>
-    <factor> 36 </factor>
+    <property>/instrumentation/nav[1]/radials/rsd/val1</property>
+    <factor> 36 </factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m> -0.023 </y-m>
       <z-m>  0.045 </z-m>
     </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
   <animation>
@@ -197,8 +197,8 @@
     <object-name>cmpscard</object-name>
     <condition>
       <greater-than>
-        <property>/systems/electrical/outputs/hsi</property>
-        <value>24</value>
+	<property>/systems/electrical/outputs/hsi</property>
+	<value>24</value>
       </greater-than>
     </condition>
     <property>/instrumentation/heading-indicator-fg/indicated-heading-deg</property>
@@ -213,7 +213,7 @@
       <y> 0.000 </y>
       <y> 0.003 </y>
     </center>
-  </animation> 
+  </animation>
 
   <animation>
     <type>rotate</type>
@@ -234,8 +234,8 @@
     <object-name>heading-bug</object-name>
     <condition>
       <greater-than>
-        <property>systems/electrical/outputs/hsi</property>
-        <value>24</value>
+	<property>systems/electrical/outputs/hsi</property>
+	<value>24</value>
       </greater-than>
     </condition>
     <property>/instrumentation/heading-indicator-fg/indicated-heading-deg</property>
@@ -246,14 +246,14 @@
       <z>  0 </z>
     </axis>
   </animation>
- 
+
   <animation>
     <type>rotate</type>
     <object-name>bearing-bug</object-name>
     <condition>
       <greater-than>
-        <property>/systems/electrical/outputs/hsi</property>
-        <value>24</value>
+	<property>/systems/electrical/outputs/hsi</property>
+	<value>24</value>
       </greater-than>
     </condition>
     <property>/instrumentation/navcomputer/indicated-bearing</property>
@@ -270,14 +270,14 @@
     <object-name>cache</object-name>
     <condition>
       <or>
-        <equals>
-          <property>/instrumentation/tacan/in-range</property>
-          <value>false</value>
-        </equals>
-        <equals>
-          <property>/instrumentation/tacan/switch-position</property>
-          <value>0</value>
-        </equals>
+	<equals>
+	  <property>/instrumentation/tacan/in-range</property>
+	  <value>false</value>
+	</equals>
+	<equals>
+	  <property>/instrumentation/tacan/switch-position</property>
+	  <value>0</value>
+	</equals>
       </or>
     </condition>
   </animation>
@@ -287,8 +287,8 @@
     <object-name>off-flag</object-name>
     <condition>
       <less-than>
-        <property>/systems/electrical/outputs/hsi</property>
-        <value>24</value>
+	<property>/systems/electrical/outputs/hsi</property>
+	<value>24</value>
       </less-than>
     </condition>
   </animation>
@@ -348,12 +348,12 @@
       <button>0</button>
       <repeatable>true</repeatable>
       <binding>
-        <command>property-adjust</command>
-        <property>/instrumentation/nav[1]/radials/selected-deg</property>
-        <step>-1</step>
-        <min>0</min>
-        <max>360</max>
-        <wrap>1</wrap>
+	<command>property-adjust</command>
+	<property>/instrumentation/nav[1]/radials/selected-deg</property>
+	<step>-1</step>
+	<min>0</min>
+	<max>360</max>
+	<wrap>1</wrap>
       </binding>
     </action>
   </animation>
@@ -366,12 +366,12 @@
       <button>0</button>
       <repeatable>true</repeatable>
       <binding>
-        <command>property-adjust</command>
-        <property>/instrumentation/nav[1]/radials/selected-deg</property>
-        <step>1</step>
-        <min>0</min>
-        <max>360</max>
-        <wrap>1</wrap>
+	<command>property-adjust</command>
+	<property>/instrumentation/nav[1]/radials/selected-deg</property>
+	<step>1</step>
+	<min>0</min>
+	<max>360</max>
+	<wrap>1</wrap>
       </binding>
     </action>
   </animation>
@@ -400,12 +400,12 @@
       <button>0</button>
       <repeatable>true</repeatable>
       <binding>
-        <command>property-adjust</command>
-        <property>/instrumentation/heading-indicator-fg/offset-deg</property>
-        <step>-1</step>
-        <min>0</min>
-        <max>360</max>
-        <wrap>1</wrap>
+	<command>property-adjust</command>
+	<property>/instrumentation/heading-indicator-fg/offset-deg</property>
+	<step>-1</step>
+	<min>0</min>
+	<max>360</max>
+	<wrap>1</wrap>
       </binding>
     </action>
   </animation>
@@ -418,12 +418,12 @@
       <button>0</button>
       <repeatable>true</repeatable>
       <binding>
-        <command>property-adjust</command>
-        <property>/instrumentation/heading-indicator-fg/offset-deg</property>
-        <step>1</step>
-        <min>0</min>
-        <max>360</max>
-        <wrap>1</wrap>
+	<command>property-adjust</command>
+	<property>/instrumentation/heading-indicator-fg/offset-deg</property>
+	<step>1</step>
+	<min>0</min>
+	<max>360</max>
+	<wrap>1</wrap>
       </binding>
     </action>
   </animation>

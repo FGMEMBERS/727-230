@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+			<livery>
+				<name type="string">USATour</name>
+				<texture>727-230_USATour.png</texture>
+			</livery>
+			<tail>
+				<name type="string">USATour</name>
+				<texture>727-230.tail_USATour.png</texture>
+			</tail>
+
+    </model>
+</sim>
+</PropertyList>

@@ -3,7 +3,7 @@
 <PropertyList>
 
   <path>alt.ac</path>
-  
+
   <animation>
   <type>scale</type>
   <x-offset>0.5</x-offset>
@@ -47,7 +47,7 @@
     <object-name>roue4</object-name>
     <emission>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
-          <red>   0.030 </red>
+	  <red>	  0.030 </red>
       <green> 0.015 </green>
       <blue>  0.005 </blue>
     </emission>
@@ -117,74 +117,74 @@
   </animation>
 
   <!-- Pressure in millibar -->
-  <animation>
+  <animation>
     <type>rotate</type>
     <object-name>roue1</object-name>
-    <property>/instrumentation/altimeter/millibar/unit1</property>
-    <factor>36</factor>
+    <property>/instrumentation/altimeter/millibar/unit1</property>
+    <factor>36</factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m>  0.009 </y-m>
       <z-m> -0.033 </z-m>
     </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
-  <animation>
+  <animation>
     <type>rotate</type>
     <object-name>roue2</object-name>
-    <property>/instrumentation/altimeter/millibar/unit10</property>
-    <factor>36</factor>
+    <property>/instrumentation/altimeter/millibar/unit10</property>
+    <factor>36</factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m>  0.002 </y-m>
       <z-m> -0.033 </z-m>
     </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <animation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
     <type>rotate</type>
     <object-name>roue3</object-name>
-    <property>/instrumentation/altimeter/millibar/unit100</property>
-    <factor>36</factor>
+    <property>/instrumentation/altimeter/millibar/unit100</property>
+    <factor>36</factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m> -0.005 </y-m>
       <z-m> -0.033 </z-m>
     </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <animation>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
     <type>rotate</type>
     <object-name>roue4</object-name>
-    <property>/instrumentation/altimeter/millibar/unit1000</property>
-    <factor>36</factor>
+    <property>/instrumentation/altimeter/millibar/unit1000</property>
+    <factor>36</factor>
     <center>
       <x-m> -0.015 </x-m>
       <y-m> -0.012 </y-m>
       <z-m> -0.033 </z-m>
     </center>
-    <axis>
-      <x> 0 </x>
-      <y> 1 </y>
-      <z> 0 </z>
-    </axis>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
-
+
   <animation>
     <type>pick</type>
     <object-name>inhg.dn</object-name>
@@ -193,12 +193,12 @@
       <button>0</button>
       <repeatable>true</repeatable>
       <binding>
-        <command>property-adjust</command>
-        <property>instrumentation/altimeter/setting-inhg</property>
-        <step>-0.01</step>
-        <min>27.90</min>
-        <max>31.40</max>
-        <wrap>0</wrap>
+	<command>property-adjust</command>
+	<property>instrumentation/altimeter/setting-inhg</property>
+	<step>-0.01</step>
+	<min>27.90</min>
+	<max>31.40</max>
+	<wrap>0</wrap>
       </binding>
     </action>
   </animation>
@@ -211,12 +211,12 @@
       <button>1</button>
       <repeatable>true</repeatable>
       <binding>
-        <command>property-adjust</command>
-        <property>instrumentation/altimeter/setting-inhg</property>
-        <step>-0.1</step>
-        <min>27.90</min>
-        <max>31.40</max>
-        <wrap>0</wrap>
+	<command>property-adjust</command>
+	<property>instrumentation/altimeter/setting-inhg</property>
+	<step>-0.1</step>
+	<min>27.90</min>
+	<max>31.40</max>
+	<wrap>0</wrap>
       </binding>
     </action>
   </animation>
@@ -229,12 +229,12 @@
       <button>0</button>
       <repeatable>true</repeatable>
       <binding>
-        <command>property-adjust</command>
-        <property>instrumentation/altimeter/setting-inhg</property>
-        <step>0.01</step>
-        <min>27.90</min>
-        <max>31.40</max>
-        <wrap>0</wrap>
+	<command>property-adjust</command>
+	<property>instrumentation/altimeter/setting-inhg</property>
+	<step>0.01</step>
+	<min>27.90</min>
+	<max>31.40</max>
+	<wrap>0</wrap>
       </binding>
     </action>
   </animation>
@@ -247,12 +247,12 @@
       <button>1</button>
       <repeatable>true</repeatable>
       <binding>
-        <command>property-adjust</command>
-        <property>instrumentation/altimeter/setting-inhg</property>
-        <step>0.1</step>
-        <min>27.90</min>
-        <max>31.40</max>
-        <wrap>0</wrap>
+	<command>property-adjust</command>
+	<property>instrumentation/altimeter/setting-inhg</property>
+	<step>0.1</step>
+	<min>27.90</min>
+	<max>31.40</max>
+	<wrap>0</wrap>
       </binding>
     </action>
   </animation>

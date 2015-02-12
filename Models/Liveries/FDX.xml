@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+			<livery>
+				<name type="string">FDX</name>
+				<texture>727-230_FDX.png</texture>
+			</livery>
+			<tail>
+				<name type="string">FDX</name>
+				<texture>727-230.tail_FDX.png</texture>
+			</tail>
+
+    </model>
+</sim>
+</PropertyList>
