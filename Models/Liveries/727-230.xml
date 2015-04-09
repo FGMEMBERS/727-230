@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+			<livery>
+				<name type="string">Default</name>
+				<texture>727-230.png</texture>
+			</livery>
+			<cabine>
+				<name type="string">Default</name>
+				<texture>727-230.tail.png</texture>
+			</cabine>        
+        
+    </model>
+</sim>
+</PropertyList>
