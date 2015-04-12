@@ -5,11 +5,11 @@
     <model>
 			<livery>
 				<name type="string">WT</name>
-				<texture>727-230_WT.png</texture>
+				<texture>Liveries/727-230_WT.png</texture>
 			</livery>
 			<tail>
 				<name type="string">WT</name>
-				<texture>727-230.tail_WT.png</texture>
+				<texture>Liveries/727-230.tail_WT.png</texture>
 			</tail>
 
     </model>
