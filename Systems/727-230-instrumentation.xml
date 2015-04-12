@@ -73,19 +73,19 @@ file, these values will be used (they are hardcoded).
     <number>0</number>
   </tacan>
 
-<!-- Transferred here from original -set.xml -->
+  <!-- Transferred here from original -set.xml -->
   <mk-viii>			   <!-- http://wiki.flightgear.org/index.php/GPWS -->
-    <serviceable>true</serviceable>  <!-- EGPWS_ENABLE -->
-    <configuration-module>
-      <category-1> 255 </category-1>  <!-- AIRCRAFT_MODE_TYPE_SELECT -->
-      <category-8> 3  </category-8> 		   <!-- RADIO_ALTITUDE_INPUT_SELECT/ YASIM -->
-    </configuration-module>
-    <inputs>			   <!-- Module I/O -->
-      <arinc429>
-        <decision-height-ncd> false </decision-height-ncd>
-        <decision-height> 200 </decision-height>
-      </arinc429>
-    </inputs>
+  <serviceable>true</serviceable>  <!-- EGPWS_ENABLE -->
+  <configuration-module>
+    <category-1> 255 </category-1>  <!-- AIRCRAFT_MODE_TYPE_SELECT -->
+    <category-8> 3  </category-8> 		   <!-- RADIO_ALTITUDE_INPUT_SELECT/ YASIM -->
+  </configuration-module>
+  <inputs>			   <!-- Module I/O -->
+  <arinc429>
+    <decision-height-ncd> false </decision-height-ncd>
+    <decision-height> 200 </decision-height>
+  </arinc429>
+  </inputs>
   </mk-viii>
 
 </PropertyList>

@@ -65,25 +65,25 @@
   </animation>
 
   <!--
-  Rotation center of needle2
+      Rotation center of needle2
 
-    x  0.000
-    y -0.009
-    z  0.010
+x  0.000
+y -0.009
+z  0.010
 
-    <interpolation>
-      <entry><ind> 0 </ind><dep>   0 </dep></entry>
-      <entry><ind> 1 </ind><dep>  42 </dep></entry>
-      <entry><ind> 2 </ind><dep>  71 </dep></entry>
-      <entry><ind> 3 </ind><dep> 108 </dep></entry>
-      <entry><ind> 4 </ind><dep> 145 </dep></entry>
-      <entry><ind> 5 </ind><dep> 182 </dep></entry>
-      <entry><ind> 6 </ind><dep> 217 </dep></entry>
-      <entry><ind> 7 </ind><dep> 252 </dep></entry>
-      <entry><ind> 8 </ind><dep> 288 </dep></entry>
-      <entry><ind> 9 </ind><dep> 325 </dep></entry>
-    </interpolation>
+<interpolation>
+<entry><ind> 0 </ind><dep>   0 </dep></entry>
+<entry><ind> 1 </ind><dep>  42 </dep></entry>
+<entry><ind> 2 </ind><dep>  71 </dep></entry>
+<entry><ind> 3 </ind><dep> 108 </dep></entry>
+<entry><ind> 4 </ind><dep> 145 </dep></entry>
+<entry><ind> 5 </ind><dep> 182 </dep></entry>
+<entry><ind> 6 </ind><dep> 217 </dep></entry>
+<entry><ind> 7 </ind><dep> 252 </dep></entry>
+<entry><ind> 8 </ind><dep> 288 </dep></entry>
+<entry><ind> 9 </ind><dep> 325 </dep></entry>
+</interpolation>
 
--->
+  -->
 </PropertyList>
 

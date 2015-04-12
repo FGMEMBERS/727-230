@@ -62,31 +62,31 @@
     </axis>
   </animation>
 
-<!--
-  <animation>
-    <type>rotate</type>
-    <object-name>needle2</object-name>
-    <property> ? </property>
-    <interpolation>
+  <!--
+      <animation>
+      <type>rotate</type>
+      <object-name>needle2</object-name>
+      <property> ? </property>
+      <interpolation>
       <entry><ind>  0 </ind><dep>   0 </dep></entry>
       <entry><ind>  2 </ind><dep>  65 </dep></entry>
       <entry><ind>  4 </ind><dep> 150 </dep></entry>
       <entry><ind>  6 </ind><dep> 220 </dep></entry>
       <entry><ind>  8 </ind><dep> 290 </dep></entry>
       <entry><ind> 10 </ind><dep> 360 </dep></entry>
-    </interpolation>
-    <center>
+      </interpolation>
+      <center>
       <x-m>  0.000 </x-m>
       <y-m>  0.001 </y-m>
       <z-m> -0.015 </z-m>
-    </center>
-    <axis>
+      </center>
+      <axis>
       <x> -1 </x>
       <y>  0 </y>
       <z>  0 </z>
-    </axis>
-  </animation>
--->
+      </axis>
+      </animation>
+  -->
 
 </PropertyList>
 

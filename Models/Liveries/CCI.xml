@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 
 <PropertyList>
-<sim>
+  <sim>
     <model>
-			<livery>
-				<name type="string">CCI</name>
-				<texture>Liveries/727-230_CCI.png</texture>
-			</livery>
-			<tail>
-				<name type="string">CCI</name>
-				<texture>Liveries/727-230.tail_CCI.png</texture>
-			</tail>
+      <livery>
+	<name type="string">CCI</name>
+	<texture>Liveries/727-230_CCI.png</texture>
+      </livery>
+      <tail>
+	<name type="string">CCI</name>
+	<texture>Liveries/727-230.tail_CCI.png</texture>
+      </tail>
 
     </model>
-</sim>
+  </sim>
 </PropertyList>

@@ -429,19 +429,19 @@
   </animation>
 
   <animation>
-   <type>rotate</type>
-   <object-name>buttonHDG</object-name>
-   <property>/instrumentation/heading-indicator-fg/offset-deg</property>
-   <center>
+    <type>rotate</type>
+    <object-name>buttonHDG</object-name>
+    <property>/instrumentation/heading-indicator-fg/offset-deg</property>
+    <center>
       <x-m>  0.007 </x-m>
       <y-m>  0.051 </y-m>
       <z-m> -0.053 </z-m>
-   </center>
-   <axis>
-     <x> -1 </x>
-     <y>  0 </y>
-     <z>  0 </z>
-   </axis>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
   </animation>
 
 </PropertyList>
