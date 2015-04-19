@@ -17,26 +17,91 @@
 
   <animation>
     <type>material</type>
+    <!-- fuselage -->
     <object-name>Cube.004</object-name>
+    <object-name>antup</object-name>
+    <object-name>antlo</object-name>
+    <object-name>antlo</object-name>
+    <object-name>Cube.005</object-name>
+    <!-- passenger doors -->
+    <object-name>Plane.018</object-name>
+    <object-name>Plane.020</object-name>
     <object-name>frontdoorleft.001</object-name>
     <object-name>Plane.004</object-name>
-    <object-name>Plane.020</object-name>
-    <object-name>Plane.018</object-name>
-
+    <!-- tire doors -->
+    <object-name>rhngdoor_1_1</object-name>
+    <object-name>rhngdoor_1_0</object-name>
+    <object-name>lhngdoor_1_1</object-name>
+    <object-name>lhngdoor_1_0</object-name>
+    <object-name>rmgdoor1.001</object-name>
+    <object-name>rmgdoor2.001</object-name>
+    <object-name>lmgdoor1.001</object-name>
+    <object-name>lmgdoor2.001</object-name>
+    <object-name>rmgdoor</object-name>
+    <object-name>lmgdoor</object-name>
+    <object-name>Plane.025_1_1</object-name>
+    <!-- tail -->
+    <object-name>Fuselage.003</object-name>
+    <object-name>rudder</object-name>
+    <object-name>Plane</object-name>
+    <object-name>leftelevator</object-name>
+    <object-name>rightelevator</object-name>
+    <!-- engines -->
+    <object-name>Circle</object-name>
+    <object-name>Circle.001</object-name>
+    <object-name>Fuselage.004</object-name>
+    <!-- Wings -->
+    <!-- main plane -->
+    <object-name>Plane.005</object-name>
+    <!-- Left -->
+    <object-name>leftaileron</object-name>
+    <object-name>flap2</object-name>
+    <object-name>flap2.1</object-name>
+    <object-name>flap4</object-name>
+    <object-name>flap4.1</object-name>
+    <object-name>inneraileronl_0</object-name>
+    <object-name>inneraileronl_1</object-name>
+    <object-name>obs1</object-name>
+    <object-name>obs2</object-name>
+    <object-name>ibs3</object-name>
+    <object-name>ibs4</object-name>
+    <object-name>ibs5</object-name>
+    <object-name>ibs6</object-name>
+    <object-name>gs7_0</object-name>
+    <object-name>gs7_1</object-name>
+    <object-name>slat1.039</object-name>
+    <object-name>Plane.031</object-name>
+    <object-name>slat2</object-name>
+    <object-name>slat2.1</object-name>
+    <object-name>slat2.2</object-name>
+    <object-name>slat2.3</object-name>
+    <object-name>edger</object-name>
+    <!-- Right -->
+    <object-name>rightaileron</object-name>
+    <object-name>flap1</object-name>
+    <object-name>flap1.1</object-name>
+    <object-name>flap3</object-name>
+    <object-name>flap3.1</object-name>
+    <object-name>gs8_0</object-name>
+    <object-name>gs8_1</object-name>
+    <object-name>inneraileronr_0</object-name>
+    <object-name>inneraileronr_1</object-name>
+    <object-name>ibs9</object-name>
+    <object-name>ibs10</object-name>
+    <object-name>ibs11</object-name>
+    <object-name>ibs12</object-name>
+    <object-name>obs13</object-name>
+    <object-name>obs14</object-name>
+    <object-name>Plane.013</object-name>
+    <object-name>edgel</object-name>
+    <object-name>slat1</object-name>
+    <object-name>slat1.1</object-name>
+    <object-name>slat1.2</object-name>
+    <object-name>slat1.3</object-name>
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>727-230_Lufthansa.png</texture>
+    <texture>Liveries/727-230_Lufthansa.png</texture>
   </animation>
-
-  <animation>
-    <type>material</type>
-    <object-name>Plane.015</object-name>
-    <property-base>sim/model/tail</property-base>
-    <texture-prop>texture</texture-prop>
-    <texture>727-230.tail_Lufthansa.png</texture>
-  </animation>
-
-  <!-- Livery System -->
 
   <model>
     <name>shadowOSG</name>
