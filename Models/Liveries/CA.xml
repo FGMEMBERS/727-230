@@ -7,11 +7,6 @@
 	<name type="string">Century</name>
 	<texture>Liveries/727-230_Century.png</texture>
       </livery>
-      <tail>
-	<name type="string">Century</name>
-	<texture>Liveries/727-230.tail_Century.png</texture>
-      </tail>        
-      
     </model>
   </sim>
 </PropertyList>
