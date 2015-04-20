@@ -429,14 +429,6 @@
        </offsets>
        </model>
   -->
-  <model>
-    <path>./Instruments/AP1/AP1.xml</path>
-    <offsets>
-      <x-m> -21.323 </x-m>
-      <y-m> -0.165 </y-m>
-      <z-m>  0.545 </z-m>
-    </offsets>
-  </model>
 
   <!-- STBYai -->
   <model>

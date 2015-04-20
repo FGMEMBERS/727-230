@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PropertyList>
 
-  <path>./AP1.ac</path>
+  <path>AP1.ac</path>
 
   <!-- Grouping Objects -->
   <animation>
@@ -52,7 +52,7 @@
   
   <!-- Lightmap -->
   <effect>
-    <inherits-from>../../../Models/Effects/reflect</inherits-from>
+    <inherits-from>Models/Effects/reflect</inherits-from>
     <object-name>Button.1-2</object-name>
     <object-name>Button.DMEin</object-name>
     <object-name>Button.NavSrc</object-name>
