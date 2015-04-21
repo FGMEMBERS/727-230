@@ -4,7 +4,7 @@
   <sim>
     <model>
       <livery>
-	<name type="string">Century</name>
+	<name type="string">CA0</name>
 	<texture>Liveries/727-230_Century.png</texture>
       </livery>
     </model>
