@@ -4,7 +4,7 @@
   <sim>
     <model>
       <livery>
-	<name type="string">AVIOGENEX YU-AKM</name>
+	<name type="string">AGX YU_AKM</name>
 	<texture>Liveries/727-230_YUAKM.png</texture>
       </livery>
     </model>
