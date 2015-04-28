@@ -157,6 +157,8 @@
 
   </sim>
 
+  <controls include="Init/controls.xml"/>
+
   <!-- IAHMCOL introduced new instrumentation file to install ADF, Clock, and DME. Old config was transferred there -->
   <instrumentation>
     <path>Aircraft/727-230/Systems/727-230-instrumentation.xml</path>
