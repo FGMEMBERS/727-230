@@ -88,4 +88,18 @@ file, these values will be used (they are hardcoded).
   </inputs>
   </mk-viii>
 
+  <!-- Keep these comm-radio entries at the bottom of this file. Users running
+       Flightgear versions prior to 3.2 do not have the new comm radio code
+       and anything after these entries will be ignored in those versions.
+  -->
+  <comm-radio>
+    <name>comm</name>
+    <number>0</number>
+  </comm-radio>
+
+  <comm-radio>
+    <name>comm</name>
+    <number>1</number>
+  </comm-radio>
+
 </PropertyList>
