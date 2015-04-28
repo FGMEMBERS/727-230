@@ -4,7 +4,7 @@
   <sim>
     <model>
       <livery>
-	<name type="string">PAA</name>
+	<name type="string">PAA - Panamerican Airl.</name>
 	<texture>Liveries/727-230_PanAm.png</texture>
       </livery>
     </model>
