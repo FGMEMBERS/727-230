@@ -36,8 +36,8 @@
         <negative-z>Aircraft/Generic/Effects/fgfs-sky2/5.png</negative-z>
       </images>
     </texture>
-    <reflection-rainbow type="float">0.05</reflection-rainbow>
-    <reflection-fresnel type="float">0.18</reflection-fresnel>
+    <reflection-rainbow type="float">0.25</reflection-rainbow>
+    <reflection-fresnel type="float">0.08</reflection-fresnel>
     <ambient_correction>0.32</ambient_correction>
   </parameters>
   <!-- ####################
