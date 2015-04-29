@@ -49,9 +49,14 @@
       </default>
     </menubar>
 
-    <autopilot>
-      <path>Aircraft/727-230/Systems/727-autopilotV5.xml</path>
-    </autopilot>
+    <systems>
+      <autopilot>
+        <path>Systems/727-autopilotV5.xml</path>
+      </autopilot>
+      <property-rule n="101">
+        <path>Systems/instrumentation-rules.xml</path>
+      </property-rule>
+    </systems>
 
     <model>
       <path>Aircraft/727-230/Models/727-230.xml</path>
@@ -240,6 +245,8 @@
     </engine>
 
   </engines>
+
+  <instrumentation include="Init/instrumentation.xml"/>
 
   <!--Nasal files modified to include ADF/RMI and DME -->
   <nasal>
