@@ -18,7 +18,7 @@
     </startup>
 
     <sound>
-      <path>Aircraft/737-100/Sounds/737-100-sound.xml</path>
+      <path>Aircraft/727-230/Sounds/Sounds.xml</path>
       <switch type="bool">0</switch>
       <stall-horn type="bool">0</stall-horn>
     </sound>
