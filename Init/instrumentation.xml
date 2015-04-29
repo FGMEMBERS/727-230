@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <adf n="0">
+    <ident-audible type="bool">false</ident-audible>
+    <volume type="double">0.0</volume>
+  </adf>
+
+  <adf n="1">
+    <ident-audible type="bool">false</ident-audible>
+    <volume type="double">0.0</volume>
+  </adf>
+
+  <comm n="0">
+    <volume type="double">1.0</volume>
+  </comm>
+
+  <comm n="1">
+    <volume type="double">1.0</volume>
+  </comm>
+
+  <nav n="0">
+    <volume type="double">0.0</volume>
+  </nav>
+
+  <nav n="1">
+    <volume type="double">0.0</volume>
+  </nav>
+
+  <!-- VOR mode -->
+  <rmi-needle n="0">
+    <mode type="bool">0</mode>
+  </rmi-needle>
+
+  <!-- VOR mode -->
+  <rmi-needle n="1">
+    <mode type="bool">0</mode>
+  </rmi-needle>
+
+</PropertyList>
+

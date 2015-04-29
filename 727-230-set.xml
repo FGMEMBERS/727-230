@@ -17,6 +17,14 @@
       <splash-texture>Aircraft/727-230/splash-tribute.png</splash-texture>
     </startup>
 
+    <!-- Required for parkpos=AVAILABLE option -->
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator></aircraft-operator>
+    <dimensions>
+      <radius-m type="float">23.35</radius-m>
+      <parkpos-offset type="float">0.0</parkpos-offset>
+    </dimensions>
+
     <sound>
       <path>Aircraft/727-230/Sounds/Sounds.xml</path>
       <switch type="bool">0</switch>
@@ -49,9 +57,14 @@
       </default>
     </menubar>
 
-    <autopilot>
-      <path>Aircraft/727-230/Systems/727-autopilotV5.xml</path>
-    </autopilot>
+    <systems>
+      <autopilot>
+        <path>Systems/727-autopilotV5.xml</path>
+      </autopilot>
+      <property-rule n="101">
+        <path>Systems/instrumentation-rules.xml</path>
+      </property-rule>
+    </systems>
 
     <model>
       <path>Aircraft/727-230/Models/727-230.xml</path>
@@ -241,11 +254,13 @@
 
   </engines>
 
+  <instrumentation include="Init/instrumentation.xml"/>
+
   <!--Nasal files modified to include ADF/RMI and DME -->
   <nasal>
-    <ADF>
-      <file>Aircraft/727-230/Nasal/mk-rmi-adf-nav.nas</file>
-    </ADF>
+    <B727-230>
+      <file>Nasal/waypoint-smoothing.nas</file>
+    </B727-230>
     <DME>
       <file>Aircraft/727-230/Nasal/mk-ki266.nas</file>
       <script><![CDATA[
