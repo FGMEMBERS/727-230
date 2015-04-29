@@ -17,6 +17,14 @@
       <splash-texture>Aircraft/727-230/splash-tribute.png</splash-texture>
     </startup>
 
+    <!-- Required for parkpos=AVAILABLE option -->
+    <aircraft-class>gate</aircraft-class>
+    <aircraft-operator></aircraft-operator>
+    <dimensions>
+      <radius-m type="float">23.35</radius-m>
+      <parkpos-offset type="float">0.0</parkpos-offset>
+    </dimensions>
+
     <sound>
       <path>Aircraft/727-230/Sounds/Sounds.xml</path>
       <switch type="bool">0</switch>
