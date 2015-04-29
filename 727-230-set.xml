@@ -243,6 +243,9 @@
 
   <!--Nasal files modified to include ADF/RMI and DME -->
   <nasal>
+    <B727-230>
+      <file>Nasal/waypoint-smoothing.nas</file>
+    </B727-230>
     <ADF>
       <file>Aircraft/727-230/Nasal/mk-rmi-adf-nav.nas</file>
     </ADF>
