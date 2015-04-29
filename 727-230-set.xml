@@ -13,7 +13,6 @@
     <flight-model>yasim</flight-model>
     <aero>727-230</aero>
 
-
     <startup>
       <splash-texture>Aircraft/727-230/splash-tribute.png</splash-texture>
     </startup>
@@ -57,13 +56,9 @@
     <model>
       <path>Aircraft/727-230/Models/727-230.xml</path>
       <livery>
-	<name type="string">Lufthansa</name>
-	<texture>727-230_Lufthansa.png</texture>
+	<name type="string">DLH - Lufthansa Airl.</name>
+	<texture>Liveries/727-230_Lufthansa.png</texture>
       </livery>
-      <tail>
-	<name type="string">Lufthansa</name>
-	<texture>727-230.tail_Lufthansa.png</texture>
-      </tail>
     </model>
 
     <view>
@@ -81,8 +76,6 @@
 	</dynamic>
       </config>
     </view>
-
-
 
     <view n="100">
       <name>interior view</name>
@@ -102,7 +95,6 @@
 	<pitch-offset-deg>3</pitch-offset-deg>
       </config>
     </view>
-
 
     <chase-distance-m>-100</chase-distance-m>
 
@@ -127,14 +119,11 @@
       <!-- flaps 40 -->
     </flaps>
 
-
-
     <!--<ai>
     <submodels>
       <contrails type="bool">true</contrails>
     </submodels>
     </ai>-->
-
 
     <weight n="0">
       <name>156 PAX</name>
