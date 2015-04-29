@@ -246,9 +246,6 @@
     <B727-230>
       <file>Nasal/waypoint-smoothing.nas</file>
     </B727-230>
-    <ADF>
-      <file>Aircraft/727-230/Nasal/mk-rmi-adf-nav.nas</file>
-    </ADF>
     <DME>
       <file>Aircraft/727-230/Nasal/mk-ki266.nas</file>
       <script><![CDATA[
