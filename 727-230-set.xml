@@ -50,7 +50,7 @@
     </menubar>
 
     <autopilot>
-      <path>Aircraft/727-230/737-autopilotV5.xml</path>
+      <path>Aircraft/727-230/Systems/727-autopilotV5.xml</path>
     </autopilot>
 
     <model>
