@@ -60,7 +60,7 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 		<location name="VRP" unit="IN">
 			<x>0</x>
 			<y>0</y>
-			<z>0</z>
+			<z>-100</z>
 		</location>
 	</metrics>
 
@@ -74,15 +74,107 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			<y>   0.00 </y>
 			<z> -45.95 </z>
 		</location>
-		<pointmass name="Payload">
-			<description> 35789 LBS + full (70811 LBS) fuel should bring model up to entered max weight</description>
-			<weight unit="LBS">  17894.5 </weight>
-			<location name="POINTMASS" unit="IN">
-				<x> 900.00 </x>
-				<y>   0.00 </y>
-				<z> -45.95 </z>
+
+		<pointmass name="Cockpit Crew">
+			<description>Cockpit Crew, 3 persons</description>
+			<weight unit="LBS">  600.0000 </weight>
+			<location name="CREW" unit="IN">
+				<x>   100.00 </x>
+				<y>     0.00 </y>
+				<z>   -48.50 </z>
 			</location>
 		</pointmass> 
+
+		<pointmass name="Cabin Crew">
+			<description>Cabin Crew Crew, 4 weight controlled stewardesses</description>
+			<weight unit="LBS">  600.0000 </weight>
+			<location name="CREW" unit="IN">
+				<x> 900.00 </x>
+				<y>   0.00 </y>
+				<z> -48.50 </z>
+			</location>
+		</pointmass> 
+
+		<pointmass name="First Class">
+			<description>First Class, 12 persons</description>
+			<weight unit="LBS"> 2400.0000 </weight>
+			<location name="CREW" unit="IN">
+				<x>   600.00 </x>
+				<y>     0.00 </y>
+				<z>   -48.50 </z>
+			</location>
+		</pointmass> 
+
+		<pointmass name="Coach Class">
+			<description>Coach Class, 136 persons</description>
+			<weight unit="LBS"> 26800.0000 </weight>
+			<location name="Tech ops" unit="IN">
+				<x>   950.00 </x>
+				<y>     0.00 </y>
+				<z>   -48.50 </z>
+			</location>
+		</pointmass> 
+
+		<pointmass name="Fwd Freight/Luggage">
+			<description>Fwd. Freight/Luggage</description>
+			<weight unit="LBS"> 9000.0000 </weight>
+			<location name="Tech ops" unit="IN">
+				<x>   450.00 </x>
+				<y>     0.00 </y>
+				<z>   -24.07 </z>
+			</location>
+		</pointmass> 
+
+		<pointmass name="Rear Freight/luggage">
+			<description>Rear Freight/Luggage</description>
+			<weight unit="LBS"> 10000.0000 </weight>
+			<location name="Tech ops" unit="IN">
+				<x>  1350.00 </x>
+				<y>     0.00 </y>
+				<z>   -24.07 </z>
+			</location>
+		</pointmass> 
+
+		<pointmass name="Fwd. Opt. Tank 1">
+			<description>Fwd Opt. Tank1</description>
+			<weight unit="LBS"> 5670.0000 </weight>
+			<location name="Tech ops" unit="IN">
+				<x>   800.00 </x>
+				<y>     0.00 </y>
+				<z>   -24.07 </z>
+			</location>
+		</pointmass> 
+
+		<pointmass name="Fwd. Opt. Tank 2">
+			<description>Fwd. Opt. Tank 2</description>
+			<weight unit="LBS"> 5670.0000 </weight>
+			<location name="Tech ops" unit="IN">
+				<x>   850.00 </x>
+				<y>     0.00 </y>
+				<z>   -24.07 </z>
+			</location>
+		</pointmass> 
+
+		<pointmass name="Rear Opt. Tank 3">
+			<description>Rear Opt. Tank 3</description>
+			<weight unit="LBS"> 6020.0000 </weight>
+			<location name="Tech ops" unit="IN">
+				<x>   950.00 </x>
+				<y>     0.00 </y>
+				<z>   -24.07 </z>
+			</location>
+		</pointmass> 
+
+		<pointmass name="Rear Opt. Tank 4">
+			<description>Rear Opt. Tank 4</description>
+			<weight unit="LBS"> 5670.0000 </weight>
+			<location name="Tech ops" unit="IN">
+				<x>  1000.00 </x>
+				<y>     0.00 </y>
+				<z>   -24.07 </z>
+			</location>
+		</pointmass>
+ 
 	</mass_balance>
 
 	<ground_reactions>
@@ -139,7 +231,7 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			<location unit="IN">
 				<x>1100.00 </x>
 				<y> -54.00 </y>
-				<z> -45.95 </z>
+				<z> -145.95 </z>
 			</location>
 			<static_friction>  1.00 </static_friction>
 			<dynamic_friction> 1.00 </dynamic_friction>
@@ -151,7 +243,7 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			<location unit="IN">
 				<x>1100.00 </x>
 				<y>  54.00 </y>
-				<z> -45.95 </z>
+				<z> -145.95 </z>
 			</location>
 			<static_friction>  1.00 </static_friction>
 			<dynamic_friction> 1.00 </dynamic_friction>

@@ -189,10 +189,11 @@
     <object-name>slat1.3</object-name>
   </effect>
 
-  <model>
+	<!-- disabled because it looks sooooo bad -->
+  <!-- model>
     <name>shadowOSG</name>
     <path>Aircraft/727-230/Models/shadow.xml</path>
-  </model>
+  </model -->
 
   <animation>
     <type>select</type>

@@ -27,30 +27,30 @@ file, these values will be used (they are hardcoded).
 
 <PropertyList>
 
-  <adf>
+  <!-- adf>
     <name>adf</name>
     <number>0</number>
-  </adf>
+  </adf -->
 
-  <adf>
+  <!-- adf>
     <name>adf</name>
     <number>1</number>
-  </adf>
+  </adf -->
 
-  <clock>
+  <!-- clock>
     <name>clock</name>
     <number>0</number>
-  </clock>
+  </clock -->
 
-  <dme>
+  <!-- dme>
     <name>dme</name>
     <number>0</number>
-  </dme>
+  </dme -->
 
-  <dme>
+  <!-- dme>
     <name>dme</name>
     <number>1</number>
-  </dme>
+  </dme -->
 
   <nav-radio>
     <name>nav</name>

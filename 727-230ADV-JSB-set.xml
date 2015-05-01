@@ -14,327 +14,422 @@ splash screen Tribute (IAHM-COL)
 -->
 
 <PropertyList>
-  <sim>
-    <description>Boeing 727-230ADV</description>
-    <author>The FlightGear 727 Project</author>
+	<sim>
+		<description>Boeing 727-230ADV</description>
+		<author>The FlightGear 727 Project</author>
 
-    <aircraft-version>V00.00.00</aircraft-version>
-    <status>Alpha</status>
+		<aircraft-version>V00.00.00</aircraft-version>
+		<status>Alpha</status>
 
-    <rating>
-      <FDM type="int">0</FDM>
-      <systems type="int">0</systems>
-      <cockpit type="int">0</cockpit>
-      <model type="int">0</model>
-    </rating>
+		<rating>
+			<FDM type="int">0</FDM>
+			<systems type="int">0</systems>
+			<cockpit type="int">0</cockpit>
+			<model type="int">0</model>
+		</rating>
 
-    <flight-model>jsb</flight-model>
-    <aero>727-230ADV-JSB</aero>
-    <engine>JT8D-17R</engine>
+		<flight-model>jsb</flight-model>
+		<aero>727-230ADV-JSB</aero>
+		<engine>JT8D-17R</engine>
 
-    <startup>
-      <splash-texture>Aircraft/727-230/splash-tribute.png</splash-texture>
-    </startup>
+		<startup>
+			<splash-texture>Aircraft/727-230/splash-tribute.png</splash-texture>
+		</startup>
 
-    <sound>
-      <path>Aircraft/727-230/Sounds/Sounds.xml</path>
-      <switch type="bool">0</switch>
-      <stall-horn type="bool">0</stall-horn>
-    </sound>
+		<sound>
+			<path>Aircraft/727-230/Sounds/Sounds.xml</path>
+			<switch type="bool">0</switch>
+			<stall-horn type="bool">0</stall-horn>
+		</sound>
 
-    <menubar>
-      <default>
-	<menu n="10">
-	  <label>727-230</label>
-	  <enabled type="bool">true</enabled>
+		<menubar>
+			<default>
+				<menu n="10">
+					<label>727-230</label>
+					<enabled type="bool">true</enabled>
 
-	  <item>
-	    <label>Autostart</label>
-	    <binding>
-	      <command>property-toggle</command>
-	      <property>sim/model/start-idling</property>
-	    </binding>
-	  </item>
+					<item>
+						<label>Autostart</label>
+						<binding>
+							<command>property-toggle</command>
+							<property>sim/model/start-idling</property>
+						</binding>
+					</item>
 
-	  <item >
-	    <label>Pushback</label>
-	    <name>pushback</name>
-	    <binding>
-	      <command>dialog-show</command>
-	      <dialog-name>pushback</dialog-name>
-	    </binding>
-	  </item>
+					<item >
+						<label>Pushback</label>
+						<name>pushback</name>
+						<binding>
+							<command>dialog-show</command>
+							<dialog-name>pushback</dialog-name>
+						</binding>
+					</item>
 
-	  <item>
-	    <label>Select Livery</label>
-	    <binding>
-	      <command>nasal</command>
-	      <script>aircraft.livery.dialog.open()</script>
-	    </binding>
-	  </item>
+					<item>
+						<label>Select Livery</label>
+						<binding>
+							<command>nasal</command>
+							<script>aircraft.livery.dialog.open()</script>
+						</binding>
+					</item>
 
-	</menu>
-      </default>
-    </menubar>
+				</menu>
+			</default>
+		</menubar>
 
-    <!-- Systems in sim -->
-    <systems>
-      <autopilot>
-	<path>Aircraft/727-230/Systems/SYS8_0_autopilot.xml</path>
-      </autopilot>
-    </systems>
+		<!-- Systems in sim -->
+		<systems>
+			<autopilot>
+				<path>Aircraft/727-230/Systems/SYS8_0_autopilot.xml</path>
+			</autopilot>
+		</systems>
 
-    <model>
-      <path>Aircraft/727-230/Models/727-230.xml</path>
-      <livery>
-	<name type="string">DLH - Lufthansa Airl.</name>
-	<texture>Liveries/727-230_Lufthansa.png</texture>
-      </livery>
-    </model>
+		<model>
+			<path>Aircraft/727-230/Models/727-230.xml</path>
+			<livery>
+				<name type="string">DLH - Lufthansa Airl.</name>
+				<texture>Liveries/727-230_Lufthansa.png</texture>
+			</livery>
+		</model>
 
-    <view>
-      <internal archive="y">true</internal>
-      <config>
-	<!-- x/y/z == right/up/back -->
-	<x-offset-m archive="y">-0.475</x-offset-m>
-	<y-offset-m archive="y">1.02</y-offset-m>
-	<z-offset-m archive="y">-20.44</z-offset-m>
-	<!--				<z-offset-m archive="y">-6.300</z-offset-m>-->
-	<pitch-offset-deg archive="y">-11.0</pitch-offset-deg>
-	<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
-	<dynamic>
-	  <enabled type="bool" userarchive="y">false</enabled>
-	</dynamic>
-      </config>
-    </view>
+		<view>
+			<internal archive="y">true</internal>
+			<config>
+				<!-- x/y/z == right/up/back -->
+				<x-offset-m archive="y">-0.475</x-offset-m>
+				<y-offset-m archive="y">1.02</y-offset-m>
+				<z-offset-m archive="y">-20.44</z-offset-m>
+				<!-- <z-offset-m archive="y">-6.300</z-offset-m>-->
+				<pitch-offset-deg archive="y">-11.0</pitch-offset-deg>
+				<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+				<dynamic>
+					<enabled type="bool" userarchive="y">false</enabled>
+				</dynamic>
+			</config>
+		</view>
 
-    <view n="100">
-      <name>interior view</name>
-      <type>lookfrom</type>
-      <internal archive="y">true</internal>
-      <config>
-	<from-model type="bool">true</from-model>
-	<from-model-idx type="int">0</from-model-idx>
-	<ground-level-nearplane-m type="double">0.05f</ground-level-nearplane-m>
-	<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
-	<default-pitch-deg type="double">0</default-pitch-deg>
-	<default-heading-deg type="double">0</default-heading-deg>
-	<front-direction-deg type="double">0</front-direction-deg>
-	<x-offset-m archive="y" type="double">-0.36</x-offset-m>
-	<y-offset-m archive="y" type="double">1.09</y-offset-m>
-	<z-offset-m archive="y" type="double">20.53</z-offset-m>
-	<pitch-offset-deg>3</pitch-offset-deg>
-      </config>
-    </view>
+		<view n="100">
+			<name>interior view</name>
+			<type>lookfrom</type>
+			<internal archive="y">true</internal>
+			<config>
+				<from-model type="bool">true</from-model>
+				<from-model-idx type="int">0</from-model-idx>
+				<ground-level-nearplane-m type="double">0.05f</ground-level-nearplane-m>
+				<default-field-of-view-deg type="double">55.0</default-field-of-view-deg>
+				<default-pitch-deg type="double">0</default-pitch-deg>
+				<default-heading-deg type="double">0</default-heading-deg>
+				<front-direction-deg type="double">0</front-direction-deg>
+				<x-offset-m archive="y" type="double">-0.36</x-offset-m>
+				<y-offset-m archive="y" type="double">1.09</y-offset-m>
+				<z-offset-m archive="y" type="double">20.53</z-offset-m>
+				<pitch-offset-deg>3</pitch-offset-deg>
+			</config>
+		</view>
 
-    <chase-distance-m>-100</chase-distance-m>
+		<chase-distance-m>-100</chase-distance-m>
 
-    <flaps>
-      <setting>0.000</setting>
-      <!-- flaps up -->
-      <setting>0.125</setting>
-      <!-- flaps 1  -->
-      <setting>0.250</setting>
-      <!-- flaps 2  -->
-      <setting>0.375</setting>
-      <!-- flaps 5  -->
-      <setting>0.500</setting>
-      <!-- flaps 10 -->
-      <setting>0.625</setting>
-      <!-- flaps 15 -->
-      <setting>0.750</setting>
-      <!-- flaps 25 -->
-      <setting>0.875</setting>
-      <!-- flaps 30 -->
-      <setting>1.000</setting>
-      <!-- flaps 40 -->
-    </flaps>
+		<flaps>
+			<setting>0.000</setting>
+			<!-- flaps up -->
+			<setting>0.125</setting>
+			<!-- flaps 1  -->
+			<setting>0.250</setting>
+			<!-- flaps 2  -->
+			<setting>0.375</setting>
+			<!-- flaps 5  -->
+			<setting>0.500</setting>
+			<!-- flaps 10 -->
+			<setting>0.625</setting>
+			<!-- flaps 15 -->
+			<setting>0.750</setting>
+			<!-- flaps 25 -->
+			<setting>0.875</setting>
+			<!-- flaps 30 -->
+			<setting>1.000</setting>
+			<!-- flaps 40 -->
+		</flaps>
 
-    <!--<ai>
-    <submodels>
-      <contrails type="bool">true</contrails>
-    </submodels>
-    </ai>-->
+		<!--<ai>
+			<submodels>
+			<contrails type="bool">true</contrails>
+			</submodels>
+		</ai>-->
 
-    <weight n="0">
-      <name>156 PAX</name>
-      <weight-lb>25080</weight-lb>
-      <max-lb>25080</max-lb>
-    </weight>
+		<weight n="0">
+			<name>156 PAX</name>
+			<weight-lb>25080</weight-lb>
+			<max-lb>25080</max-lb>
+		</weight>
 
-    <weight n="1">
-      <name>pilots</name>
-      <weight-lb>540</weight-lb>
-      <max-lb>540</max-lb>
-    </weight>
+		<weight n="1">
+			<name>pilots</name>
+			<weight-lb>540</weight-lb>
+			<max-lb>540</max-lb>
+		</weight>
 
-    <instrumentation>
-      <mk-viii>
-	<name>mk-viii</name>
-	<number>0</number>
-      </mk-viii>
-    </instrumentation>
+		<instrumentation>
+			<mk-viii>
+				<name>mk-viii</name>
+				<number>0</number>
+			</mk-viii>
+		</instrumentation>
 
-  </sim>
+	</sim>
 
-  <!-- Introduce the controls xml into this version:: as per Sanhozay's Changelog -->
-  <controls include="Init/controls.xml"/>
+	<!-- Introduce the controls xml into this version:: as per Sanhozay's Changelog -->
+	<controls include="Init/controls.xml"/>
 
-  <autopilot>
-    <settings>
-      <kts-mach-select type="string">kts</kts-mach-select>
-      <max-pitch type="float">4.0</max-pitch>
-    </settings>
-    <internal>
-      <max-pitch type="float">4.0</max-pitch>
-    </internal>
-  </autopilot>
+	<autopilot>
 
-  <!-- IAHMCOL introduced new instrumentation file to install ADF, Clock, and DME. Old config was transferred there -->
-  <instrumentation>
-    <path>Aircraft/727-230/Systems/727-230-instrumentation.xml</path>
-  </instrumentation>
+		<settings>
+			<kts-mach-select type="string">kts</kts-mach-select>
+			<max-pitch type="float">4.0</max-pitch>
+		</settings>
 
-  <controls>
-    <engines>
-      <engine n="0">
-	<rpm>0</rpm>
-	<running>false</running>
-      </engine>
-      <engine n="1">
-	<rpm>0</rpm>
-	<running>false</running>
-      </engine>
-      <engine n="2">
-	<rpm>0</rpm>
-	<running>false</running>
-      </engine>
-    </engines>
+		<internal>
+			<max-pitch type="float">4.0</max-pitch>
+		</internal>
 
-    <gear>
-      <brake-parking type="double">1</brake-parking>
-    </gear>
+	</autopilot>
 
-    <lighting>
-      <strobe>1</strobe>
-      <beacon>1</beacon>
-      <landing-lights>1</landing-lights>
-      <nav-lights>1</nav-lights>
-    </lighting>
+	<!-- IAHMCOL introduced new instrumentation file to install ADF, Clock, and DME. Old config was transferred there -->
+	<instrumentation>
+		<path>Aircraft/727-230/init/instrumentation.xml</path>
+	</instrumentation>
 
-    <wing>
-      <anti-ice type="string">controls/ice/wings/auto</anti-ice>
-    </wing>
-    <eng1>
-      <anti-ice type="string">controls/ice/eng1/auto</anti-ice>
-    </eng1>
-    <eng2>
-      <anti-ice type="string">controls/ice/eng2/auto</anti-ice>
-    </eng2>
-  </controls>
+	<controls>
 
-  <gear>
-    <gear n="0">
-      <tyre-smoke type="int">0</tyre-smoke>
-      <sprayspeed-ms type="double">0</sprayspeed-ms>
-      <spray-density type="double">0</spray-density>
-    </gear>
+		<engines>
+			<engine n="0">
+				<rpm>0</rpm>
+				<running>false</running>
+			</engine>
+			
+			<engine n="1">
+				<rpm>0</rpm>
+				<running>false</running>
+			</engine>
 
-    <gear n="1">
-      <tyre-smoke type="int">0</tyre-smoke>
-      <sprayspeed-ms type="double">0</sprayspeed-ms>
-      <spray-density type="double">0</spray-density>
-    </gear>
+			<engine n="2">
+				<rpm>0</rpm>
+				<running>false</running>
+			</engine>
+		</engines>
 
-    <gear n="2">
-      <tyre-smoke type="int">0</tyre-smoke>
-      <sprayspeed-ms type="double">0</sprayspeed-ms>
-      <spray-density type="double">0</spray-density>
-    </gear>
-  </gear>
+		<gear>
+			<brake-parking type="double">1</brake-parking>
+		</gear>
 
-  <!-- IAHMCOL: It creates 3 tanks, RW and LH capable of 1890 gallons
-  each. Center capable of 4310 gallons; for an standard option of
-  8090 total gallons. Tanks start filled, and Center selected.
-  Ideally, when center tank (feeding the 3 engines) equalizes 1890
-  gallons, RW and LH should start feeding also, one engine per tank.
-  Switch for center vs 3 tank feeding configuration might be implemented.
-  Automatic switch of center vs 3 tank feeding might be implemented
-  -->
+		<lighting>
+			<strobe>1</strobe>
+			<beacon>1</beacon>
+			<landing-lights>1</landing-lights>
+			<nav-lights>1</nav-lights>
+		</lighting>
 
-  <!-- IAHMCOL suggests reading
-  http://wiki.flightgear.org/Howto:Write_a_fuel_system_in_JSBSim
-  for trying to implement fueling method
-  -->
-  <!-- JABBERWOCKY: with reference to IAHMCOL
-  The fuel system in JSB will only work for the JSBSIM versions like this one, not for YASIM versions.
-  Therefore, I would aim for a Nasal solution.
-  -->
+		<wing>
+			<anti-ice type="string">controls/ice/wings/auto</anti-ice>
+		</wing>
+		<eng0>
+			<anti-ice type="string">controls/ice/eng0/auto</anti-ice>
+		</eng0>
+		<eng2>
+			<anti-ice type="string">controls/ice/eng2/auto</anti-ice>
+		</eng2>
+		<eng2>
+			<anti-ice type="string">controls/ice/eng2/auto</anti-ice>
+		</eng2>
 
-  <consumables>
-    <fuel>
-      <tank n="0">
-	<name type="string">Left Wing</name>
-	<density-ppg type="double">6.72</density-ppg>
-	<unusable-gal_us type="double">2.5</unusable-gal_us>
-	<level-gal_us type="double">1890</level-gal_us>
-	<selected type="bool">false</selected>
-      </tank>
+	</controls>
 
-      <tank n="1">
-	<name type="string">Center</name>
-	<density-ppg type="double">6.72</density-ppg>
-	<unusable-gal_us type="double">2.5</unusable-gal_us>
-	<level-gal_us type="double">4310</level-gal_us>
-	<selected type="bool">true</selected>
-      </tank>
+	<gear>
+		<gear n="0">
+			<tyre-smoke type="int">0</tyre-smoke>
+			<sprayspeed-ms type="double">0</sprayspeed-ms>
+			<spray-density type="double">0</spray-density>
+		</gear>
 
-      <tank n="2">
-	<name type="string">Right Wing</name>
-	<density-ppg type="double">6.72</density-ppg>
-	<unusable-gal_us type="double">2.5</unusable-gal_us>
-	<level-gal_us type="double">1890</level-gal_us>
-	<selected type="bool">false</selected>
-      </tank>
-    </fuel>
-  </consumables>
+		<gear n="1">
+			<tyre-smoke type="int">0</tyre-smoke>
+			<sprayspeed-ms type="double">0</sprayspeed-ms>
+			<spray-density type="double">0</spray-density>
+		</gear>
 
-  <!-- Engines using thrust reversal keyboard. http://wiki.flightgear.org/index.php/Howto:_Add_thrust_reversal -->
-  <!-- Prestes Hangar code - SET-2009 -->
-  <input>
-    <keyboard>
-      <key n="127">
-	<name>Delete</name>
-	<desc>Toggle Reversers</desc>
-	<binding>
-	  <command>nasal</command>
-	  <script>reversethrust.togglereverser()</script>
-	</binding>
-      </key>
-    </keyboard>
-  </input>
+		<gear n="2">
+			<tyre-smoke type="int">0</tyre-smoke>
+			<sprayspeed-ms type="double">0</sprayspeed-ms>
+			<spray-density type="double">0</spray-density>
+		</gear>
+	</gear>
 
-  <!-- Nasal files modified to include ADF/RMI and DME -->
-  <!-- Nasal includes always last to make sure all properties for initialization are set -->
-  <nasal>
-    <ADF>
-      <file>Aircraft/727-230/Nasal/mk-rmi-adf-nav.nas</file>
-    </ADF>
-    <DME>
-      <file>Aircraft/727-230/Nasal/mk-ki266.nas</file>
-      <script><![CDATA[
-      ki266.new(0);
-      ]]></script>
-    </DME>
-    <tyresmoke>
-      <file>Aircraft/727-230/Nasal/tyresmoke.nas</file>
-    </tyresmoke>
-    <livery>
-      <file>Aircraft/727-230/Nasal/livery.nas</file>
-    </livery>
-    <b727>
-      <file>Aircraft/727-230/Nasal/727.nas</file>
-    </b727>	
-  </nasal>
+	<!-- IAHMCOL: It creates 3 tanks, RW and LH capable of 1890 gallons
+		each. Center capable of 4310 gallons; for an standard option of
+		8090 total gallons. Tanks start filled, and Center selected.
+		Ideally, when center tank (feeding the 3 engines) equalizes 1890
+		gallons, RW and LH should start feeding also, one engine per tank.
+		Switch for center vs 3 tank feeding configuration might be implemented.
+		Automatic switch of center vs 3 tank feeding might be implemented
+	-->
+
+	<!-- IAHMCOL suggests reading
+		http://wiki.flightgear.org/Howto:Write_a_fuel_system_in_JSBSim
+		for trying to implement fueling method
+	-->
+	<!-- JABBERWOCKY: with reference to IAHMCOL
+		The fuel system in JSB will only work for the JSBSIM versions like this one, not for YASIM versions.
+		Therefore, I would aim for a Nasal solution.
+	-->
+
+	<consumables>
+		<fuel>
+			<tank n="0">
+				<name type="string">Left Wing</name>
+				<density-ppg type="double">7.00</density-ppg> <!-- density changed to 7.00 Jet-A1 fuel -->
+				<unusable-gal_us type="double">2.5</unusable-gal_us>
+				<level-gal_us type="double">1890</level-gal_us>
+				<selected type="bool">false</selected>
+			</tank>
+
+			<tank n="1">
+				<name type="string">Center</name>
+				<density-ppg type="double">7.00</density-ppg>
+				<unusable-gal_us type="double">2.5</unusable-gal_us>
+				<level-gal_us type="double">4310</level-gal_us>
+				<selected type="bool">true</selected>
+			</tank>
+
+			<tank n="2">
+				<name type="string">Right Wing</name>
+				<density-ppg type="double">7.00</density-ppg>
+				<unusable-gal_us type="double">2.5</unusable-gal_us>
+				<level-gal_us type="double">1890</level-gal_us>
+				<selected type="bool">false</selected>
+			</tank>
+		</fuel>
+	</consumables>
+
+	<!-- Payload section: Whatever weights -->
+	<payload>
+
+		<weight n="0">
+			<name>Cockpit Crew</name>
+			<!-- pilot + copilot + engineer -->
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[0]" />
+			<min-lb type="double">  200</min-lb>
+			<max-lb type="double">  600</max-lb>
+		</weight>
+
+		<weight n="1">
+			<name>Cabin Crew</name>
+			<!-- 4 flight attendants -->
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[1]" />
+			<min-lb type="double">    0</min-lb>
+			<max-lb type="double">  600</max-lb> <!-- Stewardesses were back then weight controlled -->
+		</weight>
+
+		<weight n="2">
+			<!-- first class -->
+			<name>First Class</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[2]" />
+			<min-lb type="double">    0 </min-lb>
+			<max-lb type="double"> 2400 </max-lb>
+		</weight>
+
+		<weight n="3">
+			<!-- coach class -->
+			<name>Coach Class</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[3]" />
+			<min-lb type="double">     0 </min-lb>
+			<max-lb type="double"> 26800 </max-lb>
+		</weight>
+
+		<weight n="4">
+			<!-- fwd. freight/luggage -->
+			<name>Fwd. Freight/Luggage</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[4]" />
+			<min-lb type="double">    0</min-lb>
+			<max-lb type="double"> 9000</max-lb>
+		</weight>
+
+		<weight n="5">
+			<!-- rear freight/luggage -->
+			<name>Rear Freight/Luggage</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[5]" />
+			<min-lb type="double">     0</min-lb>
+			<max-lb type="double"> 10000</max-lb>
+		</weight>
+
+		<weight n="6">
+			<!-- Forward Opt. Tank 1 -->
+			<name>Fwd Opt. Tank 1</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[6]" />
+			<min-lb type="double">    0</min-lb>
+			<max-lb type="double"> 5670</max-lb>
+		</weight>
+
+		<weight n="7">
+			<!-- Forward Opt. Tank 2 -->
+			<name>Fwd Opt. Tank</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[7]" />
+			<min-lb type="double">    0</min-lb>
+			<max-lb type="double"> 5670</max-lb>
+		</weight>
+
+		<weight n="8">
+			<!-- Rear Opt. Tank 3 -->
+			<name>Rear Opt. Tank 3</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[8]" />
+			<min-lb type="double">    0</min-lb>
+			<max-lb type="double"> 6020</max-lb>
+		</weight>
+
+		<weight n="9">
+			<!-- Rear Opt. Tank 4 -->
+			<name>Rear Opt. Tank 4</name>
+			<weight-lb alias="/fdm/jsbsim/inertia/pointmass-weight-lbs[9]" />
+			<min-lb type="double">    0</min-lb>
+			<max-lb type="double"> 5670</max-lb>
+		</weight>
+
+	</payload>
+
+	<!-- Engines using thrust reversal keyboard. http://wiki.flightgear.org/index.php/Howto:_Add_thrust_reversal -->
+	<!-- Prestes Hangar code - SET-2009 -->
+	<input>
+		<keyboard>
+			<key n="127">
+				<name>Delete</name>
+				<desc>Toggle Reversers</desc>
+				<binding>
+					<command>nasal</command>
+					<script>reversethrust.togglereverser()</script>
+				</binding>
+			</key>
+		</keyboard>
+	</input>
+
+	<!-- Nasal files modified to include ADF/RMI and DME -->
+	<!-- Nasal includes always last to make sure all properties for initialization are set -->
+	<nasal>
+		<!-- ADF>
+			<file>Aircraft/727-230/Nasal/mk-rmi-adf-nav.nas</file>
+		</ADF -->
+		<DME>
+			<file>Aircraft/727-230/Nasal/mk-ki266.nas</file>
+			<script><![CDATA[
+				ki266.new(0);
+			]]></script>
+		</DME>
+		<tyresmoke>
+			<file>Aircraft/727-230/Nasal/tyresmoke.nas</file>
+		</tyresmoke>
+		<livery>
+			<file>Aircraft/727-230/Nasal/livery.nas</file>
+		</livery>
+		<b727>
+			<file>Aircraft/727-230/Nasal/727.nas</file>
+		</b727>	
+	</nasal>
 
 </PropertyList>
