@@ -1011,6 +1011,33 @@
     </axis>
   </animation>
 
+  <!-- Steering -->
+  <animation>
+    <type>rotate</type>
+    <object-name>tyrern</object-name>
+    <object-name>tyreln</object-name>
+    <object-name>Cube</object-name>
+    <object-name>nlowerstrut</object-name>
+    <object-name>nouterstrut</object-name>
+    <object-name>lhsteercyl</object-name>
+    <object-name>rhsteercyl</object-name>
+    <object-name>nlinklower</object-name>
+    <object-name>nlinkupper</object-name>
+    <object-name>noseaxle</object-name>
+    <property>gear/gear[0]/steering-norm</property>
+    <factor>-65</factor>
+    <center>
+      <x-m>-19.2036</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-1.6281</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
   <animation>
     <type>rotate</type>
     <object-name>lmgt</object-name>
