@@ -3,7 +3,8 @@
 <!--
     ================================================================
     Autopilot SYS8 (originally for Voodoomaster test platform)
-    JWOCKY: April, 2015, adapted for 767-Sentry and variants
+    JWOCKY: April 2015, adapted for 767-Sentry and variants
+	    May 2015 in 727-230-JSB(copy), StratoFortressH, RA-5
     ================================================================
 -->
 
@@ -19,35 +20,12 @@
 	</predict-simple>
 
 	<predict-simple>
-		<name>predicted tru-heading 5 seconds ahead</name>
-		<input>/autopilot/internal/true-heading-error-deg</input>
-		<output>/autopilot/internal/true-heading-5-sec-ahead</output>
-		<seconds>8</seconds>
-		<filter-gain>0.1</filter-gain>
-	</predict-simple>
-
-	<predict-simple>
 		<name>predicted nav1-error 5 seconds ahead</name>
 		<input>/autopilot/internal/nav1-track-error-deg</input>
 		<output>/autopilot/internal/nav1-error-5-sec-ahead</output>
 		<seconds>8</seconds>
 		<filter-gain>0.1</filter-gain>
 	</predict-simple>
-  
-	<filter>
-		<name>Bank Angle Limiter</name>
-		<type>gain</type>
-		<debug>false</debug>
-		<input>
-			<property>/velocities/airspeed-kt</property>
-		</input>
-		<output>
-			<property>/autopilot/internal/bank-angle-limit-deg</property>
-		</output>
-		<gain>0.15</gain>
-		<u_min>20.0</u_min>
-		<u_max>45.0</u_max>
-	</filter>
   
 	<filter>
 		<name>Aileron Command Limiter</name>
@@ -106,15 +84,6 @@
 		<type>noise-spike</type>
 		<input>/autopilot/internal/nav1-error-5-sec-ahead</input>
 		<output>/autopilot/internal/nav1-heading-error-deg-filtered</output>
-		<max-rate-of-change>30.0</max-rate-of-change>
-	</filter>
-
-	<filter>
-		<name>True heading error Filter</name>
-		<debug>false</debug>
-		<type>noise-spike</type>
-		<input>/autopilot/internal/true-heading-5-sec-ahead</input>
-		<output>/autopilot/internal/true-heading-error-deg-filtered</output>
 		<max-rate-of-change>30.0</max-rate-of-change>
 	</filter>
   
@@ -177,6 +146,47 @@
 			<offset>-0.95</offset>
 			<scale>4</scale>
 			<!-- property>/velocities/airspeed-kt</property --> 
+		</reference>
+		<output>
+			<property>/autopilot/internal/max-pitch</property>
+		</output>
+		<config>
+			<Kp>1.00</Kp>        <!-- proportional gain -0.01 -->
+			<!-- beta>1.0</beta -->       <!-- input value weighing factor -->
+			<!-- alpha>0.5</alpha -->     <!-- low pass filter weighing factor -->
+			<!-- gamma>0.0</gamma -->     <!-- input value weighing factor for -->
+			<!-- unfiltered derivative error -->
+			<Ti>100.0</Ti>          <!-- integrator time  10.0 -->
+			<Td>0.000001</Td>       <!-- derivator time -->
+			<u_min>-4.0</u_min>  <!-- minimum output clamp -->
+			<u_max>
+				<property>/autopilot/settings/max-pitch</property>
+			</u_max>   <!-- maximum output clamp -->
+		</config>
+	</pid-controller>
+  
+	<pid-controller>
+		<name>Max Pitch 2</name>
+		<debug>false</debug>
+		<enable>
+			<condition>
+				<and>
+					<equals>        
+						<property>/autopilot/locks/altitude</property>
+						<value>altitude-hold</value>
+					</equals>
+					<lesser-equal>
+						<property>/controls/engines/engine[0]/throttle</property>
+						<value>0.95</value>
+					</lesser-equal>
+				</and>
+			</condition>
+		</enable>
+		<input>
+			<property>/position/altitude-ft</property>
+		</input>
+		<reference>
+			<property>/autopilot/settings/target-altitude-ft</property>
 		</reference>
 		<output>
 			<property>/autopilot/internal/max-pitch</property>
@@ -303,7 +313,7 @@
 					<value>true-heading-hold</value>
 				</equals>
 			</condition>
-			<property>/autopilot/internal/true-heading-error-deg-filtered</property>
+			<property>/autopilot/internal/true-heading-error-deg</property>
 		</input>
 		<input>
 			<condition>
@@ -312,18 +322,18 @@
 					<value>nav1-hold</value>
 				</equals>
 			</condition>
-			<prop>/autopilot/internal/nav1-heading-error-deg-filtered</prop>
+			<prop>/autopilot/internal/nav1-heading-error-deg</prop>
 		</input>
 		<output>
 			<property>/autopilot/internal/target-roll-deg</property>
 		</output>
-		<gain>5</gain>
+		<gain>2</gain>
 		<u_min>
-			<property>/autopilot/internal/bank-angle-limit-deg</property>
+			<property>/autopilot/settings/bank-angle-limit-deg</property>
 			<scale>-1.0</scale>
 		</u_min>
 		<u_max>
-			<property>/autopilot/internal/bank-angle-limit-deg</property>
+			<property>/autopilot/settings/bank-angle-limit-deg</property>
 		</u_max>
 	</filter>
   
@@ -378,12 +388,12 @@
 			<property>/controls/flight/aileron</property>
 		</output>
 		<config>
-			<Kp>0.0025</Kp>		<!-- proportional gain -->
+			<Kp>0.10</Kp>		<!-- proportional gain -->
 			<beta>1.0</beta>	<!-- input value weighing factor -->
 			<alpha>0.1</alpha>	<!-- low pass filter weighing factor -->
 			<gamma>0.0</gamma>	<!-- input value weighing factor for -->
 			<!-- unfiltered derivative error -->
-			<Ti>5</Ti>        	<!-- integrator time -->
+			<Ti>10</Ti>        	<!-- integrator time -->
 			<Td>0.00001</Td>     	<!-- derivator time -->
 			<u_min>-0.35</u_min> 	<!-- minimum output clamp -->
 			<u_max>0.35</u_max>  	<!-- maximum output clamp -->
@@ -415,10 +425,10 @@
 			<beta>1.0</beta>    <!-- input value weighing factor -->
 			<alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
 			<gamma>0.0</gamma>  <!-- input value weighing factor for -->
-			<Ti>100.0</Ti>       <!-- integrator time  10.0 -->
+			<Ti>10.0</Ti>       <!-- integrator time  10.0 -->
 			<Td>0.000001</Td>    <!-- derivator time -->
-			<u_min>-0.35</u_min> <!-- minimum output clamp -->
-			<u_max>0.35</u_max>
+			<u_min>-0.45</u_min> <!-- minimum output clamp -->
+			<u_max>0.45</u_max>
 		</config>
 	</pid-controller>
 
@@ -475,6 +485,10 @@
 			<prop>/controls/engines/engine[1]/throttle</prop>
 			<prop>/controls/engines/engine[2]/throttle</prop>
 			<prop>/controls/engines/engine[3]/throttle</prop>
+			<prop>/controls/engines/engine[4]/throttle</prop>
+			<prop>/controls/engines/engine[5]/throttle</prop>
+			<prop>/controls/engines/engine[6]/throttle</prop>
+			<prop>/controls/engines/engine[7]/throttle</prop>
 		</output>
 		<config>
 			<Kp>0.05</Kp>        <!-- proportional gain -->
@@ -613,7 +627,7 @@
 			<!-- unfiltered derivative error -->
 			<Ti>2.0</Ti>       <!-- integrator time -->
 			<Td>0.00001</Td>    <!-- derivator time -->
-			<u_min>-0.0005</u_min> <!-- minimum output clamp -->
+			<u_min>-0.50</u_min> <!-- minimum output clamp -->
 			<u_max>0.50</u_max>  <!-- maximum output clamp -->
 		</config>
 	</pid-controller>

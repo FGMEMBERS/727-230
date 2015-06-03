@@ -134,46 +134,6 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 				<z>   -24.07 </z>
 			</location>
 		</pointmass> 
-
-		<pointmass name="Fwd. Opt. Tank 1">
-			<description>Fwd Opt. Tank1</description>
-			<weight unit="LBS"> 5670.0000 </weight>
-			<location name="Tech ops" unit="IN">
-				<x>   800.00 </x>
-				<y>     0.00 </y>
-				<z>   -24.07 </z>
-			</location>
-		</pointmass> 
-
-		<pointmass name="Fwd. Opt. Tank 2">
-			<description>Fwd. Opt. Tank 2</description>
-			<weight unit="LBS"> 5670.0000 </weight>
-			<location name="Tech ops" unit="IN">
-				<x>   850.00 </x>
-				<y>     0.00 </y>
-				<z>   -24.07 </z>
-			</location>
-		</pointmass> 
-
-		<pointmass name="Rear Opt. Tank 3">
-			<description>Rear Opt. Tank 3</description>
-			<weight unit="LBS"> 6020.0000 </weight>
-			<location name="Tech ops" unit="IN">
-				<x>   950.00 </x>
-				<y>     0.00 </y>
-				<z>   -24.07 </z>
-			</location>
-		</pointmass> 
-
-		<pointmass name="Rear Opt. Tank 4">
-			<description>Rear Opt. Tank 4</description>
-			<weight unit="LBS"> 5670.0000 </weight>
-			<location name="Tech ops" unit="IN">
-				<x>  1000.00 </x>
-				<y>     0.00 </y>
-				<z>   -24.07 </z>
-			</location>
-		</pointmass>
  
 	</mass_balance>
 
@@ -181,16 +141,16 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
 		<contact type="BOGEY" name="NOSE">
 			<location unit="IN">
-				<x> 138.94 </x>
+				<x> 88.94 </x>
 				<y>   0.00 </y>
-				<z> -220.56 </z>
+				<z> -215.56 </z>
 			</location>
 			<static_friction>  0.80 </static_friction>
 			<dynamic_friction> 0.50 </dynamic_friction>
 			<rolling_friction> 0.02 </rolling_friction>
 			<spring_coeff unit="LBS/FT">      62850.00 </spring_coeff>
 			<damping_coeff unit="LBS/FT/SEC"> 104750.00 </damping_coeff>
-			<max_steer unit="DEG"> 5.00 </max_steer>
+			<max_steer unit="DEG"> 65.00 </max_steer>
 			<brake_group>NONE</brake_group>
 			<retractable>1</retractable>
 		</contact>
@@ -267,6 +227,11 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 				<yaw>   0.00 </yaw>
 			</orient>
 			<feed>0</feed>
+			<feed>1</feed>
+			<feed>3</feed>
+			<feed>4</feed>
+			<feed>5</feed>
+			<feed>6</feed>
 			<thruster file="direct">
 				<location unit="IN">
 					<x>  900.00 </x>
@@ -293,6 +258,10 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 				<yaw>   0.00 </yaw>
 			</orient>
 			<feed>1</feed>
+			<feed>3</feed>
+			<feed>4</feed>
+			<feed>5</feed>
+			<feed>6</feed>
 			<thruster file="direct">
 				<location unit="IN">
 					<x>  93.17 </x>
@@ -319,6 +288,11 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 				<yaw>   0.00 </yaw>
 			</orient>
 			<feed>2</feed>
+			<feed>1</feed>
+			<feed>3</feed>
+			<feed>4</feed>
+			<feed>5</feed>
+			<feed>6</feed>
 			<thruster file="direct">
 				<location unit="IN">
 					<x> 900.00 </x>
@@ -339,6 +313,7 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 				<y> -200.00 </y>
 				<z> -45.95 </z>
 			</location>
+			<priority>3</priority>
 			<capacity unit="LBS"> 13230 </capacity>
 			<contents unit="LBS"> 13230 </contents>
 		</tank>
@@ -349,6 +324,7 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 				<y>   0.00 </y>
 				<z> -45.95 </z>
 			</location>
+			<priority>2</priority>
 			<capacity unit="LBS"> 30233 </capacity>
 			<contents unit="LBS"> 30233 </contents>
 		</tank>
@@ -359,8 +335,53 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 				<y> 200.00 </y>
 				<z> -45.95 </z>
 			</location>
+			<priority>3</priority>
 			<capacity unit="LBS"> 13230 </capacity>
 			<contents unit="LBS"> 13230 </contents>
+		</tank>
+
+		<tank type="FUEL" number="3"> <!-- Fwd Opt Tank 1 -->
+			<location unit="IN">
+				<x> 800.00 </x>
+				<y>   0.00 </y>
+				<z> -24.95 </z>
+			</location>
+			<priority>1</priority>
+			<capacity unit="LBS"> 5670 </capacity>
+			<contents unit="LBS"> 0 </contents>
+		</tank>
+
+		<tank type="FUEL" number="4"> <!-- Fwd Opt Tank 2 -->
+			<location unit="IN">
+				<x> 850.00 </x>
+				<y>   0.00 </y>
+				<z> -24.07 </z>
+			</location>
+			<priority>1</priority>
+			<capacity unit="LBS"> 5670 </capacity>
+			<contents unit="LBS"> 0 </contents>
+		</tank>
+
+		<tank type="FUEL" number="5"> <!-- Rear Opt Tank 3 -->
+			<location unit="IN">
+				<x> 950.00 </x>
+				<y>   0.00 </y>
+				<z> -24.07 </z>
+			</location>
+			<priority>1</priority>
+			<capacity unit="LBS"> 6020 </capacity>
+			<contents unit="LBS"> 0 </contents>
+		</tank>
+
+		<tank type="FUEL" number="6"> <!-- Rear Opt Tank 4 -->
+			<location unit="IN">
+				<x>1000.00 </x>
+				<y>   0.00 </y>
+				<z> -24.07 </z>
+			</location>
+			<priority>1</priority>
+			<capacity unit="LBS"> 5670 </capacity>
+			<contents unit="LBS"> 0 </contents>
 		</tank>
 
 	</propulsion>
@@ -643,7 +664,7 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 					<property>aero/qbar-psf</property>
 					<property>metrics/Sw-sqft</property>
 					<property>fcs/flap-pos-deg</property>
-					<value> 0.07000 </value>
+					<value> 0.03500 </value>
 				</product>
 			</function>
 
@@ -722,7 +743,7 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 					<property>aero/qbar-psf</property>
 					<property>metrics/Sw-sqft</property>
 					<property>fcs/flap-pos-deg</property>
-					<value> 0.00190 </value>
+					<value> 0.00220 </value>
 				</product>
 			</function>
 
