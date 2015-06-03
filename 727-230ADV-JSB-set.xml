@@ -72,6 +72,21 @@ splash screen Tribute (IAHM-COL)
 							<script>aircraft.livery.dialog.open()</script>
 						</binding>
 					</item>
+		
+					<item>
+						<name>SteeringMode</name>
+						<label>Steering Configuration</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								var steering = gui.Dialog.new(
+									"sim/gui/voodoomaster/steering/dialog", 
+									"Aircraft/JPack/Voodoomaster/Steering/SteeringDialog.xml"
+								);
+								steering.open();
+							</script>
+						</binding>
+					</item>
 
 				</menu>
 			</default>
@@ -423,6 +438,14 @@ splash screen Tribute (IAHM-COL)
 			</key>
 		</keyboard>
 	</input>
+ 
+	<!-- Voodoomaster plane specific initializations -->
+	<voodoomaster>
+		<steering-mode-rudder type="bool">true</steering-mode-rudder>
+		<steering-mode-aileron type="bool">false</steering-mode-aileron>
+		<steering-wheel type="int">0</steering-wheel>
+		<steering-type type="string">TriCycle</steering-type>	<!-- Alternativ: Taildragger-lock or Taildragger-steer -->
+	</voodoomaster>
 
 	<!-- Nasal files modified to include ADF/RMI and DME -->
 	<!-- Nasal includes always last to make sure all properties for initialization are set -->
@@ -444,6 +467,7 @@ splash screen Tribute (IAHM-COL)
 		</livery>
 		<b727>
 			<file>Aircraft/727-230/Nasal/727.nas</file>
+			<file>Aircraft/727-230/Nasal/Steering.nas</file>
 		</b727>	
 	</nasal>
 
