@@ -189,11 +189,11 @@
     <object-name>slat1.3</object-name>
   </effect>
 
-	<!-- disabled because it looks sooooo bad -->
+  <!-- disabled because it looks sooooo bad -->
   <!-- model>
-    <name>shadowOSG</name>
-    <path>Aircraft/727-230/Models/shadow.xml</path>
-  </model -->
+       <name>shadowOSG</name>
+       <path>Aircraft/727-230/Models/shadow.xml</path>
+       </model -->
 
   <animation>
     <type>select</type>
@@ -575,13 +575,22 @@
     </offsets>
   </model>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>chrome.png</texture>
+  <!-- chrome reflection -->
+  <effect>
+    <inherits-from>Effects/reflection</inherits-from>
+    <object-name>Circle.002</object-name>
+    <object-name>Circle.003</object-name>
+    <object-name>Fuselage.005</object-name>
+    <object-name>Fuselage.006</object-name>
     <object-name>inlet</object-name>
-  </animation>
-  <!--animation-->
+    <object-name>lglhlowerstrut</object-name>
+    <object-name>lgouterstrut</object-name>
+    <object-name>lmgaxle</object-name>
+    <object-name>nouterstrut</object-name>
+    <object-name>rglhlowerstrut</object-name>
+    <object-name>rgouterstrut</object-name>
+    <object-name>rmgaxle</object-name>
+  </effect>
 
   <animation>
     <type>rotate</type>
