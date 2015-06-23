@@ -100,7 +100,7 @@ splash screen Tribute (IAHM-COL)
 		</systems>
 
 		<model>
-			<path>Aircraft/727-230/Models/727-230.xml</path>
+			<path>Aircraft/727-230/Models/727-230W.xml</path>
 			<livery>
 				<name type="string">DLH - Lufthansa Airl.</name>
 				<texture>Liveries/727-230_Lufthansa.png</texture>
