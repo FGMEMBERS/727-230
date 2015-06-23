@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <path>727-230.ac</path>
+  <path>727-230F.ac</path>
 
   <!-- Livery System -->
   <nasal>
@@ -18,7 +18,7 @@
   <animation>
     <type>material</type>
     <!-- fuselage -->
-    <object-name>fuselage.commercial</object-name>
+    <object-name>fuselage.cargo</object-name>
     <object-name>antup</object-name>
     <object-name>antlo</object-name>
     <object-name>antlo</object-name>
@@ -107,7 +107,7 @@
   <effect>
     <inherits-from>Effects/727-230-combShaders</inherits-from>
     <!-- fuselage -->
-    <object-name>fuselage.commercial</object-name>
+    <object-name>fuselage.cargo</object-name>
     <object-name>antup</object-name>
     <object-name>antlo</object-name>
     <object-name>antlo</object-name>
