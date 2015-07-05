@@ -21,7 +21,7 @@
       <wrap-t>clamp</wrap-t>
       <internal-format>normalized</internal-format>
     </texture> -->   
-    <reflection-enabled type="int">1</reflection-enabled>
+    <reflection-enabled type="int">0</reflection-enabled>
     <reflection-dynamic type="int">1</reflection-dynamic>
     <reflect_map-enabled type="int">0</reflect_map-enabled>
     <reflection-correction type="float">0.10</reflection-correction>
