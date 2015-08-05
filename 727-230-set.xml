@@ -1,3 +1,5 @@
+<?xml version="1.0"?>
+
 <PropertyList>
   <sim>
     <description>Boeing 727-230</description>
@@ -13,8 +15,10 @@
     <flight-model>yasim</flight-model>
     <aero>727-230</aero>
 
+    <!-- Splash screens. One is randomly chosen when FlightGear starts -->
     <startup>
-      <splash-texture>Aircraft/727-230/splash-tribute.png</splash-texture>
+      <splash-texture>Aircraft/727-230/splash/splash-tribute.png</splash-texture>
+      <splash-texture>Aircraft/727-230/splash/splash.png</splash-texture>
     </startup>
 
     <!-- Required for parkpos=AVAILABLE option -->

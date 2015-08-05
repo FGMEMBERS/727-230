@@ -33,10 +33,12 @@ Freighter model IAHM-COL
 		<aero>727-230F-JSB</aero>
 		<engine>JT8D-9</engine>
 
+		<!-- Splash screens. One is randomly chosen when FlightGear starts -->
 		<startup>
-			<splash-texture>Aircraft/727-230/splash-tribute.png</splash-texture>
+		  <splash-texture>Aircraft/727-230/splash/splash-tribute.png</splash-texture>
+		  <splash-texture>Aircraft/727-230/splash/splash.png</splash-texture>
 		</startup>
-
+		
 		<sound>
 			<path>Aircraft/727-230/Sounds/Sounds.xml</path>
 			<switch type="bool">0</switch>
