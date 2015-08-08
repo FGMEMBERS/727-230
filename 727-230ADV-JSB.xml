@@ -60,7 +60,7 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 		<location name="VRP" unit="IN">
 			<x>0</x>
 			<y>0</y>
-			<z>-100</z>
+			<z>-104</z>
 		</location>
 	</metrics>
 
