@@ -248,8 +248,6 @@
 		<z-offset>0.8</z-offset>
 	</animation>
 
-	<!-- panel middle engine gauges and some other stuff -->
-
 	<!-- AttitudeDirectionIndicator -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/AttitudeDirector/adi.xml</path>
@@ -576,6 +574,244 @@
 		<x-offset>1.0</x-offset>
 		<y-offset>1.0</y-offset>
 		<z-offset>1.0</z-offset>
+	</animation>
+
+	<!-- Overhead panel -->
+
+	<!-- Magnetic compass -->
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Overhead/magnetic-compass/magnetic-compass1.xml</path>
+		<offsets>
+			<x-m> -21.35500</x-m>
+			<y-m>  -0.00579</y-m>
+			<z-m>   1.17316</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>mag3</object-name>>
+		<type>scale</type>
+		<x-offset>1.2</x-offset>
+		<y-offset>1.2</y-offset>
+		<z-offset>1.2</z-offset>
+	</animation>
+
+	<!-- landing light switches -->
+
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Overhead/LightSwitches/landinglights.xml</path>
+		<offsets>
+			<x-m> -20.92000</x-m>
+			<y-m>  -0.00579</y-m>
+			<z-m>   1.23216</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>landinglights</object-name>>
+		<type>scale</type>
+		<x-offset>0.8</x-offset>
+		<y-offset>0.8</y-offset>
+		<z-offset>0.8</z-offset>
+	</animation>
+	
+	<animation>
+		<object-name>landinglights</object-name>>
+		<type>rotate</type>
+		<type>rotate</type>
+		<property>/voodoomaster/oh-angle1</property>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<!-- illumination dimmers -->
+
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Overhead/LightSwitches/flightdecklights.xml</path>
+		<offsets>
+			<x-m> -20.94500</x-m>
+			<y-m>  -0.00000</y-m>
+			<z-m>   1.23816</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>flightdecklights</object-name>>
+		<type>scale</type>
+		<x-offset>0.7</x-offset>
+		<y-offset>0.7</y-offset>
+		<z-offset>0.7</z-offset>
+	</animation>
+	
+	<animation>
+		<object-name>flightdecklights</object-name>>
+		<type>rotate</type>
+		<type>rotate</type>
+		<property>/voodoomaster/oh-angle1</property>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<!-- nav, beacon, strobe, tail, logo lights -->
+
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Overhead/LightSwitches/outerlights.xml</path>
+		<offsets>
+			<x-m> -20.93500</x-m>
+			<y-m>  -0.03000</y-m>
+			<z-m>   1.22816</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>outerlights</object-name>>
+		<type>scale</type>
+		<x-offset>0.7</x-offset>
+		<y-offset>0.7</y-offset>
+		<z-offset>0.7</z-offset>
+	</animation>
+	
+	<animation>
+		<object-name>outerlights</object-name>>
+		<type>rotate</type>
+		<type>rotate</type>
+		<property>/voodoomaster/oh-angle1</property>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<!-- wiperknob -->
+
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Overhead/WiperSwitches/wiperswitch.xml</path>
+		<offsets>
+			<x-m> -20.98000</x-m>
+			<y-m>  -0.03000</y-m>
+			<z-m>   1.24816</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>wiperswitch</object-name>>
+		<type>scale</type>
+		<x-offset>0.7</x-offset>
+		<y-offset>0.7</y-offset>
+		<z-offset>0.7</z-offset>
+	</animation>
+	
+	<animation>
+		<object-name>wiperswitch</object-name>>
+		<type>rotate</type>
+		<type>rotate</type>
+		<property>/voodoomaster/oh-angle1</property>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<!-- emerg yaw -->
+	<!-- This one is still in Voodoomaster. It contains several switches and protection brackets and is still not separated, so it remaisn only as a 			reminder
+	-->
+
+	<!-- model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/EmergYaw/test.xml</path>
+		<offsets>
+			<x-m> -20.98000</x-m>
+			<y-m>  -0.03000</y-m>
+			<z-m>   1.24816</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>emergyaw</object-name>>
+		<type>scale</type>
+		<x-offset>0.7</x-offset>
+		<y-offset>0.7</y-offset>
+		<z-offset>0.7</z-offset>
+	</animation>
+	
+	<animation>
+		<object-name>emergyaw</object-name>>
+		<type>rotate</type>
+		<type>rotate</type>
+		<property>/voodoomaster/oh-angle1</property>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation -->
+
+	<!-- seat belt and no smoking -->
+
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Overhead/SeatBeltSwitch/SeatBeltSwitch.xml</path>
+		<offsets>
+			<x-m> -21.05000</x-m>
+			<y-m>  -0.03000</y-m>
+			<z-m>   1.24816</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>seatbelt</object-name>>
+		<type>scale</type>
+		<x-offset>0.7</x-offset>
+		<y-offset>0.7</y-offset>
+		<z-offset>0.7</z-offset>
+	</animation>
+	
+	<animation>
+		<object-name>seatbelt</object-name>>
+		<type>rotate</type>
+		<type>rotate</type>
+		<property>/voodoomaster/oh-angle1</property>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
+	</animation>
+
+	<!-- circuit breakers -->
+
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Overhead/CircuitBreakers/circuitBreaker.xml</path>
+		<offsets>
+			<x-m> -20.20500</x-m>
+			<y-m>  -0.00579</y-m>
+			<z-m>   1.45316</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>breakers</object-name>>
+		<type>scale</type>
+		<x-offset>1.0</x-offset>
+		<y-offset>1.0</y-offset>
+		<z-offset>1.0</z-offset>
+	</animation>
+	
+	<animation>
+		<object-name>breakers</object-name>>
+		<type>rotate</type>
+		<property>/voodoomaster/oh-angle2</property>
+		<axis>
+			<x>0.0</x>
+			<y>1.0</y>
+			<z>0.0</z>
+		</axis>
 	</animation>
 
 </PropertyList>
