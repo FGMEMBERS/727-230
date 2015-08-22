@@ -12,6 +12,10 @@
 		</offsets>
 	</model>
 
+	<!--
+		Intruments copied from JPack/Voodoomaster, harder to maintain but it makes the 727 independent from JPack
+	-->
+
 	<!-- pilot side -->
 
 	<!-- Pneumatic Parking Brake -->
@@ -19,7 +23,7 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/ParkingBrake/pneubrake.xml</path>
 		<offsets>
 			<x-m>  15.48650</x-m>
-			<y-m>  -0.08000</y-m>
+			<y-m>  -0.05000</y-m>
 			<z-m>  -0.12216</z-m>
 		</offsets>
 	</model>
@@ -37,7 +41,7 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Altimeter/alt1.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.31379</y-m>
+			<y-m>  -0.28879</y-m>
 			<z-m>   0.82216</z-m>
 		</offsets>
 	</model>
@@ -55,8 +59,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Clock/clock.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.25379</y-m>
-			<z-m>   0.76216</z-m>
+			<y-m>  -0.22879</y-m>
+			<z-m>   0.75216</z-m>
 		</offsets>
 	</model>
 	
@@ -73,7 +77,7 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/TrimIndicator/trim.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.25379</y-m>
+			<y-m>  -0.22879</y-m>
 			<z-m>   0.70216</z-m>
 		</offsets>
 	</model>
@@ -91,8 +95,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/AGLIndicator/agl.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.37079</y-m>
-			<z-m>   0.81216</z-m>
+			<y-m>  -0.36079</y-m>
+			<z-m>   0.80216</z-m>
 		</offsets>
 	</model>
 	
@@ -106,16 +110,16 @@
 
 	<!-- VSIndicator -->
 	<model>
-		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/VSIndicator/vsi.xml</path>
+		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/VSIndicator/vsi1.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.31379</y-m>
+			<y-m>  -0.28879</y-m>
 			<z-m>   0.76216</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
-		<object-name>vsi</object-name>>
+		<object-name>vsi1</object-name>>
 		<type>scale</type>
 		<x-offset>0.6</x-offset>
 		<y-offset>0.6</y-offset>
@@ -127,7 +131,7 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/DME/dme1.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.31379</y-m>
+			<y-m>  -0.28879</y-m>
 			<z-m>   0.70216</z-m>
 		</offsets>
 	</model>
@@ -253,8 +257,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/AttitudeDirector/adi.xml</path>
 		<offsets>
 			<x-m> -21.34500</x-m>
-			<y-m>  -0.16579</y-m>
-			<z-m>   0.72316</z-m>
+			<y-m>  -0.13079</y-m>
+			<z-m>   0.71316</z-m>
 		</offsets>
 	</model>
 	
@@ -271,8 +275,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Altimeter/alt2.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.25379</y-m>
-			<z-m>   0.85216</z-m>
+			<y-m>  -0.22879</y-m>
+			<z-m>   0.84716</z-m>
 		</offsets>
 	</model>
 	
@@ -289,8 +293,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/epr_1.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.21079</y-m>
-			<z-m>   0.87616</z-m>
+			<y-m>  -0.18079</y-m>
+			<z-m>   0.84616</z-m>
 		</offsets>
 	</model>
 	
@@ -302,17 +306,13 @@
 		<z-offset>0.9</z-offset>
 	</animation>
 
-	<!--
-		Intruments pulled from JPack/Voodoomaster, that saves us from copying the same instruments in every plane
-	-->
-
 	<!-- EPR2 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/epr_2.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.17079</y-m>
-			<z-m>   0.87616</z-m>
+			<y-m>  -0.14079</y-m>
+			<z-m>   0.84616</z-m>
 		</offsets>
 	</model>
 	
@@ -329,8 +329,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/epr_3.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.13079</y-m>
-			<z-m>   0.87616</z-m>
+			<y-m>  -0.10079</y-m>
+			<z-m>   0.84616</z-m>
 		</offsets>
 	</model>
 	
@@ -347,8 +347,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/n1_1.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.21079</y-m>
-			<z-m>   0.84116</z-m>
+			<y-m>  -0.18079</y-m>
+			<z-m>   0.81116</z-m>
 		</offsets>
 	</model>
 	
@@ -365,8 +365,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/n1_2.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.17079</y-m>
-			<z-m>   0.84116</z-m>
+			<y-m>  -0.14079</y-m>
+			<z-m>   0.81116</z-m>
 		</offsets>
 	</model>
 	
@@ -383,8 +383,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/n1_3.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.13079</y-m>
-			<z-m>   0.84116</z-m>
+			<y-m>  -0.10079</y-m>
+			<z-m>   0.81116</z-m>
 		</offsets>
 	</model>
 	
@@ -401,8 +401,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/exh_1.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.21079</y-m>
-			<z-m>   0.80616</z-m>
+			<y-m>  -0.18079</y-m>
+			<z-m>   0.77616</z-m>
 		</offsets>
 	</model>
 	
@@ -419,8 +419,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/exh_2.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.17079</y-m>
-			<z-m>   0.80616</z-m>
+			<y-m>  -0.14079</y-m>
+			<z-m>   0.77616</z-m>
 		</offsets>
 	</model>
 	
@@ -437,8 +437,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/exh_3.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.13079</y-m>
-			<z-m>   0.80616</z-m>
+			<y-m>  -0.10079</y-m>
+			<z-m>   0.77616</z-m>
 		</offsets>
 	</model>
 	
@@ -455,8 +455,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/n2_1.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.21079</y-m>
-			<z-m>   0.77116</z-m>
+			<y-m>  -0.18079</y-m>
+			<z-m>   0.74116</z-m>
 		</offsets>
 	</model>
 	
@@ -473,8 +473,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/n2_2.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.17079</y-m>
-			<z-m>   0.77116</z-m>
+			<y-m>  -0.14079</y-m>
+			<z-m>   0.74116</z-m>
 		</offsets>
 	</model>
 	
@@ -491,8 +491,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/n2_3.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.13079</y-m>
-			<z-m>   0.77116</z-m>
+			<y-m>  -0.10079</y-m>
+			<z-m>   0.74116</z-m>
 		</offsets>
 	</model>
 	
@@ -509,8 +509,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/ffkgh_1.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.21079</y-m>
-			<z-m>   0.72816</z-m>
+			<y-m>  -0.18079</y-m>
+			<z-m>   0.69816</z-m>
 		</offsets>
 	</model>
 	
@@ -527,8 +527,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/ffkgh_2.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.17079</y-m>
-			<z-m>   0.72816</z-m>
+			<y-m>  -0.14079</y-m>
+			<z-m>   0.69816</z-m>
 		</offsets>
 	</model>
 	
@@ -545,8 +545,8 @@
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/ffkgh_3.xml</path>
 		<offsets>
 			<x-m> -21.08650</x-m>
-			<y-m>  -0.13079</y-m>
-			<z-m>   0.72816</z-m>
+			<y-m>  -0.10579</y-m>
+			<z-m>   0.69816</z-m>
 		</offsets>
 	</model>
 	
@@ -558,13 +558,13 @@
 		<z-offset>0.8</z-offset>
 	</animation>
 
-	<!-- Flapstack -->
+	<!-- Flapstack and gear lever -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Flaps/Flapstack/flapstack.xml</path>
 		<offsets>
 			<x-m> -21.22650</x-m>
-			<y-m>  -0.07079</y-m>
-			<z-m>   0.73816</z-m>
+			<y-m>  -0.06879</y-m>
+			<z-m>   0.72816</z-m>
 		</offsets>
 	</model>
 	
