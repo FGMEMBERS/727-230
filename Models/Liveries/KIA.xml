@@ -4,7 +4,7 @@
   <sim>
     <model>
       <livery>
-	<name type="string">Kiwi International Airlines (US)</name>
+	<name type="string">KIA - Kiwi Intl. Airl.</name>
 	<texture>Liveries/727-230_KIA.png</texture>
       </livery>
     </model>
