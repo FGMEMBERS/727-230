@@ -13,54 +13,34 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 	</fileheader>
 
 	<!--
-		File:     727-230F-JSB.xml
-		Inputs:
-			name:          727-230F
-			type:          three-engine transonic transport
-			max weight:    184800 lb
-			wing span:     108 ft
-			length:        153.1666 ft
-			wing area:     1650 sq-ft
-			gear type:     tricycle
-			retractable?:  yes
-			# engines:     3
-			engine type:   turbine
-			engine layout: wings and tail
-			yaw damper?    yes
-
-		Outputs:
-			wing loading:  126.97 lb/sq-ft
-			payload:       35789.0 lbs
-			CL-alpha:      4.4 per radian
-			CL-0:          0.2
-			CL-max:        1.2
-			CD-0:          0.019
-			K:             0.042
+			Reference literature:
+			[1] - Jet Transport Performance Methods by Boeing
+			[2] - Airplane characteristics airport planning by Boeing
 	-->
 
 	<metrics>
-		<wingarea  unit="FT2"> 1650.00 </wingarea>
-		<wingspan  unit="FT" >  108.00 </wingspan>
+		<wingarea  unit="FT2"> 1560.00 </wingarea> <!-- from [1] -->
+		<wingspan  unit="FT" >  106.00 </wingspan> <!-- from [1] -->
 		<wing_incidence>          2.00 </wing_incidence>
-		<chord     unit="FT" >   15.28 </chord>
+		<chord     unit="IN" >  180.00 </chord>  <!-- from [1] LEMAC 860.2 (Boeing) or 850 in this coordinate system --> 
 		<htailarea unit="FT2">  412.50 </htailarea>
-		<htailarm  unit="FT" >   68.92 </htailarm>
+		<htailarm  unit="FT" >   35.75 </htailarm>
 		<vtailarea unit="FT2">  330.00 </vtailarea>
-		<vtailarm  unit="FT" >   68.92 </vtailarm>
+		<vtailarm  unit="FT" >   34.00 </vtailarm>
 		<location name="AERORP" unit="IN">
-			<x> 900.00 </x>
+			<x> 895.00 </x> <!-- 25% MAC -->
 			<y>   0.00 </y>
 			<z>   0.00 </z>
 		</location>
 		<location name="EYEPOINT" unit="IN">
-			<x> 128.66 </x>
-			<y> -30.00 </y>
-			<z>  75.00 </z>
+			<x>  98.00 </x> <!-- from [2] -->
+			<y> -21.00 </y> <!-- from [2] -->
+			<z>  50.00 </z> <!-- from [2] -->
 		</location>
 		<location name="VRP" unit="IN">
-			<x>0</x>
-			<y>0</y>
-			<z>-104</z>
+			<x>916.82</x> <!-- from 3D model -->
+			<y>0</y> <!-- from 3D model -->
+			<z>5.76</z> <!-- from 3D model -->
 		</location>
 	</metrics>
 
@@ -68,11 +48,11 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 		<ixx unit="SLUG*FT2">    556938 </ixx>
 		<iyy unit="SLUG*FT2">   2322803 </iyy>
 		<izz unit="SLUG*FT2">   2877731 </izz>
-		<emptywt unit="LBS" >     98400 </emptywt>
+		<emptywt unit="LBS" >     97650 </emptywt> <!-- from [2] weight option from standard -->
 		<location name="CG" unit="IN">
-			<x> 900.00 </x>
+			<x> 895.00 </x>
 			<y>   0.00 </y>
-			<z> -45.95 </z>
+			<z>   0.00 </z>
 		</location>
 
 		<pointmass name="Cockpit Crew">
@@ -141,25 +121,25 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
 		<contact type="BOGEY" name="NOSE">
 			<location unit="IN">
-				<x> 88.94 </x>
+				<x> 181 </x> <!-- from [2] -->
 				<y>   0.00 </y>
-				<z> -215.56 </z>
+				<z> -99.61 </z> <!-- from 3D model -->
 			</location>
 			<static_friction>  0.80 </static_friction>
 			<dynamic_friction> 0.50 </dynamic_friction>
 			<rolling_friction> 0.02 </rolling_friction>
 			<spring_coeff unit="LBS/FT">      62850.00 </spring_coeff>
 			<damping_coeff unit="LBS/FT/SEC"> 104750.00 </damping_coeff>
-			<max_steer unit="DEG"> 65.00 </max_steer>
+			<max_steer unit="DEG"> 78.00 </max_steer>
 			<brake_group>NONE</brake_group>
 			<retractable>1</retractable>
 		</contact>
 
 		<contact type="BOGEY" name="LEFT_MAIN">
 			<location unit="IN">
-				<x> 1000.36 </x>
-				<y> -116.64 </y>
-				<z> -220.56 </z>
+				<x> 940 </x> <!-- from [2] -->
+				<y> -112.5 </y> <!-- from [2] -->
+				<z> -110.31 </z> <!-- from 3D model -->
 			</location>
 			<static_friction>  0.80 </static_friction>
 			<dynamic_friction> 0.50 </dynamic_friction>
@@ -173,9 +153,9 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
 		<contact type="BOGEY" name="RIGHT_MAIN">
 			<location unit="IN">
-				<x> 1000.36 </x>
-				<y> 116.64 </y>
-				<z> -220.56 </z>
+				<x> 940 </x> <!-- from [2] -->
+				<y> 112.5 </y> <!-- from [2] -->
+				<z> -110.31 </z> <!-- from 3D model -->
 			</location>
 			<static_friction>  0.80 </static_friction>
 			<dynamic_friction> 0.50 </dynamic_friction>
@@ -190,8 +170,8 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 		<contact type="STRUCTURE" name="LEFT_WING">
 			<location unit="IN">
 				<x>1100.00 </x>
-				<y> -54.00 </y>
-				<z> -145.95 </z>
+				<y> -648.00 </y>
+				<z> -8 </z>
 			</location>
 			<static_friction>  1.00 </static_friction>
 			<dynamic_friction> 1.00 </dynamic_friction>
@@ -202,8 +182,8 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 		<contact type="STRUCTURE" name="RIGHT_WING">
 			<location unit="IN">
 				<x>1100.00 </x>
-				<y>  54.00 </y>
-				<z> -145.95 </z>
+				<y>  648.00 </y>
+				<z> -8 </z>
 			</location>
 			<static_friction>  1.00 </static_friction>
 			<dynamic_friction> 1.00 </dynamic_friction>
@@ -217,9 +197,9 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
 		<engine file="JT8D-9">
 			<location unit="IN">
-				<x>  900.00 </x>
-				<y> -216.00 </y>
-				<z> -40.00 </z>
+				<x>  1353.00 </x> <!-- from engine station diagram -->
+				<y> -108.30 </y> <!-- from engine station diagram -->
+				<z>   31.60 </z> <!-- from engine station diagram -->
 			</location>
 			<orient unit="DEG">
 				<pitch> 0.00 </pitch>
@@ -230,23 +210,23 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			<feed>1</feed>
 			<thruster file="direct">
 				<location unit="IN">
-					<x>  900.00 </x>
-					<y> -216.00 </y>
-					<z> -40.00 </z>
+					<x>  1353.00 </x> <!-- from engine station diagram -->
+					<y> -108.30 </y> <!-- from engine station diagram -->
+					<z>   31.60 </z> <!-- from engine station diagram -->
 				</location>
 				<orient unit="DEG">
-					<pitch> 0.00 </pitch>
+					<pitch> 3.30 </pitch> <!-- from engine station diagram -->
 					<roll>  0.00 </roll>
-					<yaw>   0.00 </yaw>
+					<yaw>  -3.00 </yaw> <!-- from engine station diagram -->
 				</orient>
 			</thruster>
 		</engine>
 
 		<engine file="JT8D-9">
 			<location unit="IN">
-				<x>  93.17 </x>
+				<x>1633.00 </x> <!-- from engine station diagram -->
 				<y>   0.00 </y>
-				<z>  60.00 </z>
+				<z>  24.20 </z> <!-- from engine station diagram -->
 			</location>
 			<orient unit="DEG">
 				<pitch> 0.00 </pitch>
@@ -256,9 +236,9 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			<feed>1</feed>
 			<thruster file="direct">
 				<location unit="IN">
-					<x>  93.17 </x>
+					<x>1633.00 </x> <!-- from engine station diagram -->
 					<y>   0.00 </y>
-					<z>  60.00 </z>
+					<z>  24.20 </z> <!-- from engine station diagram -->
 				</location>
 				<orient unit="DEG">
 					<pitch> 0.00 </pitch>
@@ -270,9 +250,9 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
 		<engine file="JT8D-9">
 			<location unit="IN">
-				<x> 900.00 </x>
-				<y> 216.00 </y>
-				<z> -40.00 </z>
+				<x> 1353.00 </x>  <!-- from engine station diagram -->
+				<y> 108.30 </y> <!-- from engine station diagram -->
+				<z>  31.60 </z> <!-- from engine station diagram -->
 			</location>
 			<orient unit="DEG">
 				<pitch> 0.00 </pitch>
@@ -283,14 +263,14 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			<feed>1</feed>
 			<thruster file="direct">
 				<location unit="IN">
-					<x> 900.00 </x>
-					<y> 216.00 </y>
-					<z> -40.00 </z>
+					<x> 1353.00 </x> <!-- from engine station diagram -->
+					<y> 108.30 </y> <!-- from engine station diagram -->
+					<z>  31.60 </z> <!-- from engine station diagram -->
 				</location>
 				<orient unit="DEG">
-					<pitch> 0.00 </pitch>
+					<pitch> 3.30 </pitch> <!-- from engine station diagram -->
 					<roll>  0.00 </roll>
-					<yaw>   0.00 </yaw>
+					<yaw>   3.00 </yaw> <!-- from engine station diagram -->
 				</orient>
 			</thruster>
 		</engine>
@@ -580,6 +560,8 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 		</channel>
 
 	</flight_control>
+
+   <system file="steering"/>
 
 	<aerodynamics>
 

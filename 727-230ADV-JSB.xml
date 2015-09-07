@@ -13,30 +13,6 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 	</fileheader>
 
 	<!--
-		File:     727-230ADV.xml
-		Inputs:
-			name:          727-230ADV
-			type:          three-engine transonic transport
-			max weight:    209500 lb
-			wing span:     108 ft
-			length:        153.1666 ft
-			wing area:     1650 sq-ft
-			gear type:     tricycle
-			retractable?:  yes
-			# engines:     3
-			engine type:   turbine
-			engine layout: wings and tail
-			yaw damper?    yes
-
-		Outputs:
-			wing loading:  126.97 lb/sq-ft
-			payload:       35789.0 lbs
-			CL-alpha:      4.4 per radian
-			CL-0:          0.2
-			CL-max:        1.2
-			CD-0:          0.019
-			K:             0.042
-
 			Reference literature:
 			[1] - Jet Transport Performance Methods by Boeing
 			[2] - Airplane characteristics airport planning by Boeing
@@ -52,19 +28,19 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 		<vtailarea unit="FT2">  330.00 </vtailarea>
 		<vtailarm  unit="FT" >   34.00 </vtailarm>
 		<location name="AERORP" unit="IN">
-			<x> 895.00 </x>
+			<x> 895.00 </x> <!-- 25% MAC -->
 			<y>   0.00 </y>
 			<z>   0.00 </z>
 		</location>
 		<location name="EYEPOINT" unit="IN">
-			<x> 128.66 </x>
-			<y> -30.00 </y>
-			<z>  75.00 </z>
+			<x>  98.00 </x> <!-- from [2] -->
+			<y> -21.00 </y> <!-- from [2] -->
+			<z>  50.00 </z> <!-- from [2] -->
 		</location>
 		<location name="VRP" unit="IN">
-			<x>916.82</x>
-			<y>0</y>
-			<z>5.76</z>
+			<x>916.82</x> <!-- from 3D model -->
+			<y>0</y> <!-- from 3D model -->
+			<z>5.76</z> <!-- from 3D model -->
 		</location>
 	</metrics>
 
@@ -72,7 +48,7 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 		<ixx unit="SLUG*FT2">    582408 </ixx>
 		<iyy unit="SLUG*FT2">   2429029 </iyy>
 		<izz unit="SLUG*FT2">   3009335 </izz>
-		<emptywt unit="LBS" >    100700 </emptywt> <!-- from [2] -->
+		<emptywt unit="LBS" >    100700 </emptywt> <!-- from [2] weight option Number 3 -->
 		<location name="CG" unit="IN">
 			<x> 895.00 </x>
 			<y>   0.00 </y>
@@ -147,7 +123,7 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			<location unit="IN">
 				<x> 181 </x> <!-- from [2] -->
 				<y>   0.00 </y>
-				<z> -215.56 </z>
+				<z> -99.61 </z> <!-- from 3D model -->
 			</location>
 			<static_friction>  0.80 </static_friction>
 			<dynamic_friction> 0.50 </dynamic_friction>
@@ -163,7 +139,7 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			<location unit="IN">
 				<x> 940 </x> <!-- from [2] -->
 				<y> -112.5 </y> <!-- from [2] -->
-				<z> -220.56 </z>
+				<z> -110.31 </z> <!-- from 3D model -->
 			</location>
 			<static_friction>  0.80 </static_friction>
 			<dynamic_friction> 0.50 </dynamic_friction>
@@ -179,7 +155,7 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			<location unit="IN">
 				<x> 940 </x> <!-- from [2] -->
 				<y> 112.5 </y> <!-- from [2] -->
-				<z> -220.56 </z>
+				<z> -110.31 </z> <!-- from 3D model -->
 			</location>
 			<static_friction>  0.80 </static_friction>
 			<dynamic_friction> 0.50 </dynamic_friction>
@@ -194,8 +170,8 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 		<contact type="STRUCTURE" name="LEFT_WING">
 			<location unit="IN">
 				<x>1100.00 </x>
-				<y> -54.00 </y>
-				<z> -145.95 </z>
+				<y> -648.00 </y>
+				<z> -8 </z>
 			</location>
 			<static_friction>  1.00 </static_friction>
 			<dynamic_friction> 1.00 </dynamic_friction>
@@ -206,8 +182,8 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 		<contact type="STRUCTURE" name="RIGHT_WING">
 			<location unit="IN">
 				<x>1100.00 </x>
-				<y>  54.00 </y>
-				<z> -145.95 </z>
+				<y>  648.00 </y>
+				<z> -8 </z>
 			</location>
 			<static_friction>  1.00 </static_friction>
 			<dynamic_friction> 1.00 </dynamic_friction>
@@ -221,9 +197,9 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
 		<engine file="JT8D-17R">
 			<location unit="IN">
-				<x>  900.00 </x>
-				<y> -216.00 </y>
-				<z> -40.00 </z>
+				<x>  1353.00 </x> <!-- from engine station diagram -->
+				<y> -108.30 </y> <!-- from engine station diagram -->
+				<z>   31.60 </z> <!-- from engine station diagram -->
 			</location>
 			<orient unit="DEG">
 				<pitch> 0.00 </pitch>
@@ -238,23 +214,23 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			<feed>6</feed>
 			<thruster file="direct">
 				<location unit="IN">
-					<x>  900.00 </x>
-					<y> -216.00 </y>
-					<z> -40.00 </z>
+					<x>  1353.00 </x> <!-- from engine station diagram -->
+					<y> -108.30 </y> <!-- from engine station diagram -->
+					<z>   31.60 </z> <!-- from engine station diagram -->
 				</location>
 				<orient unit="DEG">
-					<pitch> 0.00 </pitch>
+					<pitch> 3.30 </pitch> <!-- from engine station diagram -->
 					<roll>  0.00 </roll>
-					<yaw>   0.00 </yaw>
+					<yaw>  -3.00 </yaw> <!-- from engine station diagram -->
 				</orient>
 			</thruster>
 		</engine>
 
 		<engine file="JT8D-17R">
 			<location unit="IN">
-				<x>  93.17 </x>
+				<x>1633.00 </x> <!-- from engine station diagram -->
 				<y>   0.00 </y>
-				<z>  60.00 </z>
+				<z>  24.20 </z> <!-- from engine station diagram -->
 			</location>
 			<orient unit="DEG">
 				<pitch> 0.00 </pitch>
@@ -268,9 +244,9 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			<feed>6</feed>
 			<thruster file="direct">
 				<location unit="IN">
-					<x>  93.17 </x>
+					<x>1633.00 </x> <!-- from engine station diagram -->
 					<y>   0.00 </y>
-					<z>  60.00 </z>
+					<z>  24.20 </z> <!-- from engine station diagram -->
 				</location>
 				<orient unit="DEG">
 					<pitch> 0.00 </pitch>
@@ -282,9 +258,9 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
 		<engine file="JT8D-17R">
 			<location unit="IN">
-				<x> 900.00 </x>
-				<y> 216.00 </y>
-				<z> -40.00 </z>
+				<x> 1353.00 </x>  <!-- from engine station diagram -->
+				<y> 108.30 </y> <!-- from engine station diagram -->
+				<z>  31.60 </z> <!-- from engine station diagram -->
 			</location>
 			<orient unit="DEG">
 				<pitch> 0.00 </pitch>
@@ -299,14 +275,14 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			<feed>6</feed>
 			<thruster file="direct">
 				<location unit="IN">
-					<x> 900.00 </x>
-					<y> 216.00 </y>
-					<z> -40.00 </z>
+					<x> 1353.00 </x> <!-- from engine station diagram -->
+					<y> 108.30 </y> <!-- from engine station diagram -->
+					<z>  31.60 </z> <!-- from engine station diagram -->
 				</location>
 				<orient unit="DEG">
-					<pitch> 0.00 </pitch>
+					<pitch> 3.30 </pitch> <!-- from engine station diagram -->
 					<roll>  0.00 </roll>
-					<yaw>   0.00 </yaw>
+					<yaw>   3.00 </yaw> <!-- from engine station diagram -->
 				</orient>
 			</thruster>
 		</engine>
