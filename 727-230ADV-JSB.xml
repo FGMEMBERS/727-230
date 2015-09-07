@@ -36,19 +36,23 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			CL-max:        1.2
 			CD-0:          0.019
 			K:             0.042
+
+			Reference literature:
+			[1] - Jet Transport Performance Methods by Boeing
+			[2] - Airplane characteristics airport planning by Boeing
 	-->
 
 	<metrics>
-		<wingarea  unit="FT2"> 1650.00 </wingarea>
-		<wingspan  unit="FT" >  108.00 </wingspan>
+		<wingarea  unit="FT2"> 1560.00 </wingarea> <!-- from [1] -->
+		<wingspan  unit="FT" >  106.00 </wingspan> <!-- from [1] -->
 		<wing_incidence>          2.00 </wing_incidence>
-		<chord     unit="FT" >   15.28 </chord>
+		<chord     unit="IN" >  180.00 </chord>  <!-- from [1] LEMAC 860.2 (Boeing) or 850 in this coordinate system --> 
 		<htailarea unit="FT2">  412.50 </htailarea>
 		<htailarm  unit="FT" >   35.75 </htailarm>
 		<vtailarea unit="FT2">  330.00 </vtailarea>
 		<vtailarm  unit="FT" >   34.00 </vtailarm>
 		<location name="AERORP" unit="IN">
-			<x> 900.00 </x>
+			<x> 895.00 </x>
 			<y>   0.00 </y>
 			<z>   0.00 </z>
 		</location>
@@ -58,9 +62,9 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			<z>  75.00 </z>
 		</location>
 		<location name="VRP" unit="IN">
-			<x>0</x>
+			<x>916.82</x>
 			<y>0</y>
-			<z>-104</z>
+			<z>5.76</z>
 		</location>
 	</metrics>
 
@@ -68,11 +72,11 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 		<ixx unit="SLUG*FT2">    582408 </ixx>
 		<iyy unit="SLUG*FT2">   2429029 </iyy>
 		<izz unit="SLUG*FT2">   3009335 </izz>
-		<emptywt unit="LBS" >    102900 </emptywt>
+		<emptywt unit="LBS" >    100700 </emptywt> <!-- from [2] -->
 		<location name="CG" unit="IN">
-			<x> 900.00 </x>
+			<x> 895.00 </x>
 			<y>   0.00 </y>
-			<z> -45.95 </z>
+			<z>   0.00 </z>
 		</location>
 
 		<pointmass name="Cockpit Crew">
@@ -141,7 +145,7 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
 		<contact type="BOGEY" name="NOSE">
 			<location unit="IN">
-				<x> 88.94 </x>
+				<x> 181 </x> <!-- from [2] -->
 				<y>   0.00 </y>
 				<z> -215.56 </z>
 			</location>
@@ -150,15 +154,15 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 			<rolling_friction> 0.02 </rolling_friction>
 			<spring_coeff unit="LBS/FT">      62850.00 </spring_coeff>
 			<damping_coeff unit="LBS/FT/SEC"> 104750.00 </damping_coeff>
-			<max_steer unit="DEG"> 65.00 </max_steer>
+			<max_steer unit="DEG"> 78.00 </max_steer>
 			<brake_group>NONE</brake_group>
 			<retractable>1</retractable>
 		</contact>
 
 		<contact type="BOGEY" name="LEFT_MAIN">
 			<location unit="IN">
-				<x> 1000.36 </x>
-				<y> -116.64 </y>
+				<x> 940 </x> <!-- from [2] -->
+				<y> -112.5 </y> <!-- from [2] -->
 				<z> -220.56 </z>
 			</location>
 			<static_friction>  0.80 </static_friction>
@@ -173,8 +177,8 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
 		<contact type="BOGEY" name="RIGHT_MAIN">
 			<location unit="IN">
-				<x> 1000.36 </x>
-				<y> 116.64 </y>
+				<x> 940 </x> <!-- from [2] -->
+				<y> 112.5 </y> <!-- from [2] -->
 				<z> -220.56 </z>
 			</location>
 			<static_friction>  0.80 </static_friction>
@@ -636,6 +640,8 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 		</channel>
 
 	</flight_control>
+
+   <system file="steering"/>
 
 	<aerodynamics>
 

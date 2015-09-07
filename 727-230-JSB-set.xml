@@ -2,7 +2,7 @@
 
 <!-- 
 ************************************************************************
-Boeing 727-200 Freighter
+Boeing 727-200
 Peter Brendt (Jabberwocky), Israel Hernandez (IAHM-COL)
 
 based on:
@@ -16,7 +16,7 @@ Freighter model IAHM-COL
 
 <PropertyList>
 	<sim>
-		<description>Boeing 727-230F</description>
+		<description>Boeing 727-230</description>
 		<author>The FlightGear 727 Project</author>
 
 		<aircraft-version>V00.00.00</aircraft-version>

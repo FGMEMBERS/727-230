@@ -90,6 +90,18 @@ splash screen Tribute (IAHM-COL)
 						</binding>
 					</item>
 
+					<item>
+						<name>TillerSteering</name>
+						<label>Tiller steering</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								var tiller = gui.Dialog.new("/sim/gui/dialogs/b727/menu/dialog","Aircraft/727-230/Dialogs/tiller-steering.xml");
+								tiller.open();
+							</script>
+						</binding>
+					</item>
+
 				</menu>
 			</default>
 		</menubar>
