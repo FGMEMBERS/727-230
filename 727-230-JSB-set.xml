@@ -2,7 +2,7 @@
 
 <!-- 
 ************************************************************************
-Boeing 727-200 Freighter
+Boeing 727-200
 Peter Brendt (Jabberwocky), Israel Hernandez (IAHM-COL)
 
 based on:
@@ -16,7 +16,7 @@ Freighter model IAHM-COL
 
 <PropertyList>
 	<sim>
-		<description>Boeing 727-230F</description>
+		<description>Boeing 727-230</description>
 		<author>The FlightGear 727 Project</author>
 
 		<aircraft-version>V00.00.00</aircraft-version>
@@ -91,6 +91,18 @@ Freighter model IAHM-COL
 						</binding>
 					</item>
 
+					<item>
+						<name>TillerSteering</name>
+						<label>Tiller steering</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								var tiller = gui.Dialog.new("/sim/gui/dialogs/b727/menu/dialog","Aircraft/727-230/Dialogs/tiller-steering.xml");
+								tiller.open();
+							</script>
+						</binding>
+					</item>
+
 				</menu>
 			</default>
 		</menubar>
@@ -151,18 +163,16 @@ Freighter model IAHM-COL
 			<setting>0.000</setting>
 			<!-- flaps up -->
 			<setting>0.125</setting>
-			<!-- flaps 1  -->
-			<setting>0.250</setting>
 			<!-- flaps 2  -->
-			<setting>0.375</setting>
+			<setting>0.250</setting>
 			<!-- flaps 5  -->
+			<setting>0.375</setting>
+			<!-- flaps 15  -->
 			<setting>0.500</setting>
-			<!-- flaps 10 -->
+			<!-- flaps 20 -->
 			<setting>0.625</setting>
-			<!-- flaps 15 -->
-			<setting>0.750</setting>
 			<!-- flaps 25 -->
-			<setting>0.875</setting>
+			<setting>0.750</setting>
 			<!-- flaps 30 -->
 			<setting>1.000</setting>
 			<!-- flaps 40 -->
@@ -173,18 +183,6 @@ Freighter model IAHM-COL
 			<contrails type="bool">true</contrails>
 			</submodels>
 		</ai>-->
-
-		<weight n="0">
-			<name>156 PAX</name>
-			<weight-lb>25080</weight-lb>
-			<max-lb>25080</max-lb>
-		</weight>
-
-		<weight n="1">
-			<name>pilots</name>
-			<weight-lb>540</weight-lb>
-			<max-lb>540</max-lb>
-		</weight>
 
 		<instrumentation>
 			<mk-viii>
