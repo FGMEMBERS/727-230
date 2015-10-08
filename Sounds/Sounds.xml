@@ -857,19 +857,15 @@ Modified by FL2070 -->
       <reference-dist>10.0</reference-dist>
       <max-dist>100.0</max-dist>
     </safety>
-    
-    
-    
-    
-    
-    
-    
+     
+    <!--FL2070 has not shared this file
     <ambience>
       <name>passangers</name>
       <mode>looped</mode>
       <property>/sim/current-view/internal</property>
       <path>Aircraft/717/Sounds/misc/amb.wav</path>
     </ambience>
+    -->
 
   </fx>
 
