@@ -366,6 +366,8 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 
 	</propulsion>
 
+	<system file="TriCycle_PushbackJSBSIM"/>
+
 	<flight_control name="FCS: 727-230ADV">
 
 		<channel name="Pitch">
@@ -1022,6 +1024,18 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 	</aerodynamics>
 
 	<external_reactions>
+		<force name="pushback" frame="BODY">
+			<location unit="IN">
+				<x> 181 </x> <!-- from [2] -->
+				<y>   0.00 </y>
+				<z> -99.61 </z> <!-- from 3D model -->
+			</location>
+			<direction>
+				<x>1</x>
+				<y>0</y>
+				<z>0</z>
+			</direction>
+		</force>
 	</external_reactions>
 
 </fdm_config>

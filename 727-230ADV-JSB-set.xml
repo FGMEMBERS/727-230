@@ -132,6 +132,15 @@ splash screen Tribute (IAHM-COL)
 				<name type="string">DLH - Lufthansa Airl.</name>
 				<texture>Liveries/727-230_Lufthansa.png</texture>
 			</livery>
+
+			<!-- Copied from JPack: push forces for Voodoomaster Pushback -->
+			<pushback>
+				<kp type="double">1600</kp>
+				<ki type="double">0</ki>
+				<kd type="double">0</kd>
+				<position-norm type="double">0</position-norm>
+				<enabled type="bool">false</enabled>
+			</pushback>
 		</model>
 
 		<view>
@@ -520,8 +529,13 @@ splash screen Tribute (IAHM-COL)
 	<voodoomaster>
 		<steering-mode-rudder type="bool">true</steering-mode-rudder>
 		<steering-mode-aileron type="bool">false</steering-mode-aileron>
+
 		<steering-wheel type="int">0</steering-wheel>
 		<steering-type type="string">TriCycle</steering-type>	<!-- Alternativ: Taildragger-lock or Taildragger-steer -->
+		<pushback>
+			<activated type="bool">false</activated>
+		</pushback>
+
 		<oh-angle1 type="double">90</oh-angle1>	<!-- angle for overhead panel instruments first part -->
 		<oh-angle2 type="double">87</oh-angle2>	<!-- angle for overhead panel instruments second part -->
 	</voodoomaster>
