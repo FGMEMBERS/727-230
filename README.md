@@ -2,6 +2,12 @@
 
 BOEING 727 DEVELOPMENT
 ==
+
+The development forum for the Boeing 727-230 is now at<br>
+www.thejabberwocky.net
+
+**
+
 EDNY_TW
 http://forum.flightgear.org/viewtopic.php?f=4&t=25684
 
@@ -15,4 +21,4 @@ What is going to be enhanced?
 * Systems (a priority list will be made after the finishing of the poll above)
 
 *You want to help? Great!,* 
-just leave a post here and tell us what you want to be.
+just leave a post <a href="http://thejabberwocky.net/viewtopic.php?f=15&t=86">here</a> and tell us what you want to be.
