@@ -22,7 +22,7 @@
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/ParkingBrake/pneubrake.xml</path>
 		<offsets>
-			<x-m>  15.48650</x-m>
+			<x-m>  15.35550</x-m>
 			<y-m>  -0.05000</y-m>
 			<z-m>  -0.12216</z-m>
 		</offsets>
@@ -40,116 +40,116 @@
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Altimeter/alt1.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.28879</y-m>
-			<z-m>   0.82216</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.21879</y-m>
+			<z-m>   0.77216</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>alt1</object-name>>
 		<type>scale</type>
-		<x-offset>0.6</x-offset>
-		<y-offset>0.6</y-offset>
-		<z-offset>0.6</z-offset>
+		<x-offset>0.8</x-offset>
+		<y-offset>0.8</y-offset>
+		<z-offset>0.8</z-offset>
 	</animation>
 
 	<!-- Clock -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Clock/clock.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.22879</y-m>
-			<z-m>   0.75216</z-m>
+			<x-m> -21.34850</x-m>
+			<y-m>  -0.12879</y-m>
+			<z-m>   0.64316</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>clock</object-name>>
 		<type>scale</type>
-		<x-offset>0.6</x-offset>
-		<y-offset>0.6</y-offset>
-		<z-offset>0.6</z-offset>
+		<x-offset>0.8</x-offset>
+		<y-offset>0.8</y-offset>
+		<z-offset>0.8</z-offset>
 	</animation>
 
 	<!-- TrimIndicator -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/TrimIndicator/trim.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.22879</y-m>
-			<z-m>   0.70216</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.12879</y-m>
+			<z-m>   0.57716</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>trim</object-name>>
 		<type>scale</type>
-		<x-offset>0.6</x-offset>
-		<y-offset>0.6</y-offset>
-		<z-offset>0.6</z-offset>
+		<x-offset>0.75</x-offset>
+		<y-offset>0.75</y-offset>
+		<z-offset>0.75</z-offset>
 	</animation>
 
 	<!-- AGLIndicator -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/AGLIndicator/agl.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.36079</y-m>
-			<z-m>   0.80216</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.289079</y-m>
+			<z-m>   0.72216</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>agl</object-name>>
 		<type>scale</type>
-		<x-offset>0.4</x-offset>
-		<y-offset>0.4</y-offset>
-		<z-offset>0.4</z-offset>
+		<x-offset>0.8</x-offset>
+		<y-offset>0.8</y-offset>
+		<z-offset>0.8</z-offset>
 	</animation>
 
 	<!-- VSIndicator -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/VSIndicator/vsi1.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.28879</y-m>
-			<z-m>   0.76216</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.21879</y-m>
+			<z-m>   0.67216</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>vsi1</object-name>>
 		<type>scale</type>
-		<x-offset>0.6</x-offset>
-		<y-offset>0.6</y-offset>
-		<z-offset>0.6</z-offset>
+		<x-offset>0.8</x-offset>
+		<y-offset>0.8</y-offset>
+		<z-offset>0.8</z-offset>
 	</animation>
 
 	<!-- DME -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/DME/dme1.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.28879</y-m>
-			<z-m>   0.70216</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.21879</y-m>
+			<z-m>   0.57216</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>dme1</object-name>>
 		<type>scale</type>
-		<x-offset>0.6</x-offset>
-		<y-offset>0.6</y-offset>
-		<z-offset>0.6</z-offset>
+		<x-offset>0.8</x-offset>
+		<y-offset>0.8</y-offset>
+		<z-offset>0.8</z-offset>
 	</animation>
 
 	<!-- AI -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/AttitudeIndicator/ai1.xml</path>
 		<offsets>
-			<x-m> -21.38650</x-m>
-			<y-m>  -0.46379</y-m>
+			<x-m> -21.37650</x-m>
+			<y-m>  -0.44379</y-m>
 			<z-m>   0.77216</z-m>
 		</offsets>
 	</model>
@@ -166,26 +166,26 @@
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/ASI/asi1.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
+			<x-m> -21.34650</x-m>
 			<y-m>  -0.56379</y-m>
-			<z-m>   0.83216</z-m>
+			<z-m>   0.73216</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>asi1</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.0</x-offset>
+		<y-offset>1.0</y-offset>
+		<z-offset>1.0</z-offset>
 	</animation>
 
 	<!-- HSI -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/HSI/hsi1.xml</path>
 		<offsets>
-			<x-m> -21.39650</x-m>
-			<y-m>  -0.46279</y-m>
+			<x-m> -21.37650</x-m>
+			<y-m>  -0.44279</y-m>
 			<z-m>   0.63016</z-m>
 		</offsets>
 	</model>
@@ -202,61 +202,61 @@
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/RMI/rmi1.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
+			<x-m> -21.34650</x-m>
 			<y-m>  -0.56379</y-m>
-			<z-m>   0.74216</z-m>
+			<z-m>   0.62216</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>rmi1</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.0</x-offset>
+		<y-offset>1.0</y-offset>
+		<z-offset>1.0</z-offset>
 	</animation>
 
 	<!-- Turn Indicator -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/TurnIndicator/turn.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.46279</y-m>
-			<z-m>   0.65216</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.44279</y-m>
+			<z-m>   0.50216</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>rmi1</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.0</x-offset>
+		<y-offset>1.0</y-offset>
+		<z-offset>1.0</z-offset>
 	</animation>
 
 	<!-- Mach Indicator -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Mach/mach.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
+			<x-m> -21.34650</x-m>
 			<y-m>  -0.56279</y-m>
-			<z-m>   0.65216</z-m>
+			<z-m>   0.50216</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
-		<object-name>rmi1</object-name>>
+		<object-name>mach</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.0</x-offset>
+		<y-offset>1.0</y-offset>
+		<z-offset>1.0</z-offset>
 	</animation>
 
 	<!-- AttitudeDirectionIndicator -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/AttitudeDirector/adi.xml</path>
 		<offsets>
-			<x-m> -21.34500</x-m>
+			<x-m> -21.34650</x-m>
 			<y-m>  -0.13079</y-m>
 			<z-m>   0.71316</z-m>
 		</offsets>
@@ -274,297 +274,297 @@
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Altimeter/alt2.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.22879</y-m>
-			<z-m>   0.84716</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.13079</y-m>
+			<z-m>   0.77716</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>alt2</object-name>>
 		<type>scale</type>
-		<x-offset>0.6</x-offset>
-		<y-offset>0.6</y-offset>
-		<z-offset>0.6</z-offset>
+		<x-offset>0.8</x-offset>
+		<y-offset>0.8</y-offset>
+		<z-offset>0.8</z-offset>
 	</animation>
 
 	<!-- EPR1 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/epr_1.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.18079</y-m>
-			<z-m>   0.84616</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.06879</y-m>
+			<z-m>   0.78116</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>epr1</object-name>>
 		<type>scale</type>
-		<x-offset>0.9</x-offset>
-		<y-offset>0.9</y-offset>
-		<z-offset>0.9</z-offset>
+		<x-offset>1.2</x-offset>
+		<y-offset>1.2</y-offset>
+		<z-offset>1.2</z-offset>
 	</animation>
 
 	<!-- EPR2 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/epr_2.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.14079</y-m>
-			<z-m>   0.84616</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.011879</y-m>
+			<z-m>   0.78116</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>epr2</object-name>>
 		<type>scale</type>
-		<x-offset>0.9</x-offset>
-		<y-offset>0.9</y-offset>
-		<z-offset>0.9</z-offset>
+		<x-offset>1.2</x-offset>
+		<y-offset>1.2</y-offset>
+		<z-offset>1.2</z-offset>
 	</animation>
 
 	<!-- EPR3 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/epr_3.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.10079</y-m>
-			<z-m>   0.84616</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>   0.04579</y-m>
+			<z-m>   0.78116</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>epr3</object-name>>
 		<type>scale</type>
-		<x-offset>0.9</x-offset>
-		<y-offset>0.9</y-offset>
-		<z-offset>0.9</z-offset>
+		<x-offset>1.2</x-offset>
+		<y-offset>1.2</y-offset>
+		<z-offset>1.2</z-offset>
 	</animation>
 
 	<!-- N1_1 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/n1_1.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.18079</y-m>
-			<z-m>   0.81116</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.06879</y-m>
+			<z-m>   0.73116</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>n1_1</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.1</x-offset>
+		<y-offset>1.1</y-offset>
+		<z-offset>1.1</z-offset>
 	</animation>
 
 	<!-- N1_2 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/n1_2.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.14079</y-m>
-			<z-m>   0.81116</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.011879</y-m>
+			<z-m>   0.73116</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>n1_2</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.1</x-offset>
+		<y-offset>1.1</y-offset>
+		<z-offset>1.1</z-offset>
 	</animation>
 
 	<!-- N1_3 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/n1_3.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.10079</y-m>
-			<z-m>   0.81116</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>   0.04579</y-m>
+			<z-m>   0.73116</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>n1_3</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.1</x-offset>
+		<y-offset>1.1</y-offset>
+		<z-offset>1.1</z-offset>
 	</animation>
 
 	<!-- EXH1 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/exh_1.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.18079</y-m>
-			<z-m>   0.77616</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.06879</y-m>
+			<z-m>   0.67916</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>exh1</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.1</x-offset>
+		<y-offset>1.1</y-offset>
+		<z-offset>1.1</z-offset>
 	</animation>
 
 	<!-- EXH2 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/exh_2.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.14079</y-m>
-			<z-m>   0.77616</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.011879</y-m>
+			<z-m>   0.67916</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>exh2</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.1</x-offset>
+		<y-offset>1.1</y-offset>
+		<z-offset>1.1</z-offset>
 	</animation>
 
 	<!-- EXH3 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/exh_3.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.10079</y-m>
-			<z-m>   0.77616</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>   0.04579</y-m>
+			<z-m>   0.67916</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>exh3</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.1</x-offset>
+		<y-offset>1.1</y-offset>
+		<z-offset>1.1</z-offset>
 	</animation>
 
 	<!-- N2_1 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/n2_1.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.18079</y-m>
-			<z-m>   0.74116</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.06879</y-m>
+			<z-m>   0.62616</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>n2_1</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.1</x-offset>
+		<y-offset>1.1</y-offset>
+		<z-offset>1.1</z-offset>
 	</animation>
 
 	<!-- N2_2 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/n2_2.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.14079</y-m>
-			<z-m>   0.74116</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.011879</y-m>
+			<z-m>   0.62616</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>n2_2</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.1</x-offset>
+		<y-offset>1.1</y-offset>
+		<z-offset>1.1</z-offset>
 	</animation>
 
 	<!-- N2_3 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/n2_3.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.10079</y-m>
-			<z-m>   0.74116</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>   0.04579</y-m>
+			<z-m>   0.62616</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>n2_3</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.1</x-offset>
+		<y-offset>1.1</y-offset>
+		<z-offset>1.1</z-offset>
 	</animation>
 
 	<!-- FFKGH1 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/ffkgh_1.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.18079</y-m>
-			<z-m>   0.69816</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.06879</y-m>
+			<z-m>   0.56816</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>ffkgh_1</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.1</x-offset>
+		<y-offset>1.1</y-offset>
+		<z-offset>1.1</z-offset>
 	</animation>
 
 	<!-- FFKGH2 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/ffkgh_2.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.14079</y-m>
-			<z-m>   0.69816</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>  -0.011879</y-m>
+			<z-m>   0.56816</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>ffkgh_2</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.1</x-offset>
+		<y-offset>1.1</y-offset>
+		<z-offset>1.1</z-offset>
 	</animation>
 
 	<!-- FFKG3 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/ffkgh_3.xml</path>
 		<offsets>
-			<x-m> -21.08650</x-m>
-			<y-m>  -0.10579</y-m>
-			<z-m>   0.69816</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>   0.04579</y-m>
+			<z-m>   0.56816</z-m>
 		</offsets>
 	</model>
 	
 	<animation>
 		<object-name>ffkgh_3</object-name>>
 		<type>scale</type>
-		<x-offset>0.8</x-offset>
-		<y-offset>0.8</y-offset>
-		<z-offset>0.8</z-offset>
+		<x-offset>1.1</x-offset>
+		<y-offset>1.1</y-offset>
+		<z-offset>1.1</z-offset>
 	</animation>
 
 	<!-- Flapstack and gear lever -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Flaps/Flapstack/flapstack.xml</path>
 		<offsets>
-			<x-m> -21.22650</x-m>
-			<y-m>  -0.06879</y-m>
-			<z-m>   0.72816</z-m>
+			<x-m> -21.34650</x-m>
+			<y-m>   0.02879</y-m>
+			<z-m>   0.66816</z-m>
 		</offsets>
 	</model>
 	

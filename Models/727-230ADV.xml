@@ -1518,74 +1518,61 @@
 		<name>tyre-smoke-s</name>
 		<offsets>
 			<x-m>-0.3242</x-m>
-			<y-m>2.839</y-m>
+			<y-m> 2.839</y-m>
 			<z-m>-3.028</z-m>
 		</offsets>
 	</model>
 
-	<!--contrails
+	<!-- Contrails -->
 	<model>
-		<path>Aircraft/Generic/Effects/contrail.xml</path>
-		<name>contrail1</name>
+		<path>Aircraft/727-230/Models/Effects/contrail.xml</path>
+		<name>contrails.left</name>     
 		<offsets>
-			<x-m>47.079</x-m>
-			<y-m>0</y-m>
-			<z-m>0.601</z-m>
+			<x-m> 31.3057</x-m>
+			<y-m> -2.6057</y-m>
+			<z-m>  2.86293</z-m>
 		</offsets>
 	</model>
 
 	<model>
-		<path>Aircraft/Generic/Effects/contrail.xml</path>
-		<name>contrail2</name>
+		<path>Aircraft/727-230/Models/Effects/contrail.xml</path>	
+		<name>contrails.right</name>     
 		<offsets>
-			<x-m>44.933</x-m>
-			<y-m>-2.827</y-m>
-			<z-m>0.601</z-m>
+			<x-m> 31.3057</x-m>
+			<y-m>  2.6057</y-m>
+			<z-m>  2.86293</z-m>
+		</offsets>
+	</model>
+	<model>
+		<path>Aircraft/727-230/Models/Effects/contrail.xml</path>
+		<name>contrails.center</name>     
+		<offsets>
+			<x-m> 31.3057</x-m>
+			<y-m>  0.00</y-m>
+			<z-m>  3.36293</z-m>
+		</offsets>
+	</model>
+
+	<!-- Wing Tip Trails -->
+	<model>
+		<path>Aircraft/727-230/Models/Effects/wingtip-trails.xml</path>
+		<name>wingtiptrails.left</name>     
+		<offsets>
+			<x-m>6.81</x-m>
+			<y-m>-18.00</y-m>
+			<z-m> 0.76</z-m>  
 		</offsets>
 	</model>
 
 	<model>
-		<path>Aircraft/Generic/Effects/contrail.xml</path>
-		<name>contrail3</name>
+		<path>Aircraft/727-230/Models/Effects/wingtip-trails.xml</path>
+		<name>wingtiptrails.right</name>     
 		<offsets>
-			<x-m>44.933</x-m>
-			<y-m>2.827</y-m>
-			<z-m>0.601</z-m>
+			<x-m>6.81</x-m>
+			<y-m>18.00</y-m>
+			<z-m> 0.76</z-m>  
 		</offsets>
 	</model>
-	-->
-
-	<!--exhaust
-	<model>
-		<path>Aircraft/Generic/Effects/exhaust-smoke.xml</path>
-		<name>contrail1</name>
-		<offsets>
-			<x-m>27.079</x-m>
-			<y-m>0</y-m>
-			<z-m>0.601</z-m>
-		</offsets>
-	</model>
-
-	<model>
-		<path>Aircraft/Generic/Effects/exhaust-smoke1.xml</path>
-		<name>contrail2</name>
-		<offsets>
-			<x-m>24.933</x-m>
-			<y-m>-2.827</y-m>
-			<z-m>0.601</z-m>
-		</offsets>
-	</model>
-
-	<model>
-		<path>Aircraft/Generic/Effects/exhaust-smoke2.xml</path>
-		<name>contrail3</name>
-		<offsets>
-			<x-m>24.933</x-m>
-			<y-m>2.827</y-m>
-			<z-m>0.601</z-m>
-		</offsets>
-	</model>
-	-->
 
 	<model>
 		<name>Pushback</name>

@@ -19,8 +19,8 @@ xsi:noNamespaceSchemaLocation="http://jsbsim.sourceforge.net/JSBSim.xsd">
 	-->
 
 	<metrics>
-		<wingarea  unit="FT2"> 1560.00 </wingarea> <!-- from [1] -->
-		<wingspan  unit="FT" >  106.00 </wingspan> <!-- from [1] -->
+		<wingarea  unit="FT2"> 1650.00 </wingarea> <!-- from [1] but Boeing 727-200 specs say 1650 which is one of the the reasons for the loss of lift we experienced with the Soitanen changes-->
+		<wingspan  unit="FT" >  108.00 </wingspan> <!-- from [1] back to 108 ft, [1] rrefers to the original -100 and -200 models, the ADV got winglets and that gave them an extra foot wingspan on every side. -->
 		<wing_incidence>          2.00 </wing_incidence>
 		<chord     unit="IN" >  180.00 </chord>  <!-- from [1] LEMAC 860.2 (Boeing) or 850 in this coordinate system --> 
 		<htailarea unit="FT2">  412.50 </htailarea>

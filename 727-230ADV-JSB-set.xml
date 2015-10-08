@@ -46,6 +46,19 @@ splash screen Tribute (IAHM-COL)
 
 		<menubar>
 			<default>
+				<menu n="3">
+					<item>
+						<name>autopilot</name>
+						<label>Autopilot Settings</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								var autopilot = gui.Dialog.new("sim/gui/dialogs/autopilot/dialog", "Aircraft/727-230/Dialogs/autopilot.xml");
+								autopilot.open();
+							</script>
+						</binding>
+					</item>
+				</menu>
 				<menu n="10">
 					<label>727-230</label>
 					<enabled type="bool">true</enabled>
@@ -157,6 +170,15 @@ splash screen Tribute (IAHM-COL)
 		</view>
 
 		<chase-distance-m>-100</chase-distance-m>
+
+		<gui>
+			<dialogs>
+				<autopilot>
+					<kts-select type="bool">true</kts-select>
+					<mach-select tpye="bool">false</mach-select>
+				</autopilot>
+			</dialogs>
+		</gui>
 
 		<flaps>
 			<setting>0.000</setting>
@@ -327,7 +349,7 @@ splash screen Tribute (IAHM-COL)
 				<name type="string">Fwd Opt. Tank 1</name>
 				<density-ppg type="double">7.00</density-ppg>
 				<unusable-gal_us type="double">2.5</unusable-gal_us>
-				<level-gal_us type="double">810</level-gal_us>
+				<level-gal_us type="double">0</level-gal_us>
 				<selected type="bool">false</selected>
 			</tank>
 
@@ -335,7 +357,7 @@ splash screen Tribute (IAHM-COL)
 				<name type="string">Fwd Opt. Tank 2</name>
 				<density-ppg type="double">7.00</density-ppg>
 				<unusable-gal_us type="double">2.5</unusable-gal_us>
-				<level-gal_us type="double">810</level-gal_us>
+				<level-gal_us type="double">0</level-gal_us>
 				<selected type="bool">false</selected>
 			</tank>
 
@@ -343,7 +365,7 @@ splash screen Tribute (IAHM-COL)
 				<name type="string">Rear Opt. Tank 3</name>
 				<density-ppg type="double">7.00</density-ppg>
 				<unusable-gal_us type="double">2.5</unusable-gal_us>
-				<level-gal_us type="double">860</level-gal_us>
+				<level-gal_us type="double">0</level-gal_us>
 				<selected type="bool">false</selected>
 			</tank>
 
@@ -351,7 +373,7 @@ splash screen Tribute (IAHM-COL)
 				<name type="string">Rear Opt. Tank 4</name>
 				<density-ppg type="double">7.00</density-ppg>
 				<unusable-gal_us type="double">2.5</unusable-gal_us>
-				<level-gal_us type="double">810</level-gal_us>
+				<level-gal_us type="double">0</level-gal_us>
 				<selected type="bool">false</selected>
 			</tank>
 		</fuel>
@@ -438,7 +460,62 @@ splash screen Tribute (IAHM-COL)
 			</key>
 		</keyboard>
 	</input>
+ 	
+	<limits>
+		<!-- vne>402</vne #### needs research, copied from C-5 to remember those settings have still to be made -->
  
+		<!-- max-positive-g>4.4</max-positive-g #### needs research -->
+		<!-- max-negative-g>-1.76</max-negative-g  #### needs research -->
+ 
+		<!-- #### needs reasearch #### max-flap-extension-speed n="0">
+			<flaps>0.167</flaps>
+			<speed>245</speed>
+		</max-flap-extension-speed>
+		<max-flap-extension-speed n="1">
+			<flaps>0.333</flaps>
+			<speed>215</speed>
+		</max-flap-extension-speed>
+		<max-flap-extension-speed n="2">
+			<flaps>0.667</flaps>
+			<speed>185</speed>
+		</max-flap-extension-speed>
+		<max-flap-extension-speed n="3">
+			<flaps>0.833</flaps>
+			<speed>185</speed>
+		</max-flap-extension-speed>
+		<max-flap-extension-speed n="4">
+			<flaps>1.000</flaps>
+			<speed>160</speed>
+		</max-flap-extension-speed -->
+
+		<!-- max-gear-extension-speed>220</max-gear-extension-speed #### needs research -->
+
+		<mass-and-balance>
+			<maximum-ramp-mass-lbs>210100</maximum-ramp-mass-lbs>	<!-- see: ICAO Aerodrome Design Manual Doc 9157-AN/901 from 1983 -->
+			<maximum-takeoff-mass-lbs>209500</maximum-takeoff-mass-lbs>
+			<maximum-landing-mass-lbs>172000</maximum-landing-mass-lbs>
+			<maximum-zero-fuel-mass-lbs>164000</maximum-zero-fuel-mass-lbs>
+		</mass-and-balance>
+	</limits>
+    
+	<!-- Autopilot initialization -->
+	<autopilot>
+
+		<settings>
+			<kts-mach-select type="string">kts</kts-mach-select>
+			<max-pitch type="float"> 6.0</max-pitch>
+			<min-pitch type="float">-4.0</min-pitch>
+			<bank-angle-limit-deg type="int">35</bank-angle-limit-deg>
+		</settings>
+
+		<internal>
+			<target-pitch-deg type="float">0.00</target-pitch-deg>
+			<max-pitch type="float"> 6.0</max-pitch>
+			<min-pitch type="float">-4.0</min-pitch>
+		</internal>
+
+	</autopilot>
+
 	<!-- Voodoomaster plane specific initializations -->
 	<voodoomaster>
 		<steering-mode-rudder type="bool">true</steering-mode-rudder>
