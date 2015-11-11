@@ -37,6 +37,9 @@ Freighter model IAHM-COL
 		<startup>
 		  <splash-texture>Aircraft/727-230/splash/splash-tribute.png</splash-texture>
 		  <splash-texture>Aircraft/727-230/splash/splash.png</splash-texture>
+ 	          <splash-texture>Aircraft/727-230/splash-1.png</splash-texture>
+                  <splash-texture>Aircraft/727-230/splash-2.png</splash-texture>
+                  <splash-texture>Aircraft/727-230/splash-3.png</splash-texture>
 		</startup>
 		
 		<sound>
