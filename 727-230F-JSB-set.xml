@@ -37,14 +37,14 @@ Freighter model IAHM-COL
 		<startup>
 		  <splash-texture>Aircraft/727-230/splash/splash-tribute.png</splash-texture>
 		  <splash-texture>Aircraft/727-230/splash/splash.png</splash-texture>
- 	          <splash-texture>Aircraft/727-230/splash-1.png</splash-texture>
-                  <splash-texture>Aircraft/727-230/splash-2.png</splash-texture>
-                  <splash-texture>Aircraft/727-230/splash-3.png</splash-texture>
-                    <splash-texture>Aircraft/727-230/splash-4.png</splash-texture>
-		  <splash-texture>Aircraft/727-230/splash-5.png</splash-texture>
-		  <splash-texture>Aircraft/727-230/splash-6.png</splash-texture>
-                  <splash-texture>Aircraft/727-230/splash-7.png</splash-texture>
-                  <splash-texture>Aircraft/727-230/splash-8.png</splash-texture>
+ 	          <splash-texture>Aircraft/727-230/splash/splash-1.png</splash-texture>
+                  <splash-texture>Aircraft/727-230/splash/splash-2.png</splash-texture>
+                  <splash-texture>Aircraft/727-230/splash/splash-3.png</splash-texture>
+                    <splash-texture>Aircraft/727-230/splash/splash-4.png</splash-texture>
+		  <splash-texture>Aircraft/727-230/splash/splash-5.png</splash-texture>
+		  <splash-texture>Aircraft/727-230/splash/splash-6.png</splash-texture>
+                  <splash-texture>Aircraft/727-230/splash/splash-7.png</splash-texture>
+                  <splash-texture>Aircraft/727-230/splash/splash-8.png</splash-texture>
 		</startup>
 		
 		<sound>
