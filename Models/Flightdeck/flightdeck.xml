@@ -24,16 +24,16 @@
 		</model>
 
 	
-	<!--yokes>	
+	<!--yokes-->	
 	<model>
 		<name>yokes</name>
 		<path>Aircraft/727-230/Models/Flightdeck/yokes/yokes.xml</path>
 		<offsets>
-		  <x-m>0.0</x-m>
-		  <y-m>0.0</y-m>
-		  <z-m>0.0</z-m>
+		  <x-m> -2.35050</x-m>
+		  <y-m>  0.02</y-m>
+		  <z-m>   -0.15</z-m>
 		</offsets>
-	</model-->
+	</model>
 	
 	<!-- pilot side -->
 
