@@ -197,3 +197,4 @@ setlistener("/sim/model/start-idling", func(idle) {
 	}
 },0,0);
 
+setprop("/b707/ess-bus", 35);
