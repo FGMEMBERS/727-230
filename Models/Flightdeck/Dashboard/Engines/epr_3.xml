@@ -21,15 +21,11 @@
 		<type>material</type>
 		<object-name>face</object-name>
 		<object-name>needle</object-name>
-		<condition>
-			<less-than><property>/systems/electrical/outputs/cabin-dim</property><value>0.8</value></less-than>
-		</condition>
-		<emission>
-			<red>0.6</red>
-			<green>0.4</green>
-			<blue>0.3</blue>
-			<factor-prop>/systems/electrical/outputs/panel-dim</factor-prop>
-		</emission>
+		  <emission>
+    <red>0.5</red>
+    <green>0.5</green>
+    <blue>0.5</blue>
+  </emission>
 	</animation>
 	
 	<animation>

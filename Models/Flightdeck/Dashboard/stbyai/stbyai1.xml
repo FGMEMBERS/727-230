@@ -11,13 +11,10 @@
     <object-name>rollindex</object-name>
     <object-name>wings</object-name>
     <emission>
-      <red>   0.7 </red>
-      <green> 0.7 </green>
-      <blue>  0.7 </blue>
+      <red>   0.5 </red>
+      <green> 0.5 </green>
+      <blue>  0.5 </blue>
     </emission>
-  <condition>
-    <property>systems/electrical/on</property>
-  </condition>
   </animation>
 
 

@@ -2,6 +2,7 @@
 
 <PropertyList>
 
+<!-- Cockpit by it0uchpods, Legoboyvdlp -->
 	<!-- insert panel -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/cockpit/727-230-Cockpit.ac</path>
@@ -633,7 +634,7 @@
 
 	<!-- landing light switches -->
 
-	<model>
+	<!--model>
 		<path>Aircraft/727-230/Models/Flightdeck/Overhead/LightSwitches/landinglights.xml</path>
 		<offsets>
 			<x-m> -20.92000</x-m>
@@ -660,11 +661,11 @@
 			<y>1.0</y>
 			<z>0.0</z>
 		</axis>
-	</animation>
+	</animation-->
 
 	<!-- illumination dimmers -->
 
-	<model>
+	<!--model>
 		<path>Aircraft/727-230/Models/Flightdeck/Overhead/LightSwitches/flightdecklights.xml</path>
 		<offsets>
 			<x-m> -20.94500</x-m>
@@ -691,11 +692,11 @@
 			<y>1.0</y>
 			<z>0.0</z>
 		</axis>
-	</animation>
+	</animation-->
 
 	<!-- nav, beacon, strobe, tail, logo lights -->
 
-	<model>
+	<!--model>
 		<path>Aircraft/727-230/Models/Flightdeck/Overhead/LightSwitches/outerlights.xml</path>
 		<offsets>
 			<x-m> -20.93500</x-m>
@@ -722,11 +723,11 @@
 			<y>1.0</y>
 			<z>0.0</z>
 		</axis>
-	</animation>
+	</animation-->
 
 	<!-- wiperknob -->
 
-	<model>
+	<!--model>
 		<path>Aircraft/727-230/Models/Flightdeck/Overhead/WiperSwitches/wiperswitch.xml</path>
 		<offsets>
 			<x-m> -20.98000</x-m>
@@ -753,7 +754,7 @@
 			<y>1.0</y>
 			<z>0.0</z>
 		</axis>
-	</animation>
+	</animation-->
 
 	<!-- emerg yaw -->
 	<!-- This one is still in Voodoomaster. It contains several switches and protection brackets and is still not separated, so it remaisn only as a 			reminder
@@ -790,7 +791,7 @@
 
 	<!-- seat belt and no smoking -->
 
-	<model>
+	<!--model>
 		<path>Aircraft/727-230/Models/Flightdeck/Overhead/SeatBeltSwitch/SeatBeltSwitch.xml</path>
 		<offsets>
 			<x-m> -21.05000</x-m>
@@ -817,7 +818,7 @@
 			<y>1.0</y>
 			<z>0.0</z>
 		</axis>
-	</animation>
+	</animation-->
 
 	<!-- circuit breakers -->
 
@@ -850,4 +851,3 @@
 	</animation>
 
 </PropertyList>
-

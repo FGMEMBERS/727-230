@@ -10,10 +10,9 @@
   <object-name>Mach1</object-name>
   <object-name>Mach2</object-name>
   <emission>
-    <red>0.3</red>
-    <green>0.3</green>
-    <blue>0.3</blue>
-    <factor-prop>/controls/lighting/pfd-norm</factor-prop>
+    <red>0.5</red>
+    <green>0.5</green>
+    <blue>0.5</blue>
   </emission>
 </animation>
 

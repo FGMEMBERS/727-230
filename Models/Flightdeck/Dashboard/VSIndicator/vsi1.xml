@@ -7,11 +7,10 @@
         <type>material</type>
         <object-name>VSIface</object-name>
         <object-name>VSI.needle</object-name>
-<emission>
-    <red>0.3</red>
-    <green>0.3</green>
-    <blue>0.3</blue>
-    <factor-prop>/controls/lighting/pfd-norm</factor-prop>
+  <emission>
+    <red>0.5</red>
+    <green>0.5</green>
+    <blue>0.5</blue>
   </emission>
     </animation>
 
