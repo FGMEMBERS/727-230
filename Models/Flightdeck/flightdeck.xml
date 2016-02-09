@@ -66,13 +66,33 @@
 		</offsets>
 	</model>
 	
+	<!-- Altimeter copilot -->
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/ALT/alt2.xml</path>
+		<offsets>
+			<x-m> -21.34550</x-m>
+			<y-m>   0.56079</y-m>
+			<z-m>   0.73076</z-m>
+		</offsets>
+	</model>
+	
 	<!-- Radio Altimeter -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/RALT/ralt1.xml</path>
 		<offsets>
 			<x-m> -21.34550</x-m>
 			<y-m>  -0.25079</y-m>
-			<z-m>   0.73076</z-m>
+			<z-m>   0.73056</z-m>
+		</offsets>
+	</model>
+	
+	<!-- Radio Altimeter copilot -->
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/RALT/ralt2.xml</path>
+		<offsets>
+			<x-m> -21.34550</x-m>
+			<y-m>   0.64779</y-m>
+			<z-m>   0.73256</z-m>
 		</offsets>
 	</model>
 	
@@ -88,11 +108,21 @@
 
 	<!-- Clock -->
 	<model>
-		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Clock/clock.xml</path>
+		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Clock/clock1.xml</path>
 		<offsets>
 			<x-m> -21.34550</x-m>
 			<y-m>  -0.63179</y-m>
 			<z-m>   0.72216</z-m>
+		</offsets>
+	</model>
+	
+	<!-- Clock copilot -->
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Clock/clock2.xml</path>
+		<offsets>
+			<x-m> -21.34550</x-m>
+			<y-m>   0.64779</y-m>
+			<z-m>   0.64016</z-m>
 		</offsets>
 	</model>
 
@@ -124,6 +154,16 @@
 			<z-m>   0.64016</z-m>
 		</offsets>
 	</model>
+	
+	<!-- VSIndicator copilot -->
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/VSIndicator/vsi2.xml</path>
+		<offsets>
+			<x-m> -21.34050</x-m>
+			<y-m>   0.56079</y-m>
+			<z-m>   0.64016</z-m>
+		</offsets>
+	</model>
 
 	<!-- DME -->
 	<model>
@@ -152,13 +192,41 @@
 			<z-m>   0.75116</z-m>
 		</offsets>
 	</model>
-
+	
+	<!-- AIcopilot -->
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/AttitudeIndicator/ai2.xml</path>
+		<offsets>
+			<x-m> -21.35050</x-m>
+			<y-m>   0.45379</y-m>
+			<z-m>   0.75116</z-m>
+		</offsets>
+	</model>
+	
 	<!-- ASI -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/ASI/asi1.xml</path>
 		<offsets>
 			<x-m> -21.34550</x-m>
 			<y-m>  -0.55379</y-m>
+			<z-m>   0.73276</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>asi1</object-name>>
+		<type>scale</type>
+		<x-offset>0.8</x-offset>
+		<y-offset>0.8</y-offset>
+		<z-offset>0.8</z-offset>
+	</animation>
+	
+	<!-- ASI copilot -->
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/ASI/asi2.xml</path>
+		<offsets>
+			<x-m> -21.34550</x-m>
+			<y-m>   0.34379</y-m>
 			<z-m>   0.73276</z-m>
 		</offsets>
 	</model>
@@ -180,6 +248,16 @@
 			<z-m>   0.63016</z-m>
 		</offsets>
 	</model>
+	
+	<!-- HSI copilot -->
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/HSI/hsi2.xml</path>
+		<offsets>
+			<x-m> -21.34050</x-m>
+			<y-m>   0.45379</y-m>
+			<z-m>   0.63016</z-m>
+		</offsets>
+	</model>
 
 	<!-- RMI -->
 	<model>
@@ -187,6 +265,16 @@
 		<offsets>
 			<x-m> -21.34050</x-m>
 			<y-m>  -0.55379</y-m>
+			<z-m>   0.64016</z-m>
+		</offsets>
+	</model>
+	
+	<!-- RMI copilot-->
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/RMI/rmi2.xml</path>
+		<offsets>
+			<x-m> -21.34050</x-m>
+			<y-m>   0.34379</y-m>
 			<z-m>   0.64016</z-m>
 		</offsets>
 	</model>
