@@ -324,6 +324,17 @@
 		<z-offset>0.7</z-offset>
 	</animation>
 	
+	<!-- firewarn -->
+	<model>
+		<name>pedestal</name>
+		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/FireWarn/firewarning.xml</path>
+		<offsets>
+			<x-m> -21.20018</x-m>
+			<y-m>  0.02500</y-m>
+			<z-m>   0.88900</z-m>
+		</offsets>
+		</model>
+	
 	<!-- EPR1 -->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/Dashboard/Engines/epr_1.xml</path>
