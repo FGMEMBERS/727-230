@@ -15,7 +15,7 @@ Various polls leaded to the result, that most of the flightgear forum users want
 
 What is going to be enhanced?
 --
-
+* Cockpit
 * Modelling
 * FDM
 * Systems (a priority list will be made after the finishing of the poll above)
