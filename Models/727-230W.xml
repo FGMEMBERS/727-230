@@ -235,7 +235,7 @@
 		<object-name>glas</object-name>
 	</animation>
 
-	<!--Add the new panel-->
+	<!--Add it0uchpods' cockpit-->
 	<model>
 		<path>Aircraft/727-230/Models/Flightdeck/flightdeck.xml</path>
 		<offsets>
