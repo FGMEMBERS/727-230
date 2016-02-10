@@ -860,5 +860,16 @@
 			<z>0.0</z>
 		</axis>
 	</animation>
+	
+	<!-- oh panel window heat -->
+	
+	<model>
+		<path>Aircraft/727-230/Models/Flightdeck/Overhead/WindowHeat/windowHeat.xml</path>
+		<offsets>
+			<x-m> -20.59101</x-m>
+			<y-m>  0.2224356</y-m>
+			<z-m>   1.44547</z-m>
+		</offsets>
+	</model>
 
 </PropertyList>
