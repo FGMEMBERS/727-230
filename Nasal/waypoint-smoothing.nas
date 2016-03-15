@@ -179,7 +179,7 @@ var turn_radius_nm = func(tas, bank_angle)
 var leg_data_on_next_waypoint = func()
 {
     var version = getprop("sim/version/flightgear");
-    return cmp(version, "3.4.0") >= 0;
+    return cmp(version, '3.4.0') >= 0 or substr(version, 0, 2) == "20";
 }
 
 var smooth = func()
