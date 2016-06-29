@@ -67,6 +67,20 @@ Freighter model IAHM-COL
 						</binding>
 					</item>
 
+<item>
+			<name>lights</name>
+			<label>Lights</label>
+				<binding>
+					<command>nasal</command>
+					<script>
+						var lights = gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/727-230/Systems/lights-dlg.xml");
+						lights.open();
+					</script>
+				</binding>
+		  </item>
+
+
+
 					<item >
 						<label>Pushback</label>
 						<name>pushback</name>
@@ -76,7 +90,26 @@ Freighter model IAHM-COL
 						</binding>
 					</item>
 
-					<item>
+					
+<item>
+		      <label>Announcements</label>
+		      <binding>
+					<command>nasal</command>
+					<script>
+						var mal = gui.Dialog.new("/sim/gui/dialogs/announcements/menu/dialog", "Aircraft/727-230/Dialogs/announcements-dialog.xml");
+						mal.open();
+		       </script>
+		      </binding>
+          </item> 
+
+
+
+
+
+
+
+
+<item>
 						<label>Select Livery</label>
 						<binding>
 							<command>nasal</command>
@@ -406,7 +439,15 @@ Freighter model IAHM-COL
 				ki266.new(0);
 			]]></script>
 		</DME>
-		<tyresmoke>
+		
+<lights>
+                 <file>Aircraft/727-230/Nasal/lighting.nas</file>		
+               </lights>
+
+
+
+
+<tyresmoke>
 			<file>Aircraft/727-230/Nasal/tyresmoke.nas</file>
 		</tyresmoke>
 		<livery>

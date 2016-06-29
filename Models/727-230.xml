@@ -1570,5 +1570,112 @@
 		</offsets>
 	</model>
 
+
+<!--LIGHTS-->
+
+  
+
+  <!-- Beacon -->
+ 
+ <model>
+  <path>Aircraft/727-230/Models/Lights/beacon.xml</path>
+  <offsets>
+   <x-m>-2.31186</x-m>
+   <y-m>-0.00395537</y-m>
+   <z-m>2.43609</z-m>
+  </offsets>     
+ </model>
+ <model>
+  <path>Aircraft/727-230/Models/Lights/beacon.xml</path>
+  <offsets>
+   <x-m>2.31186</x-m>
+   <y-m>-0.0107558</y-m>
+   <z-m>-1.6757</z-m>
+  </offsets>
+ </model>
+
+                 
+ 
+ <model>
+  <path>Aircraft/727-230/Models/Lights/RedLight.xml</path>
+  <offsets>
+   <x-m>4.7</x-m>
+   <y-m>-16.611</y-m>
+   <z-m>0.01</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/727-230/Models/Lights/flash.xml</path>
+  <offsets>
+   <x-m>4.7</x-m>
+   <y-m>-16.911</y-m>
+   <z-m>0.01</z-m>
+  </offsets>
+ </model>
+                 
+
+
+ <model>
+  <path>Aircraft/727-230/Models/Lights/GreenLight.xml</path>
+  <offsets>
+  <x-m>4.7</x-m>
+   <y-m>16.611</y-m>
+   <z-m>0.01</z-m>
+  </offsets>
+ </model>
+ <model>
+  <path>Aircraft/727-230/Models/Lights/flash.xml</path>
+  <offsets>
+   <x-m>4.7</x-m>
+   <y-m>16.611</y-m>
+   <z-m>0.01</z-m>
+  </offsets>
+ </model>
+
+
+
+<model>
+  <path>Aircraft/727-230/Models/Lights/flash.xml</path>
+  <offsets>
+   <x-m>20.6198</x-m>
+   <y-m>0</y-m>
+   <z-m>6.33592</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/727-230/Models/Lights/flash.xml</path>
+  <offsets>
+   <x-m>18.6849</x-m>
+   <y-m>0.</y-m>
+   <z-m>0.39425</z-m>
+  </offsets>
+ </model>
+
+ 
+<model>
+	<path>Aircraft/727-230/Models/lights/landinglight.xml</path>
+	<name>LeftWingLandinglight</name>
+  
+	<offsets>
+		<x-m>-5.93</x-m>
+		<y-m>-2.14</y-m>
+		<z-m>-0.51</z-m>      
+	</offsets>
+</model>
+
+<model>
+	<path>Aircraft/727-230/Models/lights/landinglight.xml</path>
+	<name>RightWingLandinglight</name>
+	<offsets>
+		<x-m>-5.93</x-m>
+		<y-m>2.14</y-m>
+		<z-m>-0.51</z-m>        
+	</offsets>
+</model>
+
+
+
+
 </PropertyList>
 

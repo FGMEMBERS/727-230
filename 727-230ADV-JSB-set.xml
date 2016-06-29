@@ -76,6 +76,37 @@ splash screen Tribute (IAHM-COL)
 					</item>
 
 					<item>
+			<name>lights</name>
+			<label>Lights</label>
+				<binding>
+					<command>nasal</command>
+					<script>
+						var lights = gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/727-230/Systems/lights-dlg.xml");
+						lights.open();
+					</script>
+				</binding>
+		  </item>
+
+<item>
+		      <label>Announcements</label>
+		      <binding>
+					<command>nasal</command>
+					<script>
+						var mal = gui.Dialog.new("/sim/gui/dialogs/announcements/menu/dialog", "Aircraft/727-230/Dialogs/announcements-dialog.xml");
+						mal.open();
+		       </script>
+		      </binding>
+          </item> 
+
+
+
+
+
+
+
+
+
+           <item>
 						<label>Select Livery</label>
 						<binding>
 							<command>nasal</command>
@@ -488,7 +519,15 @@ splash screen Tribute (IAHM-COL)
 		<tyresmoke>
 			<file>Aircraft/727-230/Nasal/tyresmoke.nas</file>
 		</tyresmoke>
-		<livery>
+		
+<lights>
+                 <file>Aircraft/727-230/Nasal/lighting.nas</file>		
+               </lights>
+
+
+
+
+<livery>
 			<file>Aircraft/727-230/Nasal/livery.nas</file>
 		</livery>
 		<b727>
